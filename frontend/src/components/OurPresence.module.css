@@ -1,0 +1,266 @@
+/* Base styles - Mobile First (320px and up) */
+.MainContainer{
+    width: 100%;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.HeadingContainer{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.heading{
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.headingSpan{
+    color: #EC221F;
+}
+
+.subHeading{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.marqueeSection{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marqueeCardContainer {
+    max-width: 200px;         
+    height: 260px;            
+    overflow: hidden;    
+    position: relative;     
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto; 
+}
+
+.marqueeTrack {
+    display: flex;
+    gap: 1rem;                   
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marqueeTrack:hover {
+    animation-play-state: paused;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        
+    object-position: center;  
+    display: block;  
+}
+
+.CardContent{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 8px;
+    bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.City{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.address{
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.gradientOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.64) 100%
+    );
+    z-index: 1;
+}
+
+/* Tablet Portrait - 480px and up */
+@media (min-width: 480px) {
+    .MainContainer {
+        gap: 2.5rem;
+        padding: 1.5rem;
+    }
+    
+    .HeadingContainer {
+        width: 85%;
+    }
+    
+    .heading {
+        font-size: 38px;
+    }
+    
+    .subHeading {
+        font-size: 17px;
+    }
+    
+    .marqueeCardContainer {
+        max-width: 230px;
+        height: 300px;
+    }
+    
+    .marqueeTrack {
+        gap: 1.5rem;
+        animation: scroll 22s linear infinite;
+    }
+    
+    .City {
+        font-size: 20px;
+    }
+    
+    .CardContent {
+        width: 70%;
+        gap: 9px;
+        bottom: 18px;
+    }
+}
+
+/* Tablet Landscape - 768px and up */
+@media (min-width: 768px) {
+    .MainContainer {
+        gap: 3rem;
+        padding: 2rem;
+    }
+    
+    .HeadingContainer {
+        width: 75%;
+        gap: 1.8rem;
+    }
+    
+    .heading {
+        font-size: 44px;
+    }
+    
+    .subHeading {
+        font-size: 18px;
+    }
+    
+    .marqueeCardContainer {
+        max-width: 250px;
+        height: 330px;
+    }
+    
+    .marqueeTrack {
+        gap: 1.8rem;
+        animation: scroll 20s linear infinite;
+    }
+    
+    .City {
+        font-size: 22px;
+    }
+    
+    .address {
+        font-size: 11px;
+    }
+    
+    .CardContent {
+        width: 65%;
+        gap: 10px;
+        bottom: 20px;
+    }
+}
+
+/* Desktop - 1024px and up */
+@media (min-width: 1024px) {
+    .MainContainer {
+        gap: 3.5rem;
+    }
+    
+    .HeadingContainer {
+        width: 70%;
+        gap: 2rem;
+    }
+    
+    .heading {
+        font-size: 48px;
+    }
+    
+    .marqueeCardContainer {
+        max-width: 270px;
+        height: 350px;
+    }
+    
+    .marqueeTrack {
+        gap: 2rem;
+    }
+    
+    .City {
+        font-size: 23px;
+    }
+}
+
+/* Large Desktop - 1200px and up */
+@media (min-width: 1200px) {
+    .MainContainer {
+        gap: 4rem;
+    }
+    
+    .HeadingContainer {
+        width: 65%;
+    }
+    
+    .heading {
+        font-size: 52px;
+    }
+    
+    .marqueeCardContainer {
+        max-width: 279px;
+        height: 366px;
+    }
+    
+    .City {
+        font-size: 24px;
+    }
+    
+    .CardContent {
+        width: 60%;
+        gap: 11px;
+    }
+}
