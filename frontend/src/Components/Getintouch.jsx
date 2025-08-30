@@ -11,9 +11,9 @@ export default function ContactSection() {
     return (
         <section className="bg-gray-50 p-6 md:p-16">
             <div className="max-w-7xl mx-auto flex md:ml-14 flex-col md:flex-row items-center justify-center md:gap-0 gap-6">
-                
-                <div className="bg-white shadow-2xl rounded-2xl p-4 md:p-10 w-full h-120 md:w-100 relative flex flex-col justify-center">
-        
+
+                <div className="bg-white shadow-2xl rounded-2xl p-4 md:p-10 w-full h-100 md:w-90 relative flex flex-col justify-center">
+
                     <div className="hidden md:flex h-[260px] justify-center absolute -left-17 top-1/2 transform -translate-y-1/2 flex-col space-y-3 bg-[#0d2c3b] p-3 rounded-bl-2xl rounded-tl-2xl shadow-lg">
                         <a href="#" className="bg-white rounded-full p-3 hover:bg-gray-100">
                             <FaLinkedinIn className="text-[#0d2c3b] text-xl" />
@@ -83,17 +83,18 @@ export default function ContactSection() {
 
                 {/* Google Map */}
                 <div className="w-full md:w-1/2 flex justify-center">
-                    <div className="w-full h-[250px] md:h-[350px] rounded-br-2xl rounded-tr-2xl overflow-hidden shadow-lg">
+                    <div className="w-full h-[250px] md:h-[300px] rounded-br-2xl rounded-tr-2xl overflow-hidden shadow-lg">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.8697386076674!2d77.39116687475085!3d28.611099785054932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef7aed902fa1%3A0x3fb397a26b27f1d8!2sChoudhary%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e1!3m2!1sen!2sin!4v1756490927962!5m2!1sen!2sin"
-                            width="100%"
-                            height="100%"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.2453093503345!2d77.393742!3d28.611095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef7aed902fa1%3A0x3fb397a26b27f1d8!2sChoudhary%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1756543874376!5m2!1sen!2sin"
+                            width="600"
+                            height="400"
                             style={{ border: 0 }}
-                            allowFullScreen=""
+                            allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             title="Google Map"
-                        ></iframe>
+                        />
+
                     </div>
                 </div>
             </div>
