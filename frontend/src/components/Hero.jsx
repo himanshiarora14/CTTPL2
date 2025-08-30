@@ -13,7 +13,6 @@ const Hero = () => {
                            md:before:top-[55%] md:before:left-[50px] md:before:h-full md:before:w-[90%]
                            lg:ml-8 lg:pl-8 lg:before:left-[50px]">
 
-                {/* left section */}
                 <div className="bg-none w-full flex-1 relative z-10">
                     <div className="flex flex-col gap-[25px] min-h-auto relative top-5 left-0 w-full px-4
                                    md:gap-[35px] md:min-h-[400px] md:top-[60px] md:left-[60px] md:w-full md:px-0
@@ -48,7 +47,7 @@ const Hero = () => {
                                          lg:text-[18px]">
                                 Experience comfort, reliability, and tech-enabled journeys with India's leading travel partner—trusted by travellers and businesses alike.
                             </p>
-                            <button className="w-[140px] h-[38px] bg-[#EC221F] rounded-[5px] flex justify-between items-center px-3 py-2 w-fit cursor-pointer gap-3
+                            <button className="w-[140px] h-[38px] bg-[#EC221F] rounded-[5px] flex justify-between items-center px-3 py-2 cursor-pointer gap-3
                                              sm:w-[150px] sm:h-10 sm:px-[14.4px] sm:py-[9.6px] sm:gap-[14px]
                                              md:w-[155px] md:h-[42px] md:px-[15.2px] md:py-[11.2px] md:gap-[15px]
                                              lg:w-40 lg:h-[43px] lg:px-4 lg:py-3 lg:gap-4">
@@ -67,7 +66,7 @@ const Hero = () => {
                 {/* right section img*/}
                 <img src={BusImg} alt="" className="relative w-4/5 max-w-[300px] self-end z-[2]
                                                    sm:w-full sm:max-w-[350px]
-                                                   md:relative md:right-0 md:top-32 md:w-auto md:max-w-[50%] md:self-auto md:self-end
+                                                   md:relative md:right-0 md:top-32 md:w-auto md:max-w-[50%] md:self-auto
                                                    lg:absolute lg:right-0 lg:top-0 lg:w-auto lg:max-w-none lg:self-auto" />
             </div>
         </div>

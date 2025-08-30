@@ -1,6 +1,6 @@
 // components/Navbar.jsx
 import React, { useState } from 'react';
-import logo from '../images/logo.png'; 
+import logo from '../images/logocttpl.png'; 
 import { FaBars } from 'react-icons/fa'; // Added this import
 
 const Navbar = () => {
