@@ -1,4 +1,4 @@
-import Navbar from "../Components/Navbar";
+// import Navbar from "../Components/Navbar";
 import Ourservices from "../Components/Ourservices";
 import Fleets from "../Components/Fleets";
 import Seamless from "../Components/Seamless";
@@ -12,7 +12,7 @@ import OurPresence from "../Components/OurPresence";
 function Homepage() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Hero/>
             <OurClient/>
             <Seamless />
