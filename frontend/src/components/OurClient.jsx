@@ -2,12 +2,12 @@ import React from 'react'
 
 const OurClient = () => {
   return (
-    <section className="w-full h-auto flex flex-col justify-center items-center p-2
-                       xs:mt-12 xs:p-4 xs:h-[50vh]
-                       md:mt-16 md:px-4 md:py-6 md:h-[55vh]
-                       lg:h-[45vh] lg:mt-8
-                       xl:h-[40vh] xl:mt-4 xl:p-0">
-      <div className="w-[95vw] flex flex-col justify-center items-center gap-4 flex-wrap
+    <section className="w-full h-auto flex flex-col justify-center items-center p-2 mt-0
+                       xs:mt-4 xs:p-4 xs:h-[50vh]
+                       md:mt-6 md:px-4 md:py-6 md:h-[55vh]
+                       lg:h-[45vh] lg:mt-4
+                       xl:h-[40vh] xl:mt-0 xl:p-0">
+      <div className="w-[95vw] flex flex-col justify-center items-center gap-4
                      xs:w-[90vw] xs:gap-6
                      md:w-[85vw] md:gap-8
                      lg:w-[82vw]
@@ -28,65 +28,66 @@ const OurClient = () => {
           Delivering seamless transport services to top corporates and organizations nationwide, trusted by industry leaders for our unmatched fleet, reliability, and service excellence.
         </p>
 
-        <div className="w-full flex justify-around gap-[10px] items-center flex-wrap
-                       xs:gap-[15px] xs:justify-center
-                       md:gap-[20px] md:justify-between
-                       lg:gap-[25px]
-                       xl:gap-[30px]">
-          <img src="/coforge.svg" alt="" className="max-w-[50px] h-auto
-                                                   xs:max-w-[60px]
-                                                   sm:max-w-[80px]
-                                                   md:max-w-[90px]
-                                                   lg:max-w-[100px]
-                                                   xl:max-w-none" />
-          <img src="/airtel.svg" alt="" className="max-w-[50px] h-auto
-                                                  xs:max-w-[60px]
-                                                  sm:max-w-[80px]
-                                                  md:max-w-[90px]
-                                                  lg:max-w-[100px]
-                                                  xl:max-w-none" />
-          <img src="/metlife.svg" alt="" className="max-w-[50px] h-auto
-                                                   xs:max-w-[60px]
-                                                   sm:max-w-[80px]
-                                                   md:max-w-[90px]
-                                                   lg:max-w-[100px]
-                                                   xl:max-w-none" />
-          <img src="/tata.svg" alt="" className="max-w-[50px] h-auto
-                                               xs:max-w-[60px]
-                                               sm:max-w-[80px]
-                                               md:max-w-[90px]
-                                               lg:max-w-[100px]
-                                               xl:max-w-none" />
-          <img src="/fiserv.svg" alt="" className="max-w-[50px] h-auto
-                                                  xs:max-w-[60px]
-                                                  sm:max-w-[80px]
-                                                  md:max-w-[90px]
-                                                  lg:max-w-[100px]
-                                                  xl:max-w-none" />
-          <img src="/samsung.svg" alt="" className="max-w-[50px] h-auto
-                                                   xs:max-w-[60px]
-                                                   sm:max-w-[80px]
-                                                   md:max-w-[90px]
-                                                   lg:max-w-[100px]
-                                                   xl:max-w-none" />
-          <img src="/logo_dps" alt="" className="max-w-[50px] h-auto
-                                               xs:max-w-[60px]
-                                               sm:max-w-[80px]
-                                               md:max-w-[90px]
-                                               lg:max-w-[100px]
-                                               xl:max-w-none" />
-          <img src="/jio.svg" alt="" className="max-w-[50px] h-auto
-                                              xs:max-w-[60px]
-                                              sm:max-w-[80px]
-                                              md:max-w-[90px]
-                                              lg:max-w-[100px]
-                                              xl:max-w-none" />
-          <img src="/dalima.svg" alt="" className="max-w-[50px] h-auto
-                                                 xs:max-w-[60px]
-                                                 sm:max-w-[80px]
-                                                 md:max-w-[90px]
-                                                 lg:max-w-[100px]
-                                                 xl:max-w-none" />
+        {/* Logo container - Fixed to prevent wrapping on larger screens */}
+        <div className="w-full flex justify-center items-center gap-[8px] flex-wrap
+                       xs:gap-[12px] xs:justify-center
+                       md:gap-[16px] md:justify-center
+                       lg:gap-[20px] lg:justify-center lg:flex-nowrap
+                       xl:gap-[24px] xl:justify-between xl:flex-nowrap">
+          <img src="/coforge.svg" alt="Coforge" className="max-w-[40px] h-auto flex-shrink-0
+                                                         xs:max-w-[50px]
+                                                         sm:max-w-[60px]
+                                                         md:max-w-[70px]
+                                                         lg:max-w-[80px]
+                                                         xl:max-w-[90px]" />
+          <img src="/airtel.svg" alt="Airtel" className="max-w-[40px] h-auto flex-shrink-0
+                                                        xs:max-w-[50px]
+                                                        sm:max-w-[60px]
+                                                        md:max-w-[70px]
+                                                        lg:max-w-[80px]
+                                                        xl:max-w-[90px]" />
+          <img src="/metlife.svg" alt="MetLife" className="max-w-[40px] h-auto flex-shrink-0
+                                                         xs:max-w-[50px]
+                                                         sm:max-w-[60px]
+                                                         md:max-w-[70px]
+                                                         lg:max-w-[80px]
+                                                         xl:max-w-[90px]" />
+          <img src="/tata.svg" alt="Tata" className="max-w-[40px] h-auto flex-shrink-0
+                                                   xs:max-w-[50px]
+                                                   sm:max-w-[60px]
+                                                   md:max-w-[70px]
+                                                   lg:max-w-[80px]
+                                                   xl:max-w-[90px]" />
+          <img src="/fiserv.svg" alt="Fiserv" className="max-w-[40px] h-auto flex-shrink-0
+                                                        xs:max-w-[50px]
+                                                        sm:max-w-[60px]
+                                                        md:max-w-[70px]
+                                                        lg:max-w-[80px]
+                                                        xl:max-w-[90px]" />
+          <img src="/samsung.svg" alt="Samsung" className="max-w-[40px] h-auto flex-shrink-0
+                                                         xs:max-w-[50px]
+                                                         sm:max-w-[60px]
+                                                         md:max-w-[70px]
+                                                         lg:max-w-[80px]
+                                                         xl:max-w-[90px]" />
+          <img src="/logo_dps.svg" alt="DPS" className="max-w-[40px] h-auto flex-shrink-0
+                                                       xs:max-w-[50px]
+                                                       sm:max-w-[60px]
+                                                       md:max-w-[70px]
+                                                       lg:max-w-[80px]
+                                                       xl:max-w-[90px]" />
+          <img src="/jio.svg" alt="Jio" className="max-w-[40px] h-auto flex-shrink-0
+                                                  xs:max-w-[50px]
+                                                  sm:max-w-[60px]
+                                                  md:max-w-[70px]
+                                                  lg:max-w-[80px]
+                                                  xl:max-w-[90px]" />
+          <img src="/dalima.svg" alt="Dalima" className="max-w-[40px] h-auto flex-shrink-0
+                                                       xs:max-w-[50px]
+                                                       sm:max-w-[60px]
+                                                       md:max-w-[70px]
+                                                       lg:max-w-[80px]
+                                                       xl:max-w-[90px]" />
         </div>
       </div>
     </section>
