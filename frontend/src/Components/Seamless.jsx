@@ -4,7 +4,7 @@ import seamless2 from '../images/seamless.png';
 
 function Seamless() {
     return (
-        <div className="bg-gray-100 font-sans flex justify-center items-center py-16 px-4">
+        <div className=" font-sans flex justify-center items-center py-16 px-4">
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg max-w-6xl w-full flex flex-col lg:flex-row">
                 
                 {/* Left Section - Image */}

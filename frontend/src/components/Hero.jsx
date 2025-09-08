@@ -5,11 +5,11 @@ const Hero = () => {
                 <div className="w-full h-auto min-h-[60vh] lg:h-[70vh] bg-[#f0f3f6] flex flex-col lg:flex-row items-center rounded-[20px] p-4 md:p-6 lg:p-0 relative overflow-visible">
                     
                     {/* Left Content Section - Enhanced tablet typography */}
-                    <div className="flex flex-col gap-6 md:gap-8 lg:gap-10 lg:ml-[4%] w-full lg:w-[40%] z-20 relative">
+                    <div className="flex flex-col gap-4 lg:ml-[4%] w-full lg:w-[40%] z-20 p-4 relative">
                         
                         {/* Badge and Heading */}
                         <div className="flex flex-col gap-4 md:gap-5 lg:gap-6">
-                            <div className="border border-[#B8DDD9] bg-white flex justify-center items-center w-fit px-4 md:px-7 h-10 md:h-14 rounded-[10px] shadow-sm">
+                            <div className="border border-[#B8DDD9] flex justify-center items-center w-fit px-4 md:px-5 h-10 md:h-14 rounded-[10px]">
                                 <p className="text-xs sm:text-sm md:text-[15px] lg:text-[14px] font-bold text-gray-800 tracking-wide">TECH-ENABLED TRAVEL</p>
                             </div>
                             
@@ -25,7 +25,7 @@ const Hero = () => {
                                 Experience comfort, reliability, and tech-enabled journeys with India's leading travel partner—trusted by travellers and businesses alike.
                             </p>
                             
-                            <button className="w-fit flex justify-center items-center gap-2 md:gap-4 bg-[#EC221F] border-none rounded-[8px] px-4 md:px-8 py-3 md:py-5 cursor-pointer hover:bg-[#d11e1b] transition-colors duration-200 shadow-lg">
+                            <button className="w-fit flex justify-center items-center gap-2 md:gap-4 bg-[#EC221F] border-none rounded-[8px] px-4 md:px-4 py-3 md:py-2 cursor-pointer hover:bg-[#d11e1b] transition-colors duration-200 shadow-lg">
                                 <p className="text-white text-base md:text-xl lg:text-xl font-medium">Contact Us</p>
                                 <img src="/call.svg" alt="call" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-8 lg:h-8"/>
                             </button>

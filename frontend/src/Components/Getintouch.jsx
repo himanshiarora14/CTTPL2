@@ -9,7 +9,7 @@ import {
 
 export default function ContactSection() {
     return (
-        <section className="bg-gray-50 p-6 md:p-16">
+        <section className=" p-6 md:p-16">
             <div className="max-w-7xl mx-auto flex md:ml-14 flex-col md:flex-row items-center justify-center md:gap-0 gap-6">
 
                 <div className="bg-white shadow-2xl rounded-2xl p-4 md:p-10 w-full h-100 md:w-90 relative flex flex-col justify-center">
