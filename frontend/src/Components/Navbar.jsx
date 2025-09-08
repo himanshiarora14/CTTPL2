@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8 items-center">
+        <div className="hidden md:flex space-x-8 mr-4 items-center">
           <Link to="/" className="hover:text-blue-950">
             HOME
           </Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
           </Link>
           <a
             href="#"
-            className="bg-[#e42313] hover:bg-[#c21e11] text-white py-2 px-6 rounded-md font-bold transition duration-300"
+            className="bg-[#e42313] hover:bg-[#c21e11] shadow-[#c21e11] shadow-2xs text-white py-2 px-6 rounded-md font-bold transition duration-300"
           >
             Get Quote
           </a>
