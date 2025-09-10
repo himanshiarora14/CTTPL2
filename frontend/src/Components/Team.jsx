@@ -72,25 +72,27 @@ const TeamsSection = () => {
   return (
     <section className="bg-white py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-16">
       {/* 🔷 Top Section */}
-      <div className="bg-[#0b2d42] text-white text-center py-8 sm:py-10 lg:py-12 px-4 sm:px-6 rounded-lg">
-        <h3 className="text-xs sm:text-sm uppercase tracking-wide font-medium text-gray-200">
-          Hierarchy Is The Key To Adherence & Service Levels
-        </h3>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-red-600 mt-2 sm:mt-3">
-          Teams & Responsibilities
-        </h2>
-        <p className="mt-4 sm:mt-5 max-w-5xl mx-auto text-sm sm:text-base lg:text-lg leading-relaxed text-gray-100 px-2">
-          At CTTPL, our teams and team members are recognized as one of the best
-          in the nation. Each team is specialized in its area of expertise,
-          bringing a wealth of knowledge, skills, and experience that contributes
-          to the overall success of the business. Our commitment to ongoing
-          training and development empowers our staff to excel in their roles,
-          fostering a culture of excellence that is reflected in our service.
-          This collective expertise allows the company to not only meet but
-          exceed customer expectations, build long-term relationships, enhance
-          operational efficiency, and drive business growth.
-        </p>
-      </div>
+      <section className="bg-[#1a202c] w-full py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+
+        {/* Content wrapper to control max-width and center the content. */}
+        <div className="max-w-5xl mx-auto text-center">
+
+          {/* Subheading */}
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white tracking-wide">
+            Hierarchy Is The Key To Adherence & Service Levels
+          </h3>
+
+          {/* Main Heading */}
+          <h2 className="mt-4 text-4xl sm:text-5xl font-extrabold text-red-600">
+            Teams & Responsibilities
+          </h2>
+
+          {/* Paragraph Content */}
+          <p className="mt-8 mx-auto max-w-4xl text-base sm:text-lg text-gray-300 leading-relaxed">
+            At CTTPL, our teams and team members are recognized as one of the best in the nation. Each team is specialized in its area of expertise, bringing a wealth of knowledge, skills, and experience that contributes to the overall success of the business. Our commitment to ongoing training and development empowers our staff to excel in their roles, fostering a culture of excellence that is reflected in our service. This collective expertise allows the company to not only meet but exceed customer expectations, building long-term relationships, enhancing operational efficiency, and driving business growth.
+          </p>
+        </div>
+      </section>
 
       {/* 🔷 Teams Grid - Always 2 columns on desktop */}
       <div className="mt-8 sm:mt-10 lg:mt-12 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
