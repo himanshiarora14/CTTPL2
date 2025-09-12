@@ -8,6 +8,7 @@ import Hero from "../Components/Hero";
 import OurClient from "../Components/OurClient";
 import Ournumbers from "../Components/Ournumbers";
 import OurPresence from "../Components/OurPresence";
+import Footer from "../Components/Footer";
 
 function Homepage() {
     return (
@@ -22,6 +23,7 @@ function Homepage() {
             <OurPresence/>
             <Fleets />
             <Getintouch />
+            <Footer/>
         </>
     );
 }
