@@ -2,10 +2,16 @@ import React from 'react'
 import Landing from '../components/saftey/landing'
 import SafetyMeasures from '../components/saftey/SafetyMeasures'
 import TechAndAi from '../components/saftey/TechAndAi'
-import Choice from '../components/Bestchoice'
-import Fleets from '../components/Fleets'
-import OurPresence from '../components/OurPresence'
-import ContactSection from '../components/Getintouch'
+// import Choice from '../components/Bestchoice'
+import Choice from '../Components/Bestchoice'
+// import Fleets from '../components/Fleets'
+import Fleets from '../Components/Fleets'
+// import OurPresence from '../components/OurPresence'
+import OurPresence from '../Components/OurPresence'
+
+// import ContactSection from '../components/Getintouch'
+import ContactSection from '../Components/Getintouch'
+import Footer from '../Components/Footer'
 
 
 const SafteyAndTech = () => {
@@ -18,7 +24,8 @@ const SafteyAndTech = () => {
        <Fleets/>
        <OurPresence/>
        <ContactSection/>
-    </div>
+       <Footer/>
+      </div>
   )
 }
 
