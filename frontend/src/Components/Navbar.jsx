@@ -20,18 +20,24 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8 mr-4 items-center">
+        <div className="hidde text-xs md:flex space-x-6 mr-6 items-center">
           <Link to="/" className="hover:text-blue-950">
             HOME
           </Link>
           <Link to="/about" className="hover:text-blue-950">
             ABOUT US
           </Link>
+          <Link to="/overview" className="hover:text-blue-950">
+            FLEET OVERVIEW
+          </Link>
           <Link to="/services" className="hover:text-blue-950">
             OUR SERVICES
           </Link>
           <Link to="/safety" className="hover:text-blue-950">
             SAFETY & TECH
+          </Link>
+          <Link to="/careers" className="hover:text-blue-950">
+            CAREERS
           </Link>
           <Link to="/contact" className="hover:text-blue-950">
             CONTACT US

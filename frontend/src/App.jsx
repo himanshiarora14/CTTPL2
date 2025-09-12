@@ -4,16 +4,22 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import Contactus from "./pages/ContactUs";
+import FleetOverview from "./pages/FleetOverview";
+import Footer from "./Components/Footer";
+import ScrollToTop from "../ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<Contactus />} />
+        <Route path="/overview" element={<FleetOverview />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
