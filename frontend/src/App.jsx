@@ -20,6 +20,7 @@ function App() {
         <Route path="/safety" element={<SafteyAndTech/>}/>
         <Route path="/contact" element={<Contactus />} />
         <Route path="/overview" element={<FleetOverview />} />
+        <Route path="/safety" element={<SafteyAndTech />} />
       </Routes>
       <Footer/>
     </Router>
