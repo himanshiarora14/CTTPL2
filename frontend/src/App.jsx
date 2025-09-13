@@ -8,6 +8,7 @@ import Contactus from "./pages/ContactUs";
 import FleetOverview from "./pages/FleetOverview";
 import Footer from "./Components/Footer";
 import ScrollToTop from "../ScrollToTop";
+import OurServices from "./pages/OurServices";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/safety" element={<SafteyAndTech/>}/>
         <Route path="/contact" element={<Contactus />} />
         <Route path="/overview" element={<FleetOverview />} />
-        <Route path="/safety" element={<SafteyAndTech />} />
+        <Route path="/services" element={<OurServices />} />
       </Routes>
       <Footer/>
     </Router>

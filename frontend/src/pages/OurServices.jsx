@@ -7,7 +7,6 @@ import FleetCard from '../Components/Electricfleet';
 function OurServices() {
     return (
         <>
-            {/* <Navbar /> */}
             <Ourservices />
             <br />
             <br />
@@ -17,7 +16,6 @@ function OurServices() {
             <br />
             <FleetCard/>
             <Getintouch />
-            <Footer/>
         </>
     );
 }
