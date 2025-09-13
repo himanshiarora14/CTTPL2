@@ -4,10 +4,10 @@ import Fleets from "../Components/Fleets";
 import Seamless from "../Components/Seamless";
 import Getintouch from "../Components/Getintouch";
 import Choice from "../Components/Bestchoice";
-import Hero from "../Components/Hero";
-import OurClient from "../Components/OurClient";
+import Hero from "../components/Hero";
+import OurClient from "../components/OurClient";
 import Ournumbers from "../Components/Ournumbers";
-import OurPresence from "../Components/OurPresence";
+import OurPresence from "../components/OurPresence";
 import Footer from "../Components/Footer";
 
 function Homepage() {
