@@ -45,11 +45,11 @@ function TechAndAi() {
                     {cardData.map((card, index) => (
                         <div
                             key={index}
-                            className="bg-gradient-to-b from-[#014452] to-[#012d38] rounded-2xl p-6 shadow-lg border border-gray-700/20 relative overflow-hidden text-left"
+                            className="bg-gradient-to-b from-[#014452] to-[#012d38] rounded-2xl p-2 shadow-lg border border-gray-700/20 relative overflow-hidden text-left"
                         >
                             {/* Large Background Number */}
                             <div className="absolute top-2 left-4">
-                                <span className="text-yellow-400/20 text-8xl sm:text-9xl font-bold leading-none select-none">
+                                <span className="text-yellow-400/20 text-3xl sm:text-5xl font-bold leading-none select-none">
                                     {card.number}
                                 </span>
                             </div>

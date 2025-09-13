@@ -25,7 +25,7 @@ const Ourservices = () => {
   ];
 
   return (
-    <div className="bg-[#f0f3f6] py-16 px-4 sm:px-6 lg:px-20">
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-20">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
           Our Services, <span className="text-[#e74c3c]">One Need</span>
@@ -37,7 +37,7 @@ const Ourservices = () => {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.slice(0, 3).map((service, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden p-6 flex flex-col items-start text-left">
+          <div key={index} className="bg-[#f2f8f8]  rounded-lg shadow-md overflow-hidden p-6 flex flex-col items-start text-left">
             <div className="p-2 rounded-full bg-gray-200 mb-4">
               <span className="text-gray-600 font-bold">SD</span>
             </div>
@@ -72,7 +72,7 @@ const Ourservices = () => {
       </div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-10 gap-8 mt-8">
-        <div className="md:col-span-6 bg-white rounded-lg shadow-md overflow-hidden p-6 flex flex-col items-start text-left">
+        <div className="md:col-span-6 bg-[#f2f8f8]  rounded-lg shadow-md overflow-hidden p-6 flex flex-col items-start text-left">
           <div className="p-2 rounded-full bg-gray-200 mb-4">
             <span className="text-gray-600 font-bold">SD</span>
           </div>
@@ -105,9 +105,9 @@ const Ourservices = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Second card (30% width) */}
-        <div className="md:col-span-4 bg-white rounded-lg shadow-md overflow-hidden p-6 flex flex-col items-start text-left">
+        <div className="md:col-span-4 bg-[#f2f8f8]  rounded-lg shadow-md overflow-hidden p-6 flex flex-col items-start text-left">
           <div className="p-2 rounded-full bg-gray-200 mb-4">
             <span className="text-gray-600 font-bold">SD</span>
           </div>
