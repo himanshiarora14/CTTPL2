@@ -28,8 +28,8 @@ const OnSpotRentalsForm = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-center mb-4">
+    <div className="max-w-4xl mx-auto p-6 m-4 bg-white rounded-lg shadow-2xl">
+      <h2 className="text-4xl font-bold text-center mb-6">
         On Spot <span className="text-red-500">Rentals</span>
       </h2>
 

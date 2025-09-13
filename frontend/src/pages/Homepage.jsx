@@ -8,13 +8,15 @@ import Hero from "../components/Hero";
 import OurClient from "../components/OurClient";
 import Ournumbers from "../Components/Ournumbers";
 import OurPresence from "../components/OurPresence";
-import Footer from "../Components/Footer";
+import Comments from "../Components/Comments";
+import OnSpotRentalsForm from '../Components/Booking';
+import FleetSection from "../Components/BrowseOurFleet";
 
 function Homepage() {
     return (
         <>
-            {/* <Navbar /> */}
             <Hero/>
+            <OnSpotRentalsForm/>
             <OurClient/>
             <Seamless />
             <Ourservices />
@@ -22,6 +24,7 @@ function Homepage() {
             <Ournumbers/>
             <OurPresence/>
             <Fleets />
+            <FleetSection/>
             <Comments/>
             <Getintouch />
         </>
