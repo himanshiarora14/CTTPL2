@@ -3,27 +3,31 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/Homepage";
 import AboutPage from "./pages/AboutPage";
-import SafteyAndTech from "./pages/SafetyAndTech";
-import Contactus from "./pages/ContactUs";
-import FleetOverview from "./pages/FleetOverview";
-import Footer from "./Components/Footer";
-import ScrollToTop from "../ScrollToTop";
 import OurServices from "./pages/OurServices";
-
+import SafetyAndTech from "./pages/SafetyAndTech";
+import ContactUs from "./pages/ContactUs";
+import Ourservices from "./Components/Ourservices";
+import EmployeeFleet from "./Components/EmployeeFleet";
+import CarFleet from "./Components/CarFleet";
+import DedicatedFleet from "./Components/DedicatedFleet"
+import SchoolFleet from "./Components/SchoolFleet"
+import Electricfleet from "./Components/Electricfleet"
 function App() {
   return (
     <Router>
-      <ScrollToTop/>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/safety" element={<SafteyAndTech/>}/>
-        <Route path="/contact" element={<Contactus />} />
-        <Route path="/overview" element={<FleetOverview />} />
         <Route path="/services" element={<OurServices />} />
+        <Route path="/employee-fleet" element={<EmployeeFleet />} />
+        <Route path="/car-leasing" element={<CarFleet />} />
+        <Route path="/dedicated-fleet" element={<DedicatedFleet />} />
+         <Route path="/electric-fleet" element={<Electricfleet />} />
+        <Route path="/school-fleet" element={<SchoolFleet />} />
+        <Route path="/safety" element={<SafetyAndTech />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
-      <Footer/>
     </Router>
   );
 }

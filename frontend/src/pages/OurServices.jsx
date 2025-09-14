@@ -1,20 +1,21 @@
 import React from 'react';
-import Ourservices from "../Components/Ourservices";
+import Ourservices from '../Components/Ourservices';
 import Getintouch from "../Components/Getintouch";
 import Footer from "../Components/Footer";
 import OnSpotRentalsForm from '../Components/Booking';
-import FleetCard from '../Components/Electricfleet';
 function OurServices() {
+    
     return (
         <>
-            <Ourservices />
+            {/* <Navbar /> */}
+            <Ourservices/>
             <br />
             <br />
 
             <OnSpotRentalsForm/>
              <br />
-            <br />
-            <FleetCard/>
+             <br />
+            
             <Getintouch />
         </>
     );
