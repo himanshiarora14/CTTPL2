@@ -3,49 +3,68 @@ import React, { useState } from 'react';
 const SafetyMeasures = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const accordionItems = [
+  const safetyItems = [
     {
-      title: "Safety First Approach",
+      title: "Driver's Road Safety Awareness Training",
       iconSrc: "/badge.svg",
-      content: "Drivers are trained to prioritize safety above all, understanding that reaching on time should never involve risky driving."
+      content: "Comprehensive training programs designed to enhance driver awareness of road safety protocols, traffic regulations, and defensive driving techniques. Our drivers learn to anticipate potential hazards and respond appropriately to ensure passenger and public safety."
     },
     {
-      title: "Responsible Driving Standards",
-      iconSrc: "/rating.svg",
-      content: "Responsible driving standards ensure that all drivers follow traffic regulations, maintain safe speeds, and practice defensive driving techniques to protect themselves and other road users."
+      title: "Vehicle Maintenance Training",
+      iconSrc: "/rating.svg", 
+      content: "Systematic training on vehicle inspection procedures, maintenance schedules, and basic troubleshooting. Drivers are equipped with knowledge to identify potential mechanical issues before they become safety hazards, ensuring vehicles remain roadworthy."
     },
     {
-      title: "Avoidance of Rash Driving",
+      title: "Driver's Induction Training Program",
       iconSrc: "/safety.svg",
-      content: "Our drivers are trained to avoid aggressive driving behaviors such as speeding, tailgating, and sudden lane changes that can lead to accidents and endanger lives."
+      content: "Comprehensive orientation program for new drivers covering company policies, safety standards, customer service protocols, and operational procedures. This foundational training ensures all drivers meet our high standards from day one."
     },
     {
-      title: "Road Safety Commitment",
+      title: "Driver's Routine Training Program", 
       iconSrc: "/purse.svg",
-      content: "We are committed to maintaining the highest standards of road safety through continuous monitoring, regular safety assessments, and strict adherence to safety protocols."
+      content: "Regular ongoing training sessions to refresh and update driver skills, introduce new safety protocols, and address emerging challenges in transportation. These sessions ensure continuous improvement in driver performance and safety awareness."
     },
     {
-      title: "Consistent Safety Training",
+      title: "Driver's Recruitment Process",
       iconSrc: "/data-management.svg",
-      content: "Regular safety training sessions are conducted to keep drivers updated on latest safety practices, traffic rules, and emergency response procedures."
+      content: "Rigorous selection process including background checks, driving record verification, skill assessments, and psychological evaluations. We ensure only qualified, reliable, and safety-conscious individuals join our driver network."
+    },
+    {
+      title: "Overall Safety Measures",
+      iconSrc: "/badge.svg",
+      content: "Comprehensive safety framework encompassing all aspects of our operations, from vehicle standards to driver protocols. Regular safety audits, incident analysis, and continuous improvement processes maintain the highest safety standards across all services."
+    },
+    {
+      title: "QRT - Quick Response Team",
+      iconSrc: "/rating.svg",
+      content: "Specialized rapid response unit trained to handle emergencies, breakdowns, and critical situations. Available 24/7 to provide immediate assistance, coordinate emergency services, and ensure passenger safety in any unexpected circumstances."
+    },
+    {
+      title: "Crisis Management",
+      iconSrc: "/safety.svg", 
+      content: "Structured protocols and procedures for managing various crisis scenarios including accidents, natural disasters, and security threats. Our crisis management team is trained to respond quickly and effectively to minimize risks and ensure safety."
     }
   ];
 
-
-  const toggleAccordion = (index) => {
+  const handleItemClick = (index) => {
     setActiveIndex(activeIndex === index ? -1 : index);
   };
 
-  const SidebarItem = ({ text, active = false }) => {
+  const SidebarItem = ({ text, active = false, index }) => {
     return (
-      <div className="relative flex items-center justify-end">
-        <span className={`text-lg leading-tight mr-4 text-right ${active ? 'font-bold text-black' : 'text-gray-700'
-          }`}>
+      <div 
+        className="relative flex items-center justify-end cursor-pointer group"
+        onClick={() => handleItemClick(index)}
+      >
+        <span className={`text-lg leading-tight mr-4 text-right transition-all duration-200 group-hover:text-red-500 ${
+          active ? 'font-bold text-red-500' : 'text-gray-700'
+        }`}>
           {text}
         </span>
         {/* Circle positioned exactly on the vertical line */}
-        <div className={`w-6 h-6 sm:w-5 sm:h-5 rounded-full z-10 ${active ? 'bg-red-500' : 'border-2 border-gray-300 bg-white'
-          }`}></div>
+        <div className={`w-6 h-6 sm:w-5 sm:h-5 rounded-full z-10 transition-all duration-200 group-hover:bg-red-400 ${
+          active ? 'bg-red-500' : 'border-2 border-gray-300 bg-white'
+        }`}></div>
       </div>
     );
   };
@@ -62,30 +81,40 @@ const SafetyMeasures = () => {
             </h1>
 
             <div className="relative">
-              {/* Vertical connecting line - positioned to pass through center of circles */}
-              <div className="absolute right-2.5 top-3.5 bottom-0 w-0.5 bg-gray-300"></div>
+              {/* Vertical connecting line with progress effect */}
+              <div className="absolute right-2.5 top-3.5 bottom-0 w-0.5">
+                {/* Gray background line */}
+                <div className="absolute inset-0 bg-gray-300"></div>
+                {/* Red progress line */}
+                <div 
+                  className="absolute top-0 left-0 w-full bg-red-500 transition-all duration-300 ease-out"
+                  style={{
+                    height: activeIndex >= 0 ? `${((activeIndex + 1) / safetyItems.length) * 100}%` : '0%'
+                  }}
+                ></div>
+              </div>
 
               <div className="space-y-8">
-                <SidebarItem text="Driver's Road Safety Awareness Training" active />
-                <SidebarItem text="Vehicle Maintenance Training" />
-                <SidebarItem text="Driver's Induction Training Program" />
-                <SidebarItem text="Driver's Routine Training Program" />
-                <SidebarItem text="Driver's Recruitment Process" />
-                <SidebarItem text="Overall Safety Measures" />
-                <SidebarItem text="QRT - Quick Response Team" />
-                <SidebarItem text="Crisis Management" />
+                {safetyItems.map((item, index) => (
+                  <SidebarItem 
+                    key={index}
+                    text={item.title} 
+                    active={activeIndex === index}
+                    index={index}
+                  />
+                ))}
               </div>
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="w-full lg:w-2/3 lg:border-l lg:border-gray-600 lg:pl-8">
-            {/* Accordion Section - NO HEADING */}
+          <div className="w-full lg:w-2/3 lg:pl-8">
+            {/* Accordion Section */}
             <div className="space-y-0 border-t-1">
-              {accordionItems.map((item, index) => (
+              {safetyItems.map((item, index) => (
                 <div key={index} className="border-t border-gray-600 first:border-t-0">
                   <button
-                    onClick={() => toggleAccordion(index)}
+                    onClick={() => handleItemClick(index)}
                     className="flex w-full items-center justify-between py-4 text-left transition-colors duration-200 hover:bg-gray-50 sm:py-6"
                   >
                     <div className="flex items-center gap-3 sm:gap-4">
@@ -114,7 +143,7 @@ const SafetyMeasures = () => {
                   </button>
 
                   {activeIndex === index && (
-                    <div className="ml-11 pb-4 pr-8 sm:ml-14 sm:pb-6 sm:pr-12">
+                    <div className="ml-11 pb-4 pr-8 sm:ml-14 sm:pb-6 sm:pr-12 animate-in slide-in-from-top-2 duration-200">
                       <p className="text-sm leading-relaxed text-gray-600 sm:text-base lg:text-lg">
                         {item.content}
                       </p>
@@ -124,8 +153,6 @@ const SafetyMeasures = () => {
               ))}
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
