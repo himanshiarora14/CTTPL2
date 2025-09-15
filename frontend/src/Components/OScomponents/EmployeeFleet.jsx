@@ -1,9 +1,9 @@
 import React from 'react';
-import CompanyOverView from './CompanyOverView';
-import Choice from "../Components/Bestchoice";
-import OnSpotRentalsForm from './Booking';
-import Getintouch from "../Components/Getintouch";
-import Footer from "../Components/Footer";
+import CompanyOverView from '../CompanyOverView';
+import Choice from "../Bestchoice";
+import OnSpotRentalsForm from '../Booking';
+import Getintouch from "../Getintouch";
+import Footer from "../Footer";
 import { CheckCircleIcon } from '@heroicons/react/24/solid'; 
 
 function EmployeeFleet() {
