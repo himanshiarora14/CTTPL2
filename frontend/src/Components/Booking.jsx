@@ -1,30 +1,59 @@
 import React, { useState } from "react";
 
+const initialForm = {
+  name: "",
+  email: "",
+  countryCode: "+91",
+  phone: "",
+  serviceType: "",
+  country: "India",
+  date: "",
+  travellers: "",
+  requirements: "",
+  agree: false,
+};
+
 const OnSpotRentalsForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    serviceType: "",
-    country: "India",
-    date: "",
-    travellers: "",
-    requirements: "",
-    agree: false,
-  });
+  const [formData, setFormData] = useState(initialForm);
+  const [loading, setLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+  const [previewUrl, setPreviewUrl] = useState("");
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prev) => ({
+      ...prev,
       [name]: type === "checkbox" ? checked : value,
-    });
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert("Enquiry sent successfully!");
+    setResponseMessage("");
+    setLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:8080/sendemail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok) {
+        setResponseMessage("Your consultation request has been sent successfully!");
+        if (data.previewUrl) setPreviewUrl(data.previewUrl);
+        setFormData(initialForm);
+      } else {
+        setResponseMessage(`Failed to send request: ${data.message || "Unknown error"}`);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setResponseMessage("There was an error sending your request. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -59,11 +88,10 @@ const OnSpotRentalsForm = () => {
           <select
             name="countryCode"
             className="border p-2 rounded"
-            defaultValue="+91"
+            value={formData.countryCode}
+            onChange={handleChange}
           >
             <option value="+91">+91</option>
-            <option value="+1">+1</option>
-            <option value="+44">+44</option>
           </select>
           <input
             type="tel"
@@ -119,6 +147,7 @@ const OnSpotRentalsForm = () => {
           onChange={handleChange}
           className="border p-2 rounded w-full"
           required
+          min="1"
         />
 
         <textarea
@@ -128,7 +157,7 @@ const OnSpotRentalsForm = () => {
           onChange={handleChange}
           className="border p-2 rounded w-full"
           rows="3"
-        ></textarea>
+        />
 
         <label className="flex items-center space-x-2 text-sm">
           <input
@@ -154,11 +183,34 @@ const OnSpotRentalsForm = () => {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-2 rounded"
+            disabled={loading}
+            className={`${loading ? "opacity-70 cursor-wait" : ""
+              } bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-2 rounded`}
           >
-            Send Enquiry
+            {loading ? "Sending..." : "Send Enquiry"}
           </button>
         </div>
+        {responseMessage && (
+          <div
+            role="status"
+            className="mb-4 p-3 rounded border bg-green-100 text-sm"
+          >
+            {responseMessage}
+            {previewUrl && (
+              <div className="mt-2 text-xs">
+                Preview:{" "}
+                <a
+                  href={previewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline"
+                >
+                  Open
+                </a>
+              </div>
+            )}
+          </div>
+        )}
       </form>
     </div>
   );
