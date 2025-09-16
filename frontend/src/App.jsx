@@ -16,6 +16,7 @@ import Electricfleet from "./Components/OScomponents/Electricfleet"
 import FleetOverview from "./pages/FleetOverview";
 import Footer from "./Components/Footer";
 import Careers from "./pages/Careers";
+import Quote from "./pages/Quote";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/safety" element={<SafetyAndTech />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/quote" element={<Quote />} />
       </Routes>
       <Footer/>
     </Router>

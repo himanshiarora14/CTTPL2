@@ -10,25 +10,6 @@ function CarFleet() {
        <div>
         <br />
         <br />
-        
-         <div className="max-w-7xl mx-auto text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
-              Our Services, <span className="text-[#e74c3c]">One Need</span>
-            </h2>
-            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-              At Choudhary Tours & Travels Pvt. Ltd. (CTTPPL), we have been a trusted name in the industry for over 35 years, offering comprehensive nationwide services in tours, cabs, and fleet management. Whether you're looking for safe and reliable corporate transportation, customizable tour packages, or efficient fleet solutions, our vast experience and cutting-edge technology ensure smooth and hassle-free journeys. With a fleet strength of 4,000+ vehicles, we provide top-notch service tailored to meet the unique needs of businesses and individuals alike.
-            </p>
-         </div>
-
-         
-         <div className="w-full bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-           
-         </div>
-
-        
-         
-
-         <Choice/>
                  
          <div className="w-full bg-white py-16 px-6 lg:px-20">
             <div className="max-w-5xl mx-auto text-center">
@@ -76,7 +57,6 @@ function CarFleet() {
 
          <OnSpotRentalsForm/>
          <Getintouch />
-         <Footer/>
        </div>
     );
 }
