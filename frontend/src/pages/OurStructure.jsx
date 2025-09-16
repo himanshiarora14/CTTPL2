@@ -1,0 +1,28 @@
+import React from 'react'
+import OurStructureHero from '../Components/ourStructure/HeroOurStructure'
+import TeamAndResponsibility from '../Components/ourStructure/TeamAndResponsibility'
+import TeamsSection from '../Components/ourStructure/TeamsCard'
+import ReportingStructure from '../Components/ourStructure/ReportingStructure'
+import BestChoice from '../Components/Bestchoice'
+import Fleets from '../Components/Fleets'
+import OurPresence from '../components/OurPresence'
+import ContactSection from '../Components/Getintouch'
+import Footer from '../Components/Footer'
+
+const OurStructure = () => {
+  return (
+    <div>
+        <OurStructureHero/>
+        <TeamAndResponsibility/>
+        <TeamsSection/>
+        <ReportingStructure/>
+        <BestChoice/>
+        <Fleets/>
+        <OurPresence/>
+        <ContactSection/>
+        <Footer/>
+    </div>
+  )
+}
+
+export default OurStructure
