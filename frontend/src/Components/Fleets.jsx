@@ -16,15 +16,21 @@ const Fleets = () => {
                         a fleet of 4,000+ vehicles, we're here to make your journeys comfortable and stress-free.
                         Contact us today and let's plan your next adventure!
                     </p>
-                    <button className="bg-red-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-red-600 transition duration-300">
+                    <a
+                        href="/quote"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-red-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-red-600 transition duration-300"
+                    >
                         Get Quote
-                    </button>
+                    </a>
+
                 </div>
                 <div className="md:w-1/2 mt-8 md:mt-0">
                     <img
                         src={fleets}
                         alt="A fleet of modern buses lined up"
-                        className="rounded-lg shadow-lg"
+                        className="rounded-3xl shadow-lg"
                     />
                 </div>
             </div>

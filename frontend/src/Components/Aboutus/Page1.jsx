@@ -40,7 +40,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="p-4 min-h-[120vh] bg-gray-100">
+    <div className="p-4 h-auto bg-gray-100">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
