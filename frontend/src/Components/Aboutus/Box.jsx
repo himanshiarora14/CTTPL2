@@ -1,51 +1,81 @@
 import React from "react";
 
-const boxes = [{}, {}, {}, {}, {}];
+// 1. Update the 'boxes' array to contain objects with your image URLs.
+const boxes = [
+  { src: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg" },
+  { src: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" },
+  { src: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" },
+  { src: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" },
+  { src: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg" },
+];
 
 export default function LifeAtCTTPL() {
   return (
-    <section className="w-full flex flex-col justify-center items-center gap-8 p-4">
-      {/* Header */}
-      <h1 className="text-3xl font-bold mt-8 mb-12">
+    <section className="w-full m-4 flex flex-col justify-center items-center gap-8 p-4">
+      <h1 className="text-3xl md:text-5xl font-bold mt-8 mb-12">
         Life at <span className="text-red-600">CTTPL</span>
       </h1>
-      {/* Scrollable Boxes */}
       <div className="w-full overflow-hidden relative">
         <div className="flex gap-6 w-max animate-[scrollbox_20s_linear_infinite] hover:[animation-play-state:paused]">
-          {[...boxes, ...boxes].map((_, idx) => {
-            // First box: small square
+          {/* 2. Change the map function to get the 'box' object */}
+          {[...boxes, ...boxes].map((box, idx) => {
             if (idx % boxes.length === 0) {
               return (
                 <div
                   key={idx}
-                  className="flex-shrink-0 w-[170px] h-[170px] rounded-xl bg-blue-500 opacity-90 shadow-md"
-                />
+                  className="flex-shrink-0 w-[170px] h-[170px] rounded-xl bg-gray-200 opacity-90 shadow-md overflow-hidden"
+                >
+                  {/* 3. Add the <img> tag here */}
+                  <img
+                    src={box.src}
+                    alt="Life at CTTPL"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               );
             }
-            // Center (3rd) box: largest
             if (idx % boxes.length === 2) {
               return (
                 <div
                   key={idx}
-                  className="flex-shrink-0 w-[260px] h-[260px] rounded-[20px] bg-blue-500 shadow-2xl scale-105"
-                />
+                  className="flex-shrink-0 w-[260px] h-[260px] rounded-[20px] bg-gray-200 shadow-2xl scale-105 overflow-hidden"
+                >
+                  {/* 3. Add the <img> tag here */}
+                  <img
+                    src={box.src}
+                    alt="Life at CTTPL"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               );
             }
-            // Last box: also small square
             if (idx % boxes.length === 4) {
               return (
                 <div
                   key={idx}
-                  className="flex-shrink-0 w-[170px] h-[170px] rounded-xl bg-blue-500 opacity-90 shadow-md"
-                />
+                  className="flex-shrink-0 w-[170px] h-[170px] rounded-xl bg-gray-200 opacity-90 shadow-md overflow-hidden"
+                >
+                  {/* 3. Add the <img> tag here */}
+                  <img
+                    src={box.src}
+                    alt="Life at CTTPL"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               );
             }
-            // All other boxes: medium rectangles
             return (
               <div
                 key={idx}
-                className="flex-shrink-0 w-[220px] h-[220px] rounded-xl bg-blue-500 opacity-95 shadow-md"
-              />
+                className="flex-shrink-0 w-[220px] h-[220px] rounded-xl bg-gray-200 opacity-95 shadow-md overflow-hidden"
+              >
+                {/* 3. Add the <img> tag here */}
+                <img
+                  src={box.src}
+                  alt="Life at CTTPL"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             );
           })}
         </div>

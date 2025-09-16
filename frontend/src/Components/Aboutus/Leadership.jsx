@@ -2,10 +2,9 @@ import React from "react";
 
 const CompanyStructure = () => {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="grid md:grid-cols-2 items-center gap-8 bg-white rounded-lg">
+    <div className="container mx-auto px-4 py-12 max-w-6xl">
+      <div className="grid md:grid-cols-2 items-center gap-8 bg-white  p-8 shadow-lg">
         
-        {/* Left Side - Image */}
         <div className="flex justify-center">
           <img
             src="https://img.freepik.com/premium-photo/bus-that-is-street-with-number-2-front_7023-351910.jpg"
@@ -14,15 +13,14 @@ const CompanyStructure = () => {
           />
         </div>
 
-        {/* Right Side - Content */}
-        <div className="px-2">
+        <div className="px-2 max-w-2xl">
           <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">
             Company{" "}
             <span className="text-red-600 font-extrabold">Structure</span>{" "}
             <span className="text-gray-900">and Leadership</span>
           </h2>
-
-          <p className="text-gray-700 mb-2 text-sm md:text-base leading-snug">
+          
+          <p className="text-gray-700 leading-relaxed text-justify mb-4">
             At CTTPL, our strength lies in a well-structured organizational
             setup, featuring experienced leaders and specialized teams. This
             system seamlessly blends strategy, service, and technology, driving
@@ -30,7 +28,7 @@ const CompanyStructure = () => {
             transport solutions.
           </p>
 
-          <p className="text-gray-700 mb-4 text-sm md:text-base leading-snug">
+          <p className="text-gray-700 leading-relaxed text-justify mb-6">
             Our dedicated and experienced team allows us to raise operational
             efficiency, develop innovative programs, and maintain global
             standards. Together, we ensure consistent performance. The backbone
@@ -38,7 +36,6 @@ const CompanyStructure = () => {
             quality.
           </p>
 
-          {/* Button */}
           <button className="bg-red-600 text-white px-5 py-2 rounded-lg shadow hover:bg-red-700 transition text-sm md:text-base">
             Know More →
           </button>
