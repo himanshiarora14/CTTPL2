@@ -4,7 +4,6 @@ import Choice from "../Components/Bestchoice";
 import OurPresence from "../Components/OurPresence";
 import ContactSection from "../Components/Getintouch";
 import Fleets from "../Components/Fleets";
-import Footer from "../Components/Footer";
 
 function Contactus() {
     return (
@@ -15,7 +14,6 @@ function Contactus() {
             <Fleets />
             <OurPresence />
             <ContactSection />
-            <Footer />
         </>
     );
 }
