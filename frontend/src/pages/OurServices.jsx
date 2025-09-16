@@ -5,7 +5,8 @@ import Footer from "../Components/Footer";
 import OnSpotRentalsForm from '../Components/Booking';
 import FleetSection from '../Components/OScomponents/FleetSection';
 import Choice from '../Components/Bestchoice';
-import Seamless from '../Components/Seamless';
+import Os from '../Components/OScomponents/Os';
+import Fleets from '../Components/Fleets';
 function OurServices() {
     
     return (
@@ -15,16 +16,12 @@ function OurServices() {
             <br />
             <FleetSection/>
             <br />
+            <OnSpotRentalsForm/>
             <br />
 
-            <Ourservices/>
-            <br />
-            <br />
-            <Choice/>
-            <br />
-            <br />
-            <Seamless/>
-            <OnSpotRentalsForm/>
+           <Os/>
+    
+            <Fleets/>
              <br />
              <br />
             

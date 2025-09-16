@@ -9,6 +9,7 @@ import Mission from '../Components/Aboutus/Mission';
 import Box from '../Components/Aboutus/Box';
 import Inception from '../Components/Aboutus/Inception';
 import Page1 from '../Components/Aboutus/Page1';
+import Team from '../Components/Aboutus/Team';
 const AboutPage = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const AboutPage = () => {
       <Box />
       <Mission />
       <Ourservices />
+      <Team/>
       <Leadership />
       <Bestchoice />
       <Fleets />

@@ -74,7 +74,6 @@ export default function Comments() {
 
                   <div className="mt-4">
                     <div className="flex items-center gap-1">
-                      {/* simple 5-star look */}
                       <div className="text-yellow-400 text-sm">★★★★★</div>
                     </div>
                   </div>
@@ -83,13 +82,11 @@ export default function Comments() {
             </div>
           </div>
 
-          {/* optional fade edges */}
           <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white/100 to-white/0" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white/100 to-white/0" />
         </div>
       </div>
 
-      {/* tiny style block to define marquee animation (keeps Tailwind classes for everything else) */}
       <style>{`
         /* move content left->right visually by animating from translateX(-50%) to translateX(0)
            Duration can be adjusted (here 28s). Using duplicated content ensures seamless loop. */
