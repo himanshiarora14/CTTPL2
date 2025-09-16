@@ -3,7 +3,7 @@ import Ourservices from '../Components/Ourservices';
 import Getintouch from "../Components/Getintouch";
 import Footer from "../Components/Footer";
 import OnSpotRentalsForm from '../Components/Booking';
-import FleetSection from '../Components/FleetSection';
+import FleetSection from '../Components/OScomponents/FleetSection';
 import Choice from '../Components/Bestchoice';
 import Seamless from '../Components/Seamless';
 function OurServices() {

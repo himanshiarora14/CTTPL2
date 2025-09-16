@@ -8,11 +8,11 @@ import ScrollToTop from "../ScrollToTop"
 import SafetyAndTech from "./pages/SafetyAndTech";
 import ContactUs from "./pages/ContactUs";
 import Ourservices from "./Components/Ourservices";
-import EmployeeFleet from "./Components/EmployeeFleet";
-import CarFleet from "./Components/CarFleet";
-import DedicatedFleet from "./Components/DedicatedFleet"
-import SchoolFleet from "./Components/SchoolFleet"
-import Electricfleet from "./Components/Electricfleet"
+import EmployeeFleet from "./Components/OScomponents/EmployeeFleet";
+import CarFleet from "./Components/OScomponents/CarFleet";
+import DedicatedFleet from "./Components/OScomponents/DedicatedFleet"
+import SchoolFleet from "./Components/OScomponents/SchoolFleet"
+import Electricfleet from "./Components/OScomponents/Electricfleet"
 import FleetOverview from "./pages/FleetOverview";
 import Footer from "./Components/Footer";
 import Careers from "./pages/Careers";
