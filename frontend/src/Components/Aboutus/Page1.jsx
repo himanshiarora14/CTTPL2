@@ -1,6 +1,5 @@
 import { Phone, Users, Car, Building, MapPin, Calendar } from "lucide-react"
 
-// Simple Button Component
 function Button({ children, className = "", ...props }) {
   return (
     <button
@@ -12,7 +11,6 @@ function Button({ children, className = "", ...props }) {
   )
 }
 
-// Simple Badge Component
 function Badge({ children, className = "" }) {
   return (
     <span
@@ -23,7 +21,6 @@ function Badge({ children, className = "" }) {
   )
 }
 
-// Simple Card Component
 function Card({ children, className = "" }) {
   return (
     <div className={`p-4 rounded-lg shadow-sm ${className}`}>
@@ -43,33 +40,16 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-[120vh] bg-gray-100">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            {/* Logo */}
-            
-
-            {/* Get Quote Button */}
-           
-          </div>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="p-4 min-h-[120vh] bg-gray-100">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Section */}
           <div className="space-y-8">
-            {/* Badge */}
-            <Badge className="bg-white border border-blue-300 text-gray-700">
+            <Badge className="bg-white border rounded-2xl border-blue-300 text-gray-700">
               TECH-ENABLED TRAVEL
             </Badge>
 
-            {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-5xl font-bold text-gray-900 leading-tight">
                 Trusted <span className="text-red-500">Fleet Solutions</span>
                 <br />
                 Since 1990
@@ -81,7 +61,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {stats.map((stat, index) => {
                 const Icon = stat.icon
