@@ -86,7 +86,7 @@ export default function ContactSection() {
                     <div className="w-full h-[250px] md:h-[300px] rounded-br-2xl rounded-tr-2xl overflow-hidden shadow-lg">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.2453093503345!2d77.393742!3d28.611095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef7aed902fa1%3A0x3fb397a26b27f1d8!2sChoudhary%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1756543874376!5m2!1sen!2sin"
-                            width="600"
+                            width="800"
                             height="400"
                             style={{ border: 0 }}
                             allowFullScreen
