@@ -7,7 +7,6 @@ import BestChoice from '../Components/Bestchoice'
 import Fleets from '../Components/Fleets'
 import OurPresence from '../components/OurPresence'
 import ContactSection from '../Components/Getintouch'
-import Footer from '../Components/Footer'
 
 const OurStructure = () => {
   return (
@@ -20,7 +19,6 @@ const OurStructure = () => {
         <Fleets/>
         <OurPresence/>
         <ContactSection/>
-        <Footer/>
     </div>
   )
 }
