@@ -4,12 +4,14 @@ import Choice from "../Components/Bestchoice";
 import OurPresence from "../Components/OurPresence";
 import ContactSection from "../Components/Getintouch";
 import Fleets from "../Components/Fleets";
+import OnSpotRentalsForm from '../Components/Booking';
 
 function Contactus() {
     return (
         <>
             <Contact1st />
             <Contact2nd />
+            <OnSpotRentalsForm/>
             <Choice />
             <Fleets />
             <OurPresence />

@@ -6,7 +6,7 @@ const Fleets = () => {
         <div className="bg-white py-12">
             <div className="container mx-auto px-4 md:flex items-center">
                 <div className="md:w-1/2 md:pr-10 p-10 bg-gray-100 rounded-bl-4xl rounded-tl-4xl">
-                    <h2 className="text-4xl font-bold mb-4 pb-6">
+                    <h2 className="md:text-5xl text-3xl font-bold mb-4 pb-6">
                         Ready to Experience <br />
                         <span className="text-red-500">Seamless </span>Travel?
                     </h2>
