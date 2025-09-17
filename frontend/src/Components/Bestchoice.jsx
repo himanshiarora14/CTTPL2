@@ -21,31 +21,31 @@ const features = [
   {
     title: "Customer Centric",
     content:
-      "We place customers at the heart of everything we do, ensuring personalized service and unmatched experiences.",
+      "By placing the customer at the core of every decision, the company can ensure a service that is tailored to meet their unique needs, expectations, and preferences.",
     icon: <Users className="w-6 h-6 text-gray-600" />,
   },
   {
     title: "Safety & Compliance",
     content:
-      "Strict adherence to safety standards and compliance protocols for worry-free journeys.",
+      "Safety is our top priority, with strict adherence to industry standards and comprehensive compliance",
     icon: <ShieldCheck className="w-6 h-6 text-gray-600" />,
   },
   {
     title: "Cost Effective",
     content:
-      "Offering affordable and transparent pricing without compromising quality.",
+      "We offer competitive pricing without compromising on quality, ensuring value in every journey.",
     icon: <Wallet className="w-6 h-6 text-gray-600" />,
   },
   {
     title: "Technology & Innovation",
     content:
-      "Harnessing cutting-edge technology to deliver smarter and seamless travel solutions.",
+      "Leveraging advanced technology, we enhance service efficiency and deliver a seamless travel experience",
     icon: <Monitor className="w-6 h-6 text-gray-600" />,
   },
   {
     title: "Social Responsibility",
     content:
-      "Committed to sustainability and contributing positively to the communities we serve.",
+      "CTTPL is committed to route safety and offers free training sessions to the drivers cross the nation.",
     icon: <Handshake className="w-6 h-6 text-gray-600" />,
   },
 ];
@@ -57,17 +57,12 @@ export default function Choice() {
     <>
       <div className="flex flex-col md:flex-row items-start gap-12 px-8 py-16 max-w-6xl mx-auto">
         <div className="md:w-1/2">
-          <h2 className="text-4xl font-bold leading-snug">
+          <h2 className="text-5xl font-bold ">
             What Makes <span className="text-red-600">CTTPL</span> Your Best
             Choice?
           </h2>
-          <p className="text-gray-600 mt-6 text-base leading-relaxed">
-            Choudhary Tours & Travels Pvt. Ltd. (CTTPL) has proudly served over
-            100,000 satisfied end users across the nation, conducting 10,000+
-            tours and trips with an impressive fleet strength of 4,000+ vehicles.
-            With over 35 years of experience, we continue to lead the industry
-            as a trusted mobility partner, making every journey safe, reliable,
-            and enjoyable.
+          <p className="text-gray-600 text-md mt-8 ">
+            Choose Choudhary Tours & Travels Pvt. Ltd. (CTTPL) for dependable, customer-focused transport solutions that blend safety, technology, and innovation with cost efficiency. Our commitment to professionalism and continuous improvement ensures unmatched service quality.
           </p>
         </div>
 

@@ -31,22 +31,19 @@ const testimonials = [
 
 export default function Comments() {
   return (
-    <section className="py-12 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-12 bg-[#F3F9F9]">
       <div className="max-w-7xl mx-auto px-4">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 ml-6 mb-8">
           What our <span className="text-red-600">Clients</span> Say?
         </h3>
 
-        {/* marquee wrapper */}
         <div className="relative overflow-hidden">
-          {/* the scroll track - duplicate content for seamless loop */}
           <div
             className="flex gap-6 whitespace-normal"
             aria-hidden="true"
             style={{ willChange: "transform" }}
           >
             <div className="flex animate-marqueeR">
-              {/* map twice for continuous effect */}
               {[...testimonials, ...testimonials].map((t, i) => (
                 <article
                   key={i}
