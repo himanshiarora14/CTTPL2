@@ -1,16 +1,13 @@
 import React from 'react';
 import bus2 from "../images/bus2.png";
+import Embedded from './Button/Embedded';
 
 export default function Fleethero() {
   return (
     <section className="mx-4 my-6 rounded-2xl bg-[#f2f8f8] p-6 sm:p-8 lg:p-12 shadow-sm">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        {/* Text column */}
         <div className="px-2  text-center lg:text-left">
-          <span className="inline-block border border-green-300 rounded-xl px-4 py-2 text-xs tracking-wider uppercase mb-6">
-            OUR DIVERSE FLEET
-          </span>
-
+          <Embedded text="OUR DIVERSE FLEET" />
           <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
             <span className="text-red-600">Tailored</span> to Your Travel Needs
           </h2>

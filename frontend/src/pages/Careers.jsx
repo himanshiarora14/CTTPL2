@@ -1,6 +1,6 @@
 import GrowWithUs from "../Components/careers/landing";
 import CurrentOpenings from "../Components/careers/CurrentOpenings";
-import OurPresence from "../Components/OurPresence";
+import OurPresence from "../components/OurPresence";
 import ContactSection from "../Components/Getintouch";
 
 function Careers() {

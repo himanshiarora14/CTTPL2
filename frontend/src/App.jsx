@@ -17,6 +17,7 @@ import FleetOverview from "./pages/FleetOverview";
 import Footer from "./Components/Footer";
 import Careers from "./pages/Careers";
 import Quote from "./pages/Quote";
+import OurStructure from "./pages/OurStructure";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/quote" element={<Quote />} />
+        <Route path="/structure" element={<OurStructure/>}/>
       </Routes>
       <Footer/>
     </Router>
