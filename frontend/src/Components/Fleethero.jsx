@@ -7,11 +7,11 @@ export default function Fleethero() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Text column */}
         <div className="px-2  text-center lg:text-left">
-          <span className="inline-block border border-gray-300 rounded-full px-3 py-1 text-xs font-semibold tracking-wider text-gray-600 uppercase mb-6">
+          <span className="inline-block border border-green-300 rounded-xl px-4 py-2 text-xs tracking-wider uppercase mb-6">
             OUR DIVERSE FLEET
           </span>
 
-          <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
+          <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
             <span className="text-red-600">Tailored</span> to Your Travel Needs
           </h2>
 
