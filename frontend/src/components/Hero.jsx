@@ -1,3 +1,5 @@
+import Contact from "./Button/Contact"
+
 const Hero = () => {
     return (
         <div className="w-full flex justify-center items-start sm:items-center px-4 lg:px-0 overflow-x-hidden pt-4 sm:pt-0">
@@ -25,19 +27,7 @@ const Hero = () => {
                                 Experience comfort, reliability, and tech-enabled journeys with India's leading travel partner—trusted by travellers and businesses alike.
                             </p>
 
-                            <a
-                                href="/contact"
-                                className="w-fit flex justify-center items-center gap-2 md:gap-4 bg-[#EC221F] border-none rounded-[8px] px-4 md:px-4 py-3 md:py-2 cursor-pointer hover:bg-[#d11e1b] transition-colors duration-200 shadow-lg"
-                            >
-                                <p className="text-white text-base md:text-xl lg:text-xl font-medium">
-                                    Contact Us
-                                </p>
-                                <img
-                                    src="/call.svg"
-                                    alt="call"
-                                    className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-8 lg:h-8"
-                                />
-                            </a>
+                            <Contact/>
 
                         </div>
                     </div>

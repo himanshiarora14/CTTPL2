@@ -56,25 +56,15 @@ export default function Comments() {
                     {t.text}
                   </p>
 
+                  <div className="flex items-center gap-1">
+                    <div className="text-yellow-400 text-sm">★★★★★</div>
+                  </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100 flex-shrink-0">
-                      <img
-                        src={bus2}
-                        alt=""
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <div className="font-semibold text-sm text-gray-900">
                         {t.author}
                       </div>
                       <div className="text-xs text-gray-500">{t.role}</div>
-                    </div>
-                  </div>
-
-                  <div className="mt-4">
-                    <div className="flex items-center gap-1">
-                      <div className="text-yellow-400 text-sm">★★★★★</div>
                     </div>
                   </div>
                 </article>
