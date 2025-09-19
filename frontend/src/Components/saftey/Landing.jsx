@@ -1,49 +1,41 @@
+import Contact from "../Button/Contact"
+import Embedded from "../Button/Embedded"
+
 const Landing = () => {
     return (
-        <div className="w-full flex justify-center items-start sm:items-center px-4 lg:px-0 overflow-x-hidden pt-4 sm:pt-0">
-            <section className="min-h-[75vh] sm:min-h-[85vh] w-full lg:w-[95%] lg:ml-[5%] flex justify-center items-center">
-                <div className="w-full h-auto min-h-[60vh] lg:h-[70vh] bg-[#f0f3f6] flex flex-col lg:flex-row items-center rounded-tl-[20px] rounded-bl-[20px]  p-2 lg:p-0 relative overflow-visible">
+        <div className="bg-white py-16 overflow-hidden">
+            <div className="w-full md:flex items-center relative bg-[#B8DDD9]/16 overflow-visible">
 
-                    <div className="flex flex-col gap-4 lg:ml-[4%] w-full lg:w-[40%] z-20 relative">
+                {/* Left content with extended background */}
+                <div className="relative z-10 md:w-2/5 lg:w-1/2 md:pr-10 p-10 md:pl-16 lg:pl-20 xl:pl-24">
+                    <div className="absolute inset-0 w-[200vw] left-0 md:left-auto md:right-0 -z-10"></div>
 
-                        {/* Badge and Heading */}
-                        <div className="flex flex-col gap-4 md:gap-5 lg:gap-6">
-                            <div className="border border-[#B8DDD9] flex justify-center items-center w-fit px-4 md:px-4 h-10 md:h-10 rounded-[10px]">
-                                <p className="text-xs sm:text-sm md:text-[8px] lg:text-[12px] font-bold text-gray-800 tracking-wide">SAFETY MEETS INNOVATION</p>
-                            </div>
+                    <Embedded text="SAFETY MEETS INNOVATION" />
+                    <h2 className="text-5xl font-bold mb-4 pb-6">
+                        Tech-Driven<br />
+                        <span className="text-red-500">Safety, Always On</span>
+                    </h2>
+                    <p className="text-lg text-gray-700 mb-6">
+                        From GPS monitoring and panic buttons to AI-powered controls, we're redefining secure travel across India with a 24/7 control centre for unmatched reliability.
+                    </p>
 
-                            <h1 className="text-2xl sm:text-[2.2rem] md:text-[2.8rem] lg:text-4xl font-bold leading-tight  text-[#EC221F]">
-                                Tech-Driven<br />
-                                <span className="text-gray-900">Safety, Always On</span>
-                            </h1>
-                        </div>
+                    <Contact />
+                </div>
 
-                        {/* Description and Button */}
-                        <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
-                            <p className="text-sm sm:text-base md:text-lg lg:text-lg text-gray-700 leading-relaxed">
-                                From GPS monitoring and panic buttons to AI-powered controls, we're redefining secure travel across India with a 24/7 control centre for unmatched reliability.
-                            </p>
-
-                            <button className="w-fit flex justify-center items-center gap-2 md:gap-4 bg-[#EC221F] border-none rounded-[8px] px-4 md:px-4 py-3 md:py-2 cursor-pointer hover:bg-[#d11e1b] transition-colors duration-200 shadow-lg">
-                                <p className="text-white text-base md:text-xl lg:text-xl font-medium">Contact Us</p>
-                                <img src="/call.svg" alt="call" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-8 lg:h-8" />
-                            </button>
-                        </div>
-                    </div>
-
-                    {/* Right Image Section - Significantly bigger for tablets */}
-                    <div className="w-full m-2 mr-8 lg:w-[60%] flex justify-end items-end lg:items-center mt-auto md:mt-auto lg:mt-0 relative right-[-15px] md:right-[-40px] lg:absolute lg:right-[-1%] lg:top-1/2 lg:-translate-y-1/2">
+                {/* Right side image - Controlled scaling */}
+                <div className="md:w-3/5 lg:w-1/2 mt-8 md:mt-0 pr-4 md:pr-8 lg:pr-12 relative z-20 -my-8 md:-my-10 lg:-my-12 xl:-my-14">
+                    <div className="lg:transform lg:scale-110 xl:scale-115 2xl:scale-100 lg:origin-left transition-transform duration-300 overflow-hidden rounded-lg max-w-full">
                         <img
                             src="/saftey-tech.png"
                             alt="Modern travel bus on highway"
-                            className=" rounded-[20px] w-full md:w-full lg:w-[90%] h-auto max-h-[350px] md:max-h-[420px]  object-contain lg:h-[85vh] lg:object-cover lg:object-left"
+                            className="shadow-lg w-full h-auto max-h-[80vh]"
                         />
-
                     </div>
                 </div>
-            </section>
-        </div>
-    )
-}
 
-export default Landing
+            </div>
+        </div>
+    );
+};
+
+export default Landing;
