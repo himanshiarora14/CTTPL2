@@ -12,8 +12,6 @@ function OurServices() {
     return (
         <>
             {/* <Navbar /> */}
-            <br />
-            <br />
             <FleetSection/>
             <br />
             <OnSpotRentalsForm/>
