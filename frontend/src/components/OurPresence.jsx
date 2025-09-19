@@ -26,6 +26,21 @@ const cards = [
     address: "Villa # 455, Rainbow Meadows, Patelguda, Hyderabad – 502319",
     img: "/hydrabad.png",
   },
+  {
+    city: "Pune, MH",
+    address: "Shop # 13, GMC Plaza, Purna Nagar, Chinchwad, Pune – 411019",
+    img: "/Pune.png",
+  },
+  {
+    city: "Indore, MP",
+    address: "CH 45 MR 10 Road, Sukhliya, Indore – 452010",
+    img: "/Indore.png",
+  },
+  {
+    city: "Kolkata, WB",
+    address: "58, Southern Avenue, Kolkata – 700029",
+    img: "/Kolkata.png",
+  },
 ];
 
 const OurPresence = () => {

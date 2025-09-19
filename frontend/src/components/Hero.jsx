@@ -1,4 +1,5 @@
 import Contact from "./Button/Contact"
+import Embedded from '../Components/Button/Embedded'
 
 const Hero = () => {
     return (
@@ -11,8 +12,8 @@ const Hero = () => {
 
                         {/* Badge and Heading */}
                         <div className="flex flex-col gap-4 md:gap-5 lg:gap-6">
-                            <div className="border border-[#B8DDD9] flex justify-center items-center w-fit px-4 md:px-5 h-10 md:h-14 rounded-[10px]">
-                                <p className="text-xs sm:text-sm md:text-[15px] lg:text-[14px] font-bold text-gray-800 tracking-wide">TECH-ENABLED TRAVEL</p>
+                            <div>
+                                <Embedded text={"TECH-ENABLED TRAVEL"}/> 
                             </div>
 
                             <h1 className="text-2xl sm:text-[2.2rem] md:text-[2.8rem] lg:text-4xl xl:text-[3.2rem] font-bold leading-tight text-gray-900">
@@ -32,7 +33,7 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    {/* Right Image Section - Significantly bigger for tablets */}
+                    {/* Right Image Section */}
                     <div className="w-full lg:w-[60%] flex justify-end items-end lg:items-center mt-auto md:mt-auto lg:mt-0 relative right-[-15px] md:right-[-40px] lg:absolute lg:right-[-1%] lg:top-1/2 lg:-translate-y-1/2">
                         <img
                             src="/HeroBusImage.svg"

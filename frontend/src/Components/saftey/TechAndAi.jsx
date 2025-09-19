@@ -49,7 +49,7 @@ function TechAndAi() {
                         >
                             {/* Large Background Number */}
                             <div className="absolute top-2 left-4">
-                                <span className="text-yellow-400/20 text-3xl sm:text-5xl font-bold leading-none select-none">
+                                <span className="text-yellow-400/20 text-6xl sm:text-8xl font-bold leading-none select-none">
                                     {card.number}
                                 </span>
                             </div>

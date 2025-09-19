@@ -1,4 +1,5 @@
 import React from 'react';
+import Embedded from '../Button/Embedded';
 
 const ReportingStructure = () => {
     const steps = [
@@ -16,10 +17,8 @@ const ReportingStructure = () => {
             <div className="w-full max-w-6xl mx-auto p-6 bg-gray-50">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <div className="inline-block px-4 py-2 border border-[#B8DDD9] rounded-2xl text-sm font-semibold text-gray-600 mb-4">
-                        KEY PERFORMANCE INDICATOR
-                    </div>
-                    <h1 className="text-[52px] md:text-4xl font-bold text-gray-900">
+                    <Embedded text={"KEY PERFORMANCE INDICATOR"}/>
+                    <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
                         Our Reporting <span className="text-[#EC221F]">Structure</span>
                     </h1>
                 </div>
