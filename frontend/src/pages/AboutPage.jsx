@@ -10,6 +10,8 @@ import Box from '../Components/Aboutus/Box';
 import Inception from '../Components/Aboutus/Inception';
 import Page1 from '../Components/Aboutus/Page1';
 import Team from '../Components/Aboutus/Team';
+import Gallery from './Gallery';
+
 const AboutPage = () => {
   return (
     <div>
@@ -24,6 +26,7 @@ const AboutPage = () => {
       <Fleets />
       <Ournation />
       <Getintouch />
+      <Gallery/>
     </div>
   );
 };

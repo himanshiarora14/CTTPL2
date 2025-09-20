@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className="w-full flex justify-center items-start sm:items-center px-4 lg:px-0 overflow-x-hidden pt-4 sm:pt-0">
             <section className="min-h-[75vh] sm:min-h-[85vh] w-full lg:w-[95%] lg:ml-[5%] flex justify-center items-center">
-                <div className="w-full h-auto min-h-[60vh] lg:h-[70vh] bg-[#f0f3f6] flex flex-col lg:flex-row items-center rounded-[20px] p-4 md:p-6 lg:p-0 relative overflow-visible">
+                <div className="w-full h-auto min-h-[60vh] lg:h-[70vh] bg-[#f2f8f8] flex flex-col lg:flex-row items-center rounded-[20px] p-4 md:p-6 lg:p-0 relative overflow-visible">
 
                     {/* Left Content Section - Enhanced tablet typography */}
                     <div className="flex flex-col gap-4 lg:ml-[4%] w-full lg:w-[40%] z-20 p-4 relative">

@@ -15,7 +15,7 @@ function Seamless() {
         <div className="lg:w-3/5 p-12 flex flex-col justify-center">
 
           <div className="mb-5">
-            <span className=" text-xs font-semibold border-2 border-green-100 rounded-md px-4 py-2 uppercase tracking-wider">
+            <span className=" text-xs font-semibold border-2 border-green-100 rounded-xl px-4 py-2 uppercase tracking-wider">
               Seamless Services
             </span>
           </div>

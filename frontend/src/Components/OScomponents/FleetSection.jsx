@@ -5,13 +5,12 @@ import Embedded from "../Button/Embedded";
 
 const FleetSection = () => {
   return (
-    <section className="w-full flex justify-center px-4 md:px-8 py-12">
+    <section className="w-full flex justify-center px-4 md:px-8">
       <div className="w-full max-w-7xl bg-[#f4fafa] rounded-2xl overflow-hidden shadow-sm">
         <div className="flex flex-col lg:flex-row items-stretch">
-          {/* Left Side */}
           <div className="lg:w-1/2 w-full p-6 md:p-10 flex flex-col justify-center bg-[#f4fafa] rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none">
             
-            {/* Wrapper to force inline pill */}
+
             <div className="w-fit">
               <Embedded text="OUR DIVERSE FLEET" />
             </div>

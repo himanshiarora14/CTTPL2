@@ -1,12 +1,18 @@
 // components/Navbar.jsx
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // use NavLink instead of Link
+import Quote from "./Button/GetQuote";
 import logo from "../images/logocttpl.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen((s) => !s);
+
+  const linkClasses = ({ isActive }) =>
+    `hover:text-blue-950 transition duration-200 ${
+      isActive ? "text-[#e42313] font-bold  underline-offset-4" : ""
+    }`;
 
   return (
     <nav
@@ -16,43 +22,38 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" onClick={() => setIsOpen(false)}>
+          <NavLink to="/" onClick={() => setIsOpen(false)}>
             <img src={logo} alt="CTT Logo" className="h-10 md:h-14" />
-          </Link>
+          </NavLink>
         </div>
 
-        {/* Desktop Menu (hidden on small screens) */}
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6 text-sm mr-6">
-          <Link to="/" className="hover:text-blue-950">
+          <NavLink to="/" className={linkClasses}>
             HOME
-          </Link>
-          <Link to="/about" className="hover:text-blue-950">
+          </NavLink>
+          <NavLink to="/about" className={linkClasses}>
             ABOUT US
-          </Link>
-          <Link to="/overview" className="hover:text-blue-950">
+          </NavLink>
+          <NavLink to="/overview" className={linkClasses}>
             FLEET OVERVIEW
-          </Link>
-          <Link to="/services" className="hover:text-blue-950">
+          </NavLink>
+          <NavLink to="/services" className={linkClasses}>
             OUR SERVICES
-          </Link>
-          <Link to="/safety" className="hover:text-blue-950">
+          </NavLink>
+          <NavLink to="/safety" className={linkClasses}>
             SAFETY & TECH
-          </Link>
-          <Link to="/careers" className="hover:text-blue-950">
+          </NavLink>
+          <NavLink to="/careers" className={linkClasses}>
             CAREERS
-          </Link>
-          <Link to="/contact" className="hover:text-blue-950">
+          </NavLink>
+          <NavLink to="/contact" className={linkClasses}>
             CONTACT US
-          </Link>
-          <Link
-            to="/quote"
-            className="bg-[#e42313] hover:bg-[#c21e11] text-white py-2 px-5 rounded-md font-bold transition duration-200"
-          >
-            Get Quote
-          </Link>
+          </NavLink>
+          <Quote />
         </div>
 
-        {/* Mobile Menu Button (visible on small screens) */}
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
             aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -69,7 +70,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu (slide down) */}
+      {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-96 mt-3" : "max-h-0"
@@ -77,63 +78,28 @@ const Navbar = () => {
         aria-hidden={!isOpen}
       >
         <div className="bg-white shadow-md rounded-md mx-4 p-4 flex flex-col gap-3 items-center">
-          <Link
-            to="/"
-            onClick={toggleMenu}
-            className="w-full text-center py-2 hover:text-gray-700"
-          >
+          <NavLink to="/" onClick={toggleMenu} className={linkClasses}>
             HOME
-          </Link>
-          <Link
-            to="/about"
-            onClick={toggleMenu}
-            className="w-full text-center py-2 hover:text-gray-700"
-          >
+          </NavLink>
+          <NavLink to="/about" onClick={toggleMenu} className={linkClasses}>
             ABOUT US
-          </Link>
-          <Link
-            to="/overview"
-            onClick={toggleMenu}
-            className="w-full text-center py-2 hover:text-gray-700"
-          >
+          </NavLink>
+          <NavLink to="/overview" onClick={toggleMenu} className={linkClasses}>
             FLEET OVERVIEW
-          </Link>
-          <Link
-            to="/services"
-            onClick={toggleMenu}
-            className="w-full text-center py-2 hover:text-gray-700"
-          >
+          </NavLink>
+          <NavLink to="/services" onClick={toggleMenu} className={linkClasses}>
             OUR SERVICES
-          </Link>
-          <Link
-            to="/safety"
-            onClick={toggleMenu}
-            className="w-full text-center py-2 hover:text-gray-700"
-          >
+          </NavLink>
+          <NavLink to="/safety" onClick={toggleMenu} className={linkClasses}>
             SAFETY & TECH
-          </Link>
-          <Link
-            to="/careers"
-            onClick={toggleMenu}
-            className="w-full text-center py-2 hover:text-gray-700"
-          >
+          </NavLink>
+          <NavLink to="/careers" onClick={toggleMenu} className={linkClasses}>
             CAREERS
-          </Link>
-          <Link
-            to="/contact"
-            onClick={toggleMenu}
-            className="w-full text-center py-2 hover:text-gray-700"
-          >
+          </NavLink>
+          <NavLink to="/contact" onClick={toggleMenu} className={linkClasses}>
             CONTACT US
-          </Link>
-
-          <Link
-            to="/quote"
-            onClick={toggleMenu}
-            className="w-full text-center bg-[#e42313] hover:bg-[#c21e11] text-white py-2 rounded-md font-bold transition duration-200"
-          >
-            Get Quote
-          </Link>
+          </NavLink>
+          <Quote/>
         </div>
       </div>
     </nav>
