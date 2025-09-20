@@ -63,7 +63,7 @@ export default function Home() {
           {/* Left Section */}
           <div className="space-y-8">
             {/* Badge */}
-            <Badge className="bg-white border border-blue-300 text-gray-700">
+            <Badge className="bg-white border-2 rounded-lg border-blue-200 text-black-1100 font-bold">
               TECH-ENABLED TRAVEL
             </Badge>
 
@@ -101,10 +101,10 @@ export default function Home() {
             </div>
 
             {/* Contact Button */}
-            <Button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 flex items-center space-x-2">
-              <Phone className="w-4 h-4" />
-              <span>Contact Us</span>
-            </Button>
+            <button className="w-fit flex justify-center items-center gap-2 md:gap-4 bg-[#EC221F] border-none rounded-[8px] px-4 md:px-4 py-3 md:py-2 cursor-pointer hover:bg-[#d11e1b] transition-colors duration-200 shadow-lg">
+                                <p className="text-white text-base md:text-xl lg:text-xl font-medium">Contact Us</p>
+                                <img src="/call.svg" alt="call" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-8 lg:h-8" />
+                            </button>
           </div>
         </div>
       </main>
