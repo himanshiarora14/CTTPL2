@@ -18,6 +18,7 @@ import Footer from "./Components/Footer";
 import Careers from "./pages/Careers";
 import Quote from "./pages/Quote";
 import OurStructure from "./pages/OurStructure";
+import SchoolFleetService from "./pages/SchoolFleetService";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/structure" element={<OurStructure/>}/>
+        <Route path="/school-fleet-service" element={<SchoolFleetService/>} />
       </Routes>
       <Footer/>
     </Router>
