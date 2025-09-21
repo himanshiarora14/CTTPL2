@@ -3,7 +3,7 @@ import bus2 from "../../images/bus2.png";
 import Contact from "../Button/Contact"
 import Embedded from "../Button/Embedded"
 
-const FleetSection = () => {
+const DrivingWorkforce = () => {
     return (
         <div className="bg-white py-16 overflow-hidden">
             <div className="w-full md:flex items-center relative bg-[#B8DDD9]/16 overflow-visible">
@@ -14,13 +14,11 @@ const FleetSection = () => {
 
                     <Embedded text="OUR DIVERSE FLEET" />
                     <h2 className="text-5xl font-bold mb-4 pb-6">
-                        Trusted Serices<br />
-                        <span className="text-red-500">Seamless Journeys</span>
+                        Driving Workforce<br />
+                        <span className="text-red-500">Productivity</span>
                     </h2>
                     <p className="text-lg text-gray-700 mb-6">
-                        From luxury sedans to economy cars and premium coaches, CTPL
-              offers a wide range of vehicles. Choose comfort, safety, and
-              reliability – every journey, every time.
+                        From luxury sedans to economy cars and premium coaches, CTTPL offers a wide range of vehicles. Choose comfort, safety, and reliability — every journey, every time.
                     </p>
 
                     <Contact />
@@ -42,4 +40,4 @@ const FleetSection = () => {
     );
 };
 
-export default FleetSection;
+export default DrivingWorkforce;
