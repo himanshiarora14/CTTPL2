@@ -11,7 +11,7 @@ const Hero = () => {
                     <div className="flex flex-col gap-4 lg:ml-[4%] w-full lg:w-[40%] z-20 p-4 relative">
 
                         {/* Badge and Heading */}
-                        <div className="flex flex-col gap-4 md:gap-5 lg:gap-6">
+                        <div className="flex flex-col gap-4 md:gap-2">
                             <div>
                                 <Embedded text={"TECH-ENABLED TRAVEL"}/> 
                             </div>

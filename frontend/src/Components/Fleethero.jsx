@@ -1,6 +1,7 @@
 import React from 'react';
-import bus2 from "../images/bus2.png";
+import bus2 from "../images/fo.png";
 import Embedded from './Button/Embedded';
+import Contact from './Button/Contact';
 
 export default function Fleethero() {
   return (
@@ -18,19 +19,7 @@ export default function Fleethero() {
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-md text-base font-medium shadow-lg transition-transform duration-200 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 bg-red-600 text-white hover:bg-red-700"
-            >
-              Contact Us
-            </button>
-
-            <button
-              type="button"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-md text-base font-medium shadow-lg transition-transform duration-200 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 border-2 border-red-600 text-red-600 bg-white hover:bg-red-50"
-            >
-              Call Us
-            </button>
+            <Contact/>
           </div>
         </div>
 
