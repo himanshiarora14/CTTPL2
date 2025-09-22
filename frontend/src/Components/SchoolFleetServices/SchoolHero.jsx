@@ -30,7 +30,7 @@ const SchoolHero = () => {
                         <img
                             src="/assets/school_bus.png"
                             alt="Modern travel bus on highway"
-                            className="shadow-lg w-full h-auto max-h-[80vh]"
+                            className="shadow-lg w-full h-auto max-h-[64vh]"
                         />
                     </div>
                 </div>

@@ -10,7 +10,7 @@ import Box from '../Components/Aboutus/Box';
 import Inception from '../Components/Aboutus/Inception';
 import Page1 from '../Components/Aboutus/Page1';
 import Team from '../Components/Aboutus/Team';
-import Gallery from './Gallery';
+import ExploreGallery from '../Components/Gallery/ExploreGallery';
 
 const AboutPage = () => {
   return (
@@ -18,15 +18,15 @@ const AboutPage = () => {
       <Page1 />
       <Inception />
       <Box />
+      <ExploreGallery />
       <Mission />
       <Ourservices />
-      <Team/>
+      <Team />
       <Leadership />
       <Bestchoice />
       <Fleets />
       <Ournation />
       <Getintouch />
-      <Gallery/>
     </div>
   );
 };

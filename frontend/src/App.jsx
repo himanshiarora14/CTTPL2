@@ -18,7 +18,13 @@ import Quote from "./pages/Quote";
 import OurStructure from "./pages/OurStructure";
 import SchoolFleetService from "./pages/SchoolFleetService";
 import EmployeeTransportService from "./Components/EmployeeTransportService";
+<<<<<<< HEAD
 import ElectricFleetServices from "./Components/ElectricFleetServices";
+=======
+import Gallery from "./pages/Gallery";
+import NotFoundPage from "./pages/NotFoundPage";
+
+>>>>>>> 9f6bbd34668fc7c416eeaf0f7d8cd6a79db7b732
 function App() {
   return (
     <Router>
@@ -42,6 +48,8 @@ function App() {
         <Route path="/quote" element={<Quote />} />
         <Route path="/structure" element={<OurStructure />} />
         <Route path="/school-fleet-service" element={<SchoolFleetService />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </Router>
