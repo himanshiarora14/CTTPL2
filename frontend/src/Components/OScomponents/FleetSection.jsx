@@ -1,5 +1,5 @@
 import React from "react";
-import bus2 from "../../images/bus2.png";
+import bus2 from "../../images/os.png";
 import Contact from "../Button/Contact"
 import Embedded from "../Button/Embedded"
 
@@ -19,8 +19,8 @@ const FleetSection = () => {
                     </h2>
                     <p className="text-lg text-gray-700 mb-6">
                         From luxury sedans to economy cars and premium coaches, CTPL
-              offers a wide range of vehicles. Choose comfort, safety, and
-              reliability – every journey, every time.
+                        offers a wide range of vehicles. Choose comfort, safety, and
+                        reliability – every journey, every time.
                     </p>
 
                     <Contact />
@@ -31,8 +31,8 @@ const FleetSection = () => {
                     <div className="lg:transform lg:scale-110 xl:scale-115 2xl:scale-100 lg:origin-left transition-transform duration-300 overflow-hidden rounded-lg max-w-full">
                         <img
                             src={bus2}
-              alt="Bus from CTPL fleet"
-                            className="shadow-lg w-full h-auto max-h-[80vh]"
+                            alt="Bus from CTPL fleet"
+                            className="shadow-lg w-auto rounded-2xl h-auto max-h-[64vh]"
                         />
                     </div>
                 </div>

@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Inception() {
   return (
-    <section className="max-w-4xl mx-auto text-center px-6 py-12">
-      <h1 className="text-4xl font-extrabold mb-4">
+    <section className="max-w-4xl mx-auto text-center  py-12">
+      <h1 className="text-5xl font-bold mb-4">
         Inception <span className="text-red-600">- 1990</span>
       </h1>
-      <p className="text-sm text-gray-800 leading-relaxed">
+      <p className="text-md text-gray-800 leading-relaxed">
         Founded in 1990 by Mr. P.S. Choudhary, Choudhary Tours &amp; Travels Pvt. Ltd. (CTTPL) began
         with a vision to transform transportation services across India. What started as a small
         operation has evolved into a vast network spanning eight major cities and a fleet strength

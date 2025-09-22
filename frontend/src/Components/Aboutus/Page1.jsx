@@ -1,5 +1,10 @@
+import React from "react"
 import { Phone, Users, Car, Building, MapPin, Calendar } from "lucide-react"
+import Embedded from '../Button/Embedded'
+import Contact from "../Button/Contact"
+import img from '../../images/bus5.png'
 
+// Simple Button Component
 function Button({ children, className = "", ...props }) {
   return (
     <button
@@ -11,6 +16,7 @@ function Button({ children, className = "", ...props }) {
   )
 }
 
+// Simple Badge Component
 function Badge({ children, className = "" }) {
   return (
     <span
@@ -21,6 +27,7 @@ function Badge({ children, className = "" }) {
   )
 }
 
+// Simple Card Component
 function Card({ children, className = "" }) {
   return (
     <div className={`p-4 rounded-lg shadow-sm ${className}`}>
@@ -40,16 +47,17 @@ export default function Home() {
   ]
 
   return (
-    <div className="p-4 h-auto bg-gray-100">
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <div className="min-h-screen bg-[#f2f8f8]">
+      {/* Main Content */}
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left Section */}
           <div className="space-y-8">
-            <Badge className="bg-white border rounded-2xl border-blue-300 text-gray-700">
-              TECH-ENABLED TRAVEL
-            </Badge>
+            <Embedded text="TECH-ENABLED TRAVEL" />
 
+            {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-5xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Trusted <span className="text-red-500">Fleet Solutions</span>
                 <br />
                 Since 1990
@@ -61,6 +69,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {stats.map((stat, index) => {
                 const Icon = stat.icon
@@ -79,11 +88,17 @@ export default function Home() {
               })}
             </div>
 
-            {/* Contact Button */}
-            <Button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 flex items-center space-x-2">
-              <Phone className="w-4 h-4" />
-              <span>Contact Us</span>
-            </Button>
+            <Contact />
+          </div>
+
+          <div className="flex items-center justify-center">
+            <div className="w-full max-h-screen h-[60vh] lg:h-screen overflow-hidden rounded-lg shadow-lg">
+              <img
+                src={img}
+                alt="Hero - fleet travel"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </main>

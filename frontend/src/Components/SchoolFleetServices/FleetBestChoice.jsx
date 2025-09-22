@@ -31,7 +31,7 @@ const FleetBestChoice = () => {
     <div className={`${bgColor} rounded-2xl p-6 lg:p-8 relative`}>
       {/* Red vertical bar */}
       <div className="absolute left-0 top-6 bottom-6 w-1 bg-[#EC221F] rounded-r"></div>
-      
+
       <div className="ml-6">
         <ul className="space-y-4">
           {points.map((point, index) => (
@@ -51,19 +51,19 @@ const FleetBestChoice = () => {
   );
 
   return (
-    <div className="w-full bg-white px-4 py-8 lg:py-16">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full bg-white px-10 py-8 lg:py-10">
+      <div className="max-w-5xl mx-auto">
         {/* Main Heading */}
         <div className="text-center mb-8 lg:mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
             What Makes <span className="text-[#EC221F]">CTTPL</span> Your Best Choice?
           </h1>
-          
+
           {/* Description */}
           <p className="text-gray-700 text-sm lg:text-base leading-relaxed max-w-6xl mx-auto">
-            Choudhary Tours & Travels Pvt. Ltd. (CTTPL) has proudly served over 100,000 satisfied end users across the nation, conducting 
-            10,000+ tours and trips with an impressive fleet strength of 4,000+ vehicles. Choose Choudhary Tours & Travels Pvt. Ltd. (CTTPL) 
-            for dependable, customer-focused transport solutions that blend safety, technology, and innovation with cost efficiency. Our 
+            Choudhary Tours & Travels Pvt. Ltd. (CTTPL) has proudly served over 100,000 satisfied end users across the nation, conducting
+            10,000+ tours and trips with an impressive fleet strength of 4,000+ vehicles. Choose Choudhary Tours & Travels Pvt. Ltd. (CTTPL)
+            for dependable, customer-focused transport solutions that blend safety, technology, and innovation with cost efficiency. Our
             commitment to professionalism and continuous improvement ensures unmatched service quality.
           </p>
         </div>
@@ -72,7 +72,7 @@ const FleetBestChoice = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {/* Quality Compliance Section */}
           <div>
-            <SectionHeading 
+            <SectionHeading
               title="and Audits"
               titleHighlight="Quality Compliance"
             />
@@ -84,7 +84,7 @@ const FleetBestChoice = () => {
 
           {/* Chauffeur Management Section */}
           <div>
-            <SectionHeading 
+            <SectionHeading
               title="Management"
               titleHighlight="Chauffeur"
             />

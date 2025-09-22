@@ -1,5 +1,6 @@
 import Contact from "../Button/Contact"
 import Embedded from "../Button/Embedded"
+import img from '../../images/bus11.png'
 
 const Landing = () => {
     return (
@@ -26,9 +27,9 @@ const Landing = () => {
                 <div className="md:w-3/5 lg:w-1/2 mt-8 md:mt-0 pr-4 md:pr-8 lg:pr-12 relative z-20 -my-8 md:-my-10 lg:-my-12 xl:-my-14">
                     <div className="lg:transform lg:scale-110 xl:scale-115 2xl:scale-100 lg:origin-left transition-transform duration-300 overflow-hidden rounded-lg max-w-full">
                         <img
-                            src="/saftey-tech.png"
+                            src={img}
                             alt="Modern travel bus on highway"
-                            className="shadow-lg w-full h-auto max-h-[80vh]"
+                            className="shadow-lg rounded-2xl w-auto h-auto max-h-[64vh]"
                         />
                     </div>
                 </div>
