@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import img1 from "../../images/bus6.png";
 import img2 from "../../images/bus7.png";
 import img3 from "../../images/bus8.png";
@@ -39,13 +38,8 @@ const services = [
     title: "Electric Fleet Services",
     description:
       "CTTPL’s Electric Fleet Services bring eco-friendly transportation solutions to your doorstep. With zero-emission vehicles and charging infrastructure, we help organizations achieve sustainability goals while maintaining efficiency and reliability. Our advanced electric fleet offers quieter, cleaner commutes, paving the way for a greener future.",
-<<<<<<< HEAD
-    img: "/images/bus.png",
-    link: "/electric-fleet-service",
-=======
     img: img5,
-    link: "#",
->>>>>>> 9f6bbd34668fc7c416eeaf0f7d8cd6a79db7b732
+    link: "/electric-fleet-service",
   },
 ];
 
