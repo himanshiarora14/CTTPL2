@@ -2,7 +2,7 @@ import React from 'react';
 import Getintouch from "../Components/Getintouch";
 import Footer from "../Components/Footer";
 import OnSpotRentalsForm from '../Components/Booking';
-import Choice from '../Components/Bestchoice';
+import FleetBestChoice from './SchoolFleetServices/FleetBestChoice';
 import Fleets from '../Components/Fleets';
 import DrivingWorkforce from './OScomponents/DrivingWorkforce';
 import EmployeeTransport from './OScomponents/EmployeeTransport';
@@ -18,7 +18,7 @@ function EmployeeTransportService() {
             <br />
             <EmployeeTransport/>
             <SafetyComfortCompliance/>
-            <Choice/>
+            <FleetBestChoice/>
             <Fleets/>
              <br />
              <br />
