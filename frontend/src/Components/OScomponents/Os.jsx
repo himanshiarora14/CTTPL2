@@ -35,7 +35,7 @@ const services = [
     description:
       "CTTPL’s Electric Fleet Services bring eco-friendly transportation solutions to your doorstep. With zero-emission vehicles and charging infrastructure, we help organizations achieve sustainability goals while maintaining efficiency and reliability. Our advanced electric fleet offers quieter, cleaner commutes, paving the way for a greener future.",
     img: "/images/bus.png",
-    link: "#",
+    link: "/electric-fleet-service",
   },
 ];
 

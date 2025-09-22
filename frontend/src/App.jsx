@@ -8,11 +8,9 @@ import ScrollToTop from "../ScrollToTop";
 import SafetyAndTech from "./pages/SafetyAndTech";
 import ContactUs from "./pages/ContactUs";
 import Ourservices from "./Components/Ourservices";
-import EmployeeFleet from "./Components/OScomponents/EmployeeFleet";
 import CarFleet from "./Components/OScomponents/CarFleet";
 import DedicatedFleet from "./Components/OScomponents/DedicatedFleet";
 import SchoolFleet from "./Components/OScomponents/SchoolFleet";
-import Electricfleet from "./Components/OScomponents/Electricfleet";
 import FleetOverview from "./pages/FleetOverview";
 import Footer from "./Components/Footer";
 import Careers from "./pages/Careers";
@@ -20,7 +18,7 @@ import Quote from "./pages/Quote";
 import OurStructure from "./pages/OurStructure";
 import SchoolFleetService from "./pages/SchoolFleetService";
 import EmployeeTransportService from "./Components/EmployeeTransportService";
-
+import ElectricFleetServices from "./Components/ElectricFleetServices";
 function App() {
   return (
     <Router>
@@ -31,12 +29,13 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<OurServices />} />
         <Route path="/overview" element={<FleetOverview />} />
-        <Route path="/employee-fleet" element={<EmployeeFleet />} />
+        <Route path="/employee-fleet" element={<EmployeeTransportService  />} />
         <Route path="/car-leasing" element={<CarFleet />} />
         <Route path="/dedicated-fleet" element={<DedicatedFleet />} />
-        <Route path="/electric-fleet" element={<Electricfleet />} />
+        <Route path="/electric-fleet" element={<ElectricFleetServices />} />
         <Route path="/school-fleet" element={<SchoolFleet />} />
         <Route path="/employee-transport-service" element={<EmployeeTransportService />} />
+        <Route path="/electric-fleet-service" element={<ElectricFleetServices />} />
         <Route path="/safety" element={<SafetyAndTech />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/careers" element={<Careers />} />
