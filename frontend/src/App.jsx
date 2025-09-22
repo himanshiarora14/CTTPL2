@@ -18,7 +18,7 @@ import Footer from "./Components/Footer";
 import Careers from "./pages/Careers";
 import Quote from "./pages/Quote";
 import OurStructure from "./pages/OurStructure";
-
+import EmployeeTransportService from "./Components/EmployeeTransportService";
 function App() {
   return (
     <Router>
@@ -34,6 +34,7 @@ function App() {
         <Route path="/dedicated-fleet" element={<DedicatedFleet />} />
          <Route path="/electric-fleet" element={<Electricfleet />} />
         <Route path="/school-fleet" element={<SchoolFleet />} />
+        <Route path="/employee-transport-service" element={<EmployeeTransportService />} />
         <Route path="/safety" element={<SafetyAndTech />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/careers" element={<Careers />} />

@@ -7,7 +7,7 @@ const services = [
     description:
       "Reliable and efficient employee transport services designed to ensure hassle-free commutes for your workforce. With a dedicated fleet and 24/7 assistance, we prioritize safety, punctuality, and comfort. Operating across major cities, we provide tailored solutions to enhance employee satisfaction and productivity.",
     img: "/images/bus.png",
-    link: "#",
+    link: "/employee-transport-service",
   },
   {
     title: "Car Leasing Services",
