@@ -45,7 +45,7 @@ const OurClient = () => {
                        xs:mt-4 xs:p-4 xs:h-[50vh]
                        md:mt-6 md:px-4 md:py-6 md:h-[55vh]
                        lg:h-[45vh] lg:mt-4
-                       xl:h-[40vh] xl:mt-6 xl:p-0">
+                       xl:h-[40vh] xl:mt-14 xl:p-0">
       <div className="w-[95vw] flex flex-col justify-center items-center gap-4
                      xs:w-[90vw] xs:gap-6
                      md:w-[85vw] md:gap-8
@@ -66,7 +66,7 @@ const OurClient = () => {
                      xs:text-base xs:w-[90%]
                      md:text-[17px] md:w-[75%]
                      lg:text-[18px] lg:w-[70%]
-                     xl:w-[65%]">
+                     xl:w-[70%]">
           Delivering seamless transport services to top corporates and organizations nationwide, 
           trusted by industry leaders for our unmatched fleet, reliability, and service excellence.
         </p>

@@ -5,10 +5,10 @@ import Quote from './Button/GetQuote';
 const Fleets = () => {
     return (
         <div className="bg-white py-12">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div className="container mx-auto px-4 flex flex-col md:gap-4 xl:gap-0 xl:flex-row items-center">
                 
                 {/* Left content */}
-                <div className="w-full md:w-1/2 md:pr-10 p-6 sm:p-8 md:p-10 bg-gray-100 rounded-t-3xl md:rounded-tl-4xl md:rounded-bl-4xl">
+                <div className="w-full xl:w-1/2 md:pr-10 p-6 sm:p-8 md:p-10 bg-gray-100 rounded-2xl md:rounded-b-none md:rounded-t-none xl:rounded-tl-4xl xl:rounded-bl-4xl">
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 pb-4 md:pb-6">
                         Ready to Experience <br />
                         <span className="text-red-500">Seamless </span>Travel?
@@ -23,7 +23,7 @@ const Fleets = () => {
                 </div>
 
                 {/* Right image */}
-                <div className="w-full md:w-1/2 mt-6 md:mt-0">
+                <div className="w-full xl:w-1/2 mt-6 md:mt-0">
                     <img
                         src={fleets}
                         alt="A fleet of modern buses lined up"

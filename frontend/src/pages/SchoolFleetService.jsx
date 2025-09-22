@@ -6,6 +6,7 @@ import Fleets from '../Components/Fleets'
 import ContactSection from '../Components/Getintouch'
 import Scc from '../Components/SchoolFleetServices/Scc'
 import FleetBestChoice from '../Components/SchoolFleetServices/FleetBestChoice'
+import SafetyComfortCompliance from '../Components/OScomponents/SafetyComfortCompliance'
 
 
 const SchoolFleetService = () => {
@@ -14,7 +15,7 @@ const SchoolFleetService = () => {
         <SchoolHero/>
         <OnSpotRentalsForm/>
         <FleetServices/>
-        <Scc/>
+        <SafetyComfortCompliance/>
         <FleetBestChoice/>
 
         <Fleets/>
