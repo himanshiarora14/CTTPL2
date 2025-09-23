@@ -4,20 +4,21 @@ import Footer from "../Components/Footer";
 import OnSpotRentalsForm from '../Components/Booking';
 import FleetBestChoice from './SchoolFleetServices/FleetBestChoice';
 import Fleets from '../Components/Fleets';
-import DrivingWorkforce from './OScomponents/DrivingWorkforce';
-import EmployeeTransport from './OScomponents/EmployeeTransport';
-import SafetyComfortCompliance from './OScomponents/SafetyComfortCompliance';
-function EmployeeTransportService() {
+import DS from './OScomponents/DS';
+import Scc from './SchoolFleetServices/Scc';
+import EF from './EF';
+function ElectricFleetServices() {
     
     return (
         <>
             {/* <Navbar /> */}
-            <DrivingWorkforce/>
+            <DS/>
             <br />
             <OnSpotRentalsForm/>
+            
             <br />
-            <EmployeeTransport/>
-            <SafetyComfortCompliance/>
+             <EF/>
+            <Scc/>
             <FleetBestChoice/>
             <Fleets/>
              <br />
@@ -28,4 +29,4 @@ function EmployeeTransportService() {
     );
 }
 
-export default EmployeeTransportService;
+export default ElectricFleetServices;

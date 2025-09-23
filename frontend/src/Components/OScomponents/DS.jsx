@@ -3,27 +3,26 @@ import bus2 from "../../images/bus2.png";
 import Contact from "../Button/Contact"
 import Embedded from "../Button/Embedded"
 
-const DrivingWorkforce = () => {
+const DS= () => {
     return (
         <div className="bg-white py-16 overflow-hidden">
             <div className="w-full md:flex items-center relative bg-[#B8DDD9]/16 overflow-visible">
 
                 {/* Left content with extended background */}
                 <div className="relative z-10 md:w-2/5 lg:w-1/2 md:pr-10 p-10 md:pl-16 lg:pl-20 xl:pl-24">
-                    <div className="absolute inset-0 w-[100vw] left-0 md:left-auto md:right-0 -z-10"></div>
+                    <div className="absolute inset-0 w-[200vw] left-0 md:left-auto md:right-0 -z-10"></div>
 
                     <Embedded text="OUR DIVERSE FLEET" />
                     <h2 className="text-5xl font-bold mb-4 pb-6">
-                        Driving Workforce<br />
-                        <span className="text-red-500">Productivity</span>
+                        Driving <span className="text-red-500">Sustainably</span><br></br>
+                        Thinking Green
                     </h2>
-                    <p className="text-md text-gray-700 mb-6">
+                    <p className="text-lg text-gray-700 mb-6">
                         From luxury sedans to economy cars and premium coaches, CTTPL offers a wide range of vehicles. Choose comfort, safety, and reliability — every journey, every time.
                     </p>
 
                     <Contact />
                 </div>
-
 
                {/* Right side image - Mobile safe + Laptop original */}
 <div className="
@@ -56,10 +55,9 @@ const DrivingWorkforce = () => {
 </div>
 
 
-
             </div>
         </div>
     );
 };
 
-export default DrivingWorkforce;
+export default DS;
