@@ -17,7 +17,7 @@ import SchoolFleetService from "./pages/SchoolFleetService";
 import EmployeeTransportService from "./Components/EmployeeTransportService";
 import Gallery from "./pages/Gallery";
 import NotFoundPage from "./pages/NotFoundPage";
-import ElectricFleetServices from '../src/Components/ElectricFleetServices';
+// import ElectricFleetServices from '../src/Components/ElectricFleetServices';
 import ElectricFleetServices from "./Components/ElectricFleetServices";
 import CarLeasingService from "./pages/CarLeasingService";
 
