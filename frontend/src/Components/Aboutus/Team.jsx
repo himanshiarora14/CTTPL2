@@ -6,45 +6,40 @@ import { FaLinkedin } from "react-icons/fa"; // Make sure to run: npm install re
 // You can replace this with your actual team data
 const teamMembers = [
   {
-    name: "Anju Choudhary",
-    title: "Chief Technical Officer",
-    imageUrl: null, // Add image URL here e.g., 'https://via.placeholder.com/150'
+    name: "Mr. P.S. Choudhary",
+    title: "Founder and Chairman",
+    imageUrl: null, 
   },
   {
-    name: "Anju Choudhary",
-    title: "Chief Technical Officer",
+    name: "Mr. Sandeep Choudhary",
+    title: "Managing Director",
+    imageUrl: null,
+  },
+  {
+    name: "Mr. Rajeev Choudhary",
+    title: "Chief Executive Officer",
+    imageUrl: null,
+  },
+  {
+    name: "Mr. Chandradeep Tamta",
+    title: "Chief Operating Officer",
+    imageUrl: null,
+  },
+  {
+    name: "Col. Ashok Prabhakar",
+    title: "Chief Training Officer",
+    imageUrl: null,
+  },
+  {
+    name: "Mr. Amit Tomar",
+    title: "CBO and Director - Operations",
     imageUrl: null,
   },
   {
     name: "Anju Choudhary",
-    title: "Chief Technical Officer",
+    title: "Chief Financial Officer",
     imageUrl: null,
-  },
-  {
-    name: "Anju Choudhary",
-    title: "Chief Technical Officer",
-    imageUrl: null,
-  },
-  {
-    name: "Anju Choudhary",
-    title: "Chief Technical Officer",
-    imageUrl: null,
-  },
-  {
-    name: "Anju Choudhary",
-    title: "Chief Technical Officer",
-    imageUrl: null,
-  },
-  {
-    name: "Anju Choudhary",
-    title: "Chief Technical Officer",
-    imageUrl: null,
-  },
-  {
-    name: "Anju Choudhary",
-    title: "Chief Technical Officer",
-    imageUrl: null,
-  },
+  }
 ];
 
 const Team = () => {
@@ -66,7 +61,7 @@ const Team = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-6 gap-y-10">
           {teamMembers.map((member, index) => (
             // The Team Member Card is now directly inside the map function
             <div key={index} className="flex flex-col items-center text-center">

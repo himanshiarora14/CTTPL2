@@ -11,6 +11,7 @@ import Inception from '../Components/Aboutus/Inception';
 import Page1 from '../Components/Aboutus/Page1';
 import Team from '../Components/Aboutus/Team';
 import ExploreGallery from '../Components/Gallery/ExploreGallery';
+import Choice from '../Components/Bestchoice';
 
 const AboutPage = () => {
   return (
@@ -23,7 +24,7 @@ const AboutPage = () => {
       <Ourservices />
       <Team />
       <Leadership />
-      <Bestchoice />
+      <Choice/>
       <Fleets />
       <Ournation />
       <Getintouch />

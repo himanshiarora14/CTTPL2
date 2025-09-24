@@ -17,7 +17,8 @@ import SchoolFleetService from "./pages/SchoolFleetService";
 import EmployeeTransportService from "./Components/EmployeeTransportService";
 import Gallery from "./pages/Gallery";
 import NotFoundPage from "./pages/NotFoundPage";
-import ElectricFleetServices from '../src/Components/ElectricFleetServices';
+import ElectricFleetServices from "./Components/ElectricFleetServices";
+import DedicatedService from "./pages/DedicatedFleetService";
 
 function App() {
   return (
@@ -29,17 +30,18 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<OurServices />} />
         <Route path="/overview" element={<FleetOverview />} />
-        <Route path="/employee-fleet" element={<EmployeeTransportService  />} />
-        <Route path="/electric-fleet" element={<ElectricFleetServices />} />
-        <Route path="/employee-transport-service" element={<EmployeeTransportService />} />
-        <Route path="/electric-fleet-service" element={<ElectricFleetServices />} />
         <Route path="/safety" element={<SafetyAndTech />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/structure" element={<OurStructure />} />
-        <Route path="/school-fleet-service" element={<SchoolFleetService />} />
         <Route path="/gallery" element={<Gallery />} />
+        
+        <Route path="/school-fleet" element={<SchoolFleetService />} />
+        <Route path="/employee-transport-service" element={<EmployeeTransportService />} />
+        <Route path="/electric-fleet-service" element={<ElectricFleetServices />} />
+        <Route path="/dedicated-fleet-service" element={<DedicatedService/>} />
+
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

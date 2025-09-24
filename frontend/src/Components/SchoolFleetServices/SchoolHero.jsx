@@ -6,7 +6,7 @@ const SchoolHero = () => {
   return (
     <div>
          <div className="bg-white sm:py-16 overflow-hidden">
-            <div className="w-full md:flex items-center relative bg-[#B8DDD9]/16 overflow-visible">
+            <div className="w-full md:flex gap-4 items-center relative bg-[#B8DDD9]/16 overflow-visible">
 
                 {/* Left content with extended background */}
                 <div className="relative z-10 md:w-2/5 lg:w-1/2 md:pr-10 p-10 md:pl-16 lg:pl-20 xl:pl-24">
@@ -30,7 +30,7 @@ const SchoolHero = () => {
                         <img
                             src="/assets/school_bus.png"
                             alt="Modern travel bus on highway"
-                            className="shadow-lg w-full h-auto max-h-[64vh]"
+                            className="shadow-lg w-80% h-auto max-h-[64vh] rounded-2xl"
                         />
                     </div>
                 </div>

@@ -10,7 +10,7 @@ const Ourservices = () => {
     {
       title: 'Employee Transport Services',
       description: 'Safe and punctual transportation solutions designed for employees, ensuring a comfortable and efficient commute every day.',
-      link: '/employee-fleet',
+      link: '/employee-transport-service',
       icon: <FaBus className="text-2xl" />,
     },
     {
@@ -22,7 +22,7 @@ const Ourservices = () => {
     {
       title: 'Dedicated Fleet Services',
       description: 'Customized fleet services for businesses, offering dedicated vehicles to meet the unique transportation demands of each client.',
-      link: '/dedicated-fleet',
+      link: '/dedicated-fleet-service',
       icon: <LuBus className="text-2xl" />,
     }
   ];
@@ -37,7 +37,7 @@ const Ourservices = () => {
     {
       title: 'Electric Fleet Services',
       description: 'Sustainable transport solutions with our electric fleet, promoting eco-friendly travel options for businesses and communities. Emissions-free vehicles and cost-effective operation make this service ideal for organizations looking to reduce their carbon footprint and embrace green mobility.',
-      link: '/electric-fleet',
+      link: '/electric-fleet-service',
       icon: <MdElectricCar className="text-2xl" />,
     }
   ];
