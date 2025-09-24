@@ -20,6 +20,7 @@ import SchoolFleetService from "./pages/SchoolFleetService";
 import EmployeeTransportService from "./Components/EmployeeTransportService";
 import Gallery from "./pages/Gallery";
 import NotFoundPage from "./pages/NotFoundPage";
+import ElectricFleetServices from "./Components/ElectricFleetServices";
 
 function App() {
   return (

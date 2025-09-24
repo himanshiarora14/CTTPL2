@@ -110,7 +110,7 @@ function Ournumbers() {
       className="relative bg-cover bg-center py-16 text-white"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1650&q=80')",
+          "url('/techandAI.png')",
       }}
     >
       <div className="relative max-w-6xl mx-auto px-6 text-center">
