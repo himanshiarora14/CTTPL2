@@ -8,9 +8,6 @@ import ScrollToTop from "../ScrollToTop";
 import SafetyAndTech from "./pages/SafetyAndTech";
 import ContactUs from "./pages/ContactUs";
 import Ourservices from "./Components/Ourservices";
-import CarFleet from "./Components/OScomponents/CarFleet";
-import DedicatedFleet from "./Components/OScomponents/DedicatedFleet";
-import SchoolFleet from "./Components/OScomponents/SchoolFleet";
 import FleetOverview from "./pages/FleetOverview";
 import Footer from "./Components/Footer";
 import Careers from "./pages/Careers";
@@ -20,6 +17,7 @@ import SchoolFleetService from "./pages/SchoolFleetService";
 import EmployeeTransportService from "./Components/EmployeeTransportService";
 import Gallery from "./pages/Gallery";
 import NotFoundPage from "./pages/NotFoundPage";
+import ElectricFleetServices from '../src/Components/ElectricFleetServices';
 
 function App() {
   return (
@@ -32,10 +30,7 @@ function App() {
         <Route path="/services" element={<OurServices />} />
         <Route path="/overview" element={<FleetOverview />} />
         <Route path="/employee-fleet" element={<EmployeeTransportService  />} />
-        <Route path="/car-leasing" element={<CarFleet />} />
-        <Route path="/dedicated-fleet" element={<DedicatedFleet />} />
         <Route path="/electric-fleet" element={<ElectricFleetServices />} />
-        <Route path="/school-fleet" element={<SchoolFleet />} />
         <Route path="/employee-transport-service" element={<EmployeeTransportService />} />
         <Route path="/electric-fleet-service" element={<ElectricFleetServices />} />
         <Route path="/safety" element={<SafetyAndTech />} />
