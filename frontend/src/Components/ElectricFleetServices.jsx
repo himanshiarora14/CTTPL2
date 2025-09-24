@@ -5,25 +5,27 @@ import OnSpotRentalsForm from '../Components/Booking';
 import FleetBestChoice from './SchoolFleetServices/FleetBestChoice';
 import Fleets from '../Components/Fleets';
 import DS from './OScomponents/DS';
-import Scc from './SchoolFleetServices/Scc';
 import EF from './EF';
+import SafetyComfortCompliance from './OScomponents/SafetyComfortCompliance';
+
 function ElectricFleetServices() {
-    
+
     return (
         <>
             {/* <Navbar /> */}
-            <DS/>
+            <DS />
             <br />
-            <OnSpotRentalsForm/>
-            
+            <OnSpotRentalsForm />
+
             <br />
-             <EF/>
-            <Scc/>
-            <FleetBestChoice/>
-            <Fleets/>
-             <br />
-             <br />
-            
+            <EF />
+
+            <SafetyComfortCompliance />
+            <FleetBestChoice />
+            <Fleets />
+            <br />
+            <br />
+
             <Getintouch />
         </>
     );

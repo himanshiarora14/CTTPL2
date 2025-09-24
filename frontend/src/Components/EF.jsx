@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import img from '../images/bus10.png'
 
 const EF = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -105,7 +106,7 @@ const EF = () => {
                 {/* Image on top - DYNAMIC */}
                 <div className="mb-6">
                   <img 
-                    src={fleetItems[activeIndex].image} 
+                    src={img} 
                     alt={`${fleetItems[activeIndex].title} Vehicle`}
                     className="w-full h-64 object-cover rounded-xl"
                   />

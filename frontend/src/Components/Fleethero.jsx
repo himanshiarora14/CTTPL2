@@ -10,7 +10,8 @@ export default function Fleethero() {
         <div className="px-2  text-center lg:text-left">
           <Embedded text="OUR DIVERSE FLEET" />
           <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-            <span className="text-red-600">Tailored</span> to Your Travel Needs
+            <span className="text-red-600">Tailored</span> to Your
+            <br></br> Travel Needs
           </h2>
 
           <p className="mt-6 text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">

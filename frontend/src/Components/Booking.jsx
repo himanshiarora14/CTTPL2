@@ -59,7 +59,7 @@ const OnSpotRentalsForm = () => {
   return (
     <div className="w-full min-h-screen flex items-center justify-center">
       <div className="w-full max-w-6xl bg-white p-10 rounded-2xl shadow-xl border-[3px] border-white">
-        <h2 className=" text-3xl md:text-5xl font-bold text-center mb-8">
+        <h2 className=" text-3xl md:text-5xl font-semibold text-center mb-8">
           On Spot <span className="text-red-500">Rentals</span>
         </h2>
 

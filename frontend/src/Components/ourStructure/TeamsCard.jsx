@@ -1,4 +1,5 @@
 import React from "react";
+import { LuBus } from "react-icons/lu";
 
 const teams = [
   {
@@ -81,14 +82,10 @@ const TeamsSection = () => {
             {/* Icon and Title Container */}
             <div className="flex items-center gap-3 mb-4">
               {/* SVG Icon */}
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-red-500 group-hover:bg-yellow-500">
-                <img 
-                  src="assets/teambus.svg" 
-                  alt="Team icon" 
-                  className="w-6 h-6"
-                />
+              <div className="w-10 h-10 rounded-lg text-2xl flex items-center justify-center flex-shrink-0 bg-red-500 group-hover:bg-yellow-500 group-hover:text-blue-900 text-white">
+                <LuBus />
               </div>
-              
+
               {/* Title */}
               <h3 className="text-lg font-bold leading-tight text-black group-hover:text-white">
                 {team.title}

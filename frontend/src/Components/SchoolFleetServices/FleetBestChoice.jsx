@@ -26,9 +26,9 @@ const FleetBestChoice = () => {
     </li>
   );
 
-  // Reusable Section Component (without heading)
+  // Reusable Section Component (with h-full for equal heights)
   const Section = ({ points, bgColor }) => (
-    <div className={`${bgColor} rounded-2xl p-6 lg:p-8 relative`}>
+    <div className={`${bgColor} rounded-2xl p-6 lg:p-8 relative h-full`}>
       {/* Red vertical bar */}
       <div className="absolute left-0 top-6 bottom-6 w-1 bg-[#EC221F] rounded-r"></div>
 
@@ -45,7 +45,9 @@ const FleetBestChoice = () => {
   // Reusable Section Heading Component
   const SectionHeading = ({ title, titleHighlight }) => (
     <h3 className="text-xl lg:text-2xl font-bold mb-6 text-center">
-      <span className="block">Ensuring <span className="text-[#EC221F]">{titleHighlight}</span></span>
+      <span className="block">
+        Ensuring <span className="text-[#EC221F]">{titleHighlight}</span>
+      </span>
       <span className="block">{title}</span>
     </h3>
   );
@@ -68,30 +70,24 @@ const FleetBestChoice = () => {
           </p>
         </div>
 
-        {/* Two Column Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+        {/* Two Column Grid with equal height */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
           {/* Quality Compliance Section */}
-          <div>
+          <div className="flex flex-col">
             <SectionHeading
               title="and Audits"
               titleHighlight="Quality Compliance"
             />
-            <Section
-              points={compliancePoints}
-              bgColor="bg-[#FBF3E4]"
-            />
+            <Section points={compliancePoints} bgColor="bg-[#FBF3E4]" />
           </div>
 
           {/* Chauffeur Management Section */}
-          <div>
+          <div className="flex flex-col">
             <SectionHeading
               title="Management"
               titleHighlight="Chauffeur"
             />
-            <Section
-              points={chauffeurPoints}
-              bgColor="bg-[#FBF3E4]"
-            />
+            <Section points={chauffeurPoints} bgColor="bg-[#FBF3E4]" />
           </div>
         </div>
       </div>

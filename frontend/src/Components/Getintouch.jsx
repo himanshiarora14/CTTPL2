@@ -75,7 +75,7 @@ export default function ContactSection() {
                             </div>
                             <div>
                                 <p className="font-bold">Email Us</p>
-                                <p className="text-gray-600 text-sm">business@choudarytours.in</p>
+                                <p className="text-gray-600 text-sm">business@choudharytours.in</p>
                             </div>
                         </div>
                     </div>

@@ -56,7 +56,8 @@ const CurrentOpenings = () => {
                   </div>
                   <button className="bg-red-500 text-white px-5 py-2.5 rounded-lg flex items-center gap-2 hover:bg-red-600 transition-colors duration-300 shadow-sm">
                     View Details
-                    <FaArrowRight />
+                    <div className='bg-white text-red-500 p-2 rounded'> <FaArrowRight /> </div>
+                    
                   </button>
                 </div>
               ))}
