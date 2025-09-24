@@ -20,6 +20,8 @@ import SchoolFleetService from "./pages/SchoolFleetService";
 import EmployeeTransportService from "./Components/EmployeeTransportService";
 import Gallery from "./pages/Gallery";
 import NotFoundPage from "./pages/NotFoundPage";
+import ElectricFleetServices from "./Components/ElectricFleetServices";
+import CarLeasingService from "./pages/CarLeasingService";
 
 function App() {
   return (
@@ -46,6 +48,7 @@ function App() {
         <Route path="/school-fleet-service" element={<SchoolFleetService />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/car-leasing-service" element={<CarLeasingService/>}/>
       </Routes>
       <Footer />
     </Router>
