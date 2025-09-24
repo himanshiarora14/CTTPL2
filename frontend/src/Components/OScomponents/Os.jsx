@@ -4,6 +4,7 @@ import img2 from "../../images/bus7.png";
 import img3 from "../../images/bus8.png";
 import img4 from "../../images/bus9.png";
 import img5 from "../../images/bus10.png";
+import { motion } from "framer-motion";
 
 const services = [
   {
