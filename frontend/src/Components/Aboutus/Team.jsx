@@ -1,45 +1,20 @@
 // src/components/Team.jsx
-
 import React from "react";
-import { FaLinkedin } from "react-icons/fa"; // Make sure to run: npm install react-icons
+import { FaLinkedin } from "react-icons/fa";
+import img1 from '../../images/team/anju.jpg'
+import img2 from '../../images/team/Chandradeep.jpg'
+import img3 from '../../images/team/Rajeev.jpg'
+import img4 from '../../images/team/sandeep.jpg'
 
-// You can replace this with your actual team data
+
 const teamMembers = [
-  {
-    name: "Mr. P.S. Choudhary",
-    title: "Founder and Chairman",
-    imageUrl: null, 
-  },
-  {
-    name: "Mr. Sandeep Choudhary",
-    title: "Managing Director",
-    imageUrl: null,
-  },
-  {
-    name: "Mr. Rajeev Choudhary",
-    title: "Chief Executive Officer",
-    imageUrl: null,
-  },
-  {
-    name: "Mr. Chandradeep Tamta",
-    title: "Chief Operating Officer",
-    imageUrl: null,
-  },
-  {
-    name: "Col. Ashok Prabhakar",
-    title: "Chief Training Officer",
-    imageUrl: null,
-  },
-  {
-    name: "Mr. Amit Tomar",
-    title: "CBO and Director - Operations",
-    imageUrl: null,
-  },
-  {
-    name: "Anju Choudhary",
-    title: "Chief Financial Officer",
-    imageUrl: null,
-  }
+  { name: "Mr. P.S. Choudhary", title: "Founder and Chairman", imageUrl: null },
+  { name: "Mr. Sandeep Choudhary", title: "Managing Director", imageUrl: img4 },
+  { name: "Mr. Rajeev Choudhary", title: "Chief Executive Officer", imageUrl: img3 },
+  { name: "Mr. Chandradeep Tamta", title: "Chief Operating Officer", imageUrl: img2 },
+  { name: "Col. Ashok Prabhakar", title: "Chief Training Officer", imageUrl: null },
+  { name: "Mr. Amit Tomar", title: "CBO and Director - Operations", imageUrl: null },
+  { name: "Anju Choudhary", title: "Chief Financial Officer", imageUrl: img1 }
 ];
 
 const Team = () => {
@@ -60,10 +35,36 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-6 gap-y-10">
-          {teamMembers.map((member, index) => (
-            // The Team Member Card is now directly inside the map function
+        {/* First Row (4 members) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 mb-10">
+          {teamMembers.slice(0, 4).map((member, index) => (
+            <div key={index} className="flex flex-col items-center text-center">
+              {/* Image Placeholder */}
+              <div className="w-40 h-40 bg-gray-200 rounded-lg mb-4 shadow-md">
+                {member.imageUrl && (
+                  <img
+                    src={member.imageUrl}
+                    alt={member.name}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                )}
+              </div>
+
+              {/* Member Info */}
+              <div className="flex items-center gap-2">
+                <FaLinkedin className="text-gray-700" />
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {member.name}
+                </h3>
+              </div>
+              <p className="text-sm text-gray-600">{member.title}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Second Row (3 members, centered) */}
+        <div className="flex justify-center gap-24 flex-wrap">
+          {teamMembers.slice(4).map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               {/* Image Placeholder */}
               <div className="w-40 h-40 bg-gray-200 rounded-lg mb-4 shadow-md">

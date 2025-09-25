@@ -41,7 +41,7 @@ function App() {
         <Route path="/employee-transport-service" element={<EmployeeTransportService />} />
         <Route path="/electric-fleet-service" element={<ElectricFleetServices />} />
         <Route path="/dedicated-fleet-service" element={<DedicatedService />} />
-        <Route path="/car-leasing-service" element={<CarLeasingService />} />
+        <Route path="/car-leasing" element={<CarLeasingService />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

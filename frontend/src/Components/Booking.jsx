@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BiSolidMessageSquare } from "react-icons/bi";
 
 const initialForm = {
   name: "",
@@ -190,35 +191,21 @@ const OnSpotRentalsForm = () => {
           {/* Button */}
           <div className="flex justify-end">
             {/* Button */}
-<div className="flex justify-end">
-  <button
-    type="submit"
-    disabled={loading}
-    className={`${
-      loading ? "opacity-70 cursor-wait" : ""
-    } flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-3 rounded-lg shadow`}
-  >
-    {loading ? "Sending..." : "Send Enquiry"}
+            <div className="flex justify-end">
+              <button
+                type="submit"
+                disabled={loading}
+                className={`${loading ? "opacity-70 cursor-wait" : ""
+                  } flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-2 py-3 rounded-lg shadow`}
+              >
+                {loading ? "Sending..." : "Send Enquiry"}
 
-    {/* White icon box */}
-    <div className="bg-white p-1 rounded-sm">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-4 w-4 text-red-600"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 8h2a2 2 0 012 2v10l-4-4H7a2 2 0 01-2-2V4a2 2 0 012-2h8"
-        />
-      </svg>
-    </div>
-  </button>
-</div>
+                {/* White icon box */}
+                <div className="bg-white p-1 rounded-sm">
+                  <BiSolidMessageSquare className="h-4 w-4 text-red-600"/>
+                </div>
+              </button>
+            </div>
 
           </div>
 

@@ -45,7 +45,7 @@ const Footer = () => {
           {/* Column 3: Follow, Share & Subscribe */}
           <div>
             <h3 className="text-lg font-bold text-[#FFD166]">Follow, Share & Subscribe</h3>
-            <p className="mt-4 text-sm">
+            <p className="mt-4 mr-4 text-sm">
               Don't miss out on any of the future updates at CTTPL. Follow, share, subscribe today and stay tuned.
             </p>
             <div className="mt-6 flex space-x-4">

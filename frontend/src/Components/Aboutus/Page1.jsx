@@ -2,7 +2,7 @@ import React from "react"
 import { Phone, Users, Car, Building, MapPin, Calendar } from "lucide-react"
 import Embedded from '../Button/Embedded'
 import Contact from "../Button/Contact"
-import img from '../../images/bus5.png'
+import img from '../../images/about.png'
 
 // Simple Button Component
 function Button({ children, className = "", ...props }) {
@@ -76,12 +76,12 @@ export default function Home() {
                 return (
                   <Card
                     key={index}
-                    className="bg-gray-900 text-white flex items-center space-x-3"
+                    className="bg-[#0A283A] text-white flex items-center space-x-3"
                   >
                     <Icon className="w-6 h-6 text-yellow-400" />
                     <div>
                       <div className="text-xl font-bold">{stat.number}</div>
-                      <div className="text-sm text-gray-300">{stat.label}</div>
+                      <div className="text-xs text-gray-300">{stat.label}</div>
                     </div>
                   </Card>
                 )

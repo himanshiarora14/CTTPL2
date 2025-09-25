@@ -13,7 +13,8 @@ const FleetBestChoice = () => {
     "Chauffeur background verification is conducted through third-party agencies like \"Verifact,\" \"Co-Achieve,\" and \"AuthBridge.\"",
     "A one-week induction training program is provided for all newly recruited chauffeurs by experienced trainers.",
     "Complete records, including police verification, are maintained for every chauffeur.",
-    "Regular counselling sessions are held to address chauffeur concerns and resolve issues proactively. Incentive programs are implemented to motivate chauffeurs and encourage high performance."
+    "Regular counselling sessions are held to address chauffeur concerns and resolve issues proactively.",
+    " Incentive programs are implemented to motivate chauffeurs and encourage high performance."
   ];
 
   // Reusable BulletPoint Component
