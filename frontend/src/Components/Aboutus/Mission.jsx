@@ -29,7 +29,7 @@ const MissionVision = () => {
             <span className="text-red-600">Mission</span>
           </h2>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
+          <div className="space-y-4 text-gray-700 leading-relaxed ">
             <p>
               At <strong>Choudhary Tours &amp; Travels Pvt. Ltd. (CTTPL)</strong>,
               our mission is to deliver safe, reliable, and sustainable
@@ -61,7 +61,7 @@ const MissionVision = () => {
             <span className="text-red-600">Vision</span>
           </h2>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
+          <div className="space-y-4 text-gray-700 leading-relaxed ">
             <p>
               Our vision is to establish CTTPL as a leading force in India's
               transportation industry, recognized for safety, sustainability,

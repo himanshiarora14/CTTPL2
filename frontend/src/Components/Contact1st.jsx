@@ -44,8 +44,8 @@ const Contact1st = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {contactDetails.map((detail, index) => (
               <div key={index} className="bg-[#0A283A] p-6 rounded-lg shadow-lg text-center">
-                <p className="text-xl text-[#FFD166]">{detail.title}</p>
-                <p className="mt-1 text-xl font-semibold text-white break-words">
+                <p className="text-xl  text-[#FFD166]">{detail.title}</p>
+                <p className="mt-1 text-xs  text-white break-words">
                   {detail.info}
                 </p>
               </div>

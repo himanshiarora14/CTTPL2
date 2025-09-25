@@ -8,7 +8,7 @@ const Contact2nd = () => {
         {/* Main Heading */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
           <span className="text-gray-900">Connecting You with</span>
-          <span className="block text-red-600 mt-2">
+          <span className="block text-red-600">
             Comfort and Reliability
           </span>
         </h2>

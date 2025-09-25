@@ -46,14 +46,14 @@ export default function ExploreGallery() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <div className="p-8 md:p-12">
+        <div className="p-8 md:p-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
               <h2 className="text-3xl md:text-5xl font-semibold text-gray-900">
-                Explore Our <span className="text-red-600">Gallery</span>
+                Life at <span className="text-red-600">CTTPL</span>
               </h2>
               <p className="mt-3 text-gray-600 max-w-xl">
-                Moments from our journeys — vehicles, passengers, and events. Click any image to zoom.
+                Moments from our journeys — vehicles, passengers, and events.
               </p>
             </div>
 
