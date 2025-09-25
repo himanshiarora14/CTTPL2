@@ -7,7 +7,6 @@ import OurServices from "./pages/OurServices";
 import ScrollToTop from "../ScrollToTop";
 import SafetyAndTech from "./pages/SafetyAndTech";
 import ContactUs from "./pages/ContactUs";
-import Ourservices from "./Components/Ourservices";
 import FleetOverview from "./pages/FleetOverview";
 import Footer from "./Components/Footer";
 import Careers from "./pages/Careers";
@@ -18,6 +17,7 @@ import EmployeeTransportService from "./Components/EmployeeTransportService";
 import Gallery from "./pages/Gallery";
 import NotFoundPage from "./pages/NotFoundPage";
 import ElectricFleetServices from "./Components/ElectricFleetServices";
+import CarLeasingService from "./pages/CarLeasingService";
 import DedicatedService from "./pages/DedicatedFleetService";
 
 function App() {
@@ -36,11 +36,12 @@ function App() {
         <Route path="/quote" element={<Quote />} />
         <Route path="/structure" element={<OurStructure />} />
         <Route path="/gallery" element={<Gallery />} />
-        
+
         <Route path="/school-fleet" element={<SchoolFleetService />} />
         <Route path="/employee-transport-service" element={<EmployeeTransportService />} />
         <Route path="/electric-fleet-service" element={<ElectricFleetServices />} />
-        <Route path="/dedicated-fleet-service" element={<DedicatedService/>} />
+        <Route path="/dedicated-fleet-service" element={<DedicatedService />} />
+        <Route path="/car-leasing-service" element={<CarLeasingService />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
