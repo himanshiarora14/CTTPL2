@@ -36,7 +36,7 @@ function TechAndAi() {
                 <h2 className="text-4xl font-bold mb-4">
                     <span className="text-yellow-400">Tech & AI</span> Enabled Organisation
                 </h2>
-                <p className="text-gray-200 text-md max-w-4xl mx-auto mb-12 leading-relaxed">
+                <p className="text-gray-200 text-md max-w-5xl mx-auto mb-12 leading-relaxed">
                     CTTPL is a technology-driven leader, pioneering end-to-end automation in the transportation sector. Our advanced systems cover every aspect of operations-from corporate fleet management and HR processes to workshop control and financial oversight-delivering unmatched efficiency and reliability. With built-in features like real-time route optimization, precise scheduling, and live vehicle tracking, our platform ensures smarter, safer journeys. At CTTPL, automation isn't just about technology-it's about creating a seamless, user-friendly ecosystem that enhances safety, accountability, and operational excellence across the board.
                 </p>
 

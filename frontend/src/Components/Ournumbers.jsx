@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Bus } from "lucide-react";
+import { GoPersonFill } from "react-icons/go";
+import { FaCar } from "react-icons/fa";
+import { MdCorporateFare } from "react-icons/md";
+import { BsBusFront } from "react-icons/bs";
 
-/**
- * useCountUp hook
- * end: final number
- * duration: animation duration in ms
- * Returns: [count, ref]
- */
-const useCountUp = (end, duration = 4000) => {
+const useCountUp = (end, duration = 3000) => {
   const [count, setCount] = useState(0);
   const elementRef = useRef(null);
   const hasStarted = useRef(false);
@@ -26,7 +24,6 @@ const useCountUp = (end, duration = 4000) => {
         if (progress < 1) {
           animateFrameId = window.requestAnimationFrame(step);
         } else {
-          // ensure exact final value
           setCount(end);
         }
       };
@@ -41,11 +38,7 @@ const useCountUp = (end, duration = 4000) => {
           startAnimation();
         }
       },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5,
-      }
+      { threshold: 0.5 }
     );
 
     const el = elementRef.current;
@@ -64,7 +57,6 @@ const useCountUp = (end, duration = 4000) => {
 };
 
 function Ournumbers() {
-  // values from your code
   const [experienceCount, experienceRef] = useCountUp(35);
   const [employeesCount, employeesRef] = useCountUp(10000);
   const [vehiclesCount, vehiclesRef] = useCountUp(4312);
@@ -75,43 +67,44 @@ function Ournumbers() {
     {
       value: experienceCount,
       suffix: "+",
-      label: "Years of experience",
+      label: "Years of Experience",
       ref: experienceRef,
+      icon: <Bus className="w-6 h-6 text-yellow-400 mr-2" />,
     },
     {
       value: employeesCount,
       suffix: "+",
       label: "Employees",
       ref: employeesRef,
+      icon: <GoPersonFill className="w-6 h-6 text-yellow-400 mr-2" />,
     },
     {
       value: vehiclesCount,
       suffix: "+",
       label: "Vehicles & Fleet",
       ref: vehiclesRef,
+      icon: <FaCar className="w-6 h-6 text-yellow-400 mr-2" />,
     },
     {
       value: clientsCount,
       suffix: "+",
       label: "Corporate Clients",
       ref: clientsRef,
+      icon: <MdCorporateFare className="w-6 h-6 text-yellow-400 mr-2" />,
     },
     {
       value: toursCount,
       suffix: "+",
-      // you used a <br /> inside the label — keep it if you want a line break
-      label: "Successful <br /> Transportation",
+      label: "Successful Transportation",
       ref: toursRef,
+      icon: <BsBusFront className="w-6 h-6 text-yellow-400 mr-2" />,
     },
   ];
 
   return (
     <div
       className="relative bg-cover bg-center py-16 text-white"
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1650&q=80')",
-      }}
+      style={{ backgroundImage: "url('/techandAI.png')" }}
     >
       <div className="relative max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-4">
@@ -133,18 +126,16 @@ function Ournumbers() {
               ref={stat.ref}
               className="bg-gradient-to-b from-[#014452] to-[#012d38] rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center space-y-3"
             >
-              <Bus className="w-10 h-10 text-yellow-400 mb-3" />
-              <div className="flex flex-col items-center">
-                <p className="text-3xl font-bold text-yellow-400">
-                  {stat.value.toLocaleString()}
-                  {stat.suffix}
-                </p>
-                <p
-                  className="text-gray-200 text-sm mt-1 text-center"
-                  // keep this only if you intentionally want HTML (line breaks)
-                  dangerouslySetInnerHTML={{ __html: stat.label }}
-                />
+              {/* Number with icon inline */}
+              <div className="flex items-center text-3xl font-bold text-white">
+                {stat.icon}
+                {stat.value.toLocaleString()}
+                {stat.suffix}
               </div>
+
+              <p className="text-gray-200 text-sm mt-1 text-center">
+                {stat.label}
+              </p>
             </div>
           ))}
         </div>

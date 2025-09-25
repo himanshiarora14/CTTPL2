@@ -66,6 +66,7 @@ const teams = [
     description:
       "Trained professionals dedicated to providing safe and reliable transportation services, their commitment to safety, punctuality, and professionalism ensure that every journey is a positive experience by representing the company with courtesy and expert diving skills reflects CTTPL's commitment to a quality service.",
   },
+  
 ];
 
 const TeamsSection = () => {

@@ -1,10 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
 import img1 from "../../images/bus6.png";
 import img2 from "../../images/bus7.png";
 import img3 from "../../images/bus8.png";
 import img4 from "../../images/bus9.png";
 import img5 from "../../images/bus10.png";
-import { motion } from "framer-motion";
 
 const services = [
   {
@@ -33,7 +33,7 @@ const services = [
     description:
       "CTTPL’s School Fleet Services ensure the safe and timely transportation of students, prioritizing their security and comfort at every step. Our trained staff and maintained vehicles provide peace of mind to parents and schools alike, ensuring a smooth and dependable daily commute for young learners.",
     img: img4,
-    link: "#",
+    link: "/school-fleet-service",
   },
   {
     title: "Electric Fleet Services",
