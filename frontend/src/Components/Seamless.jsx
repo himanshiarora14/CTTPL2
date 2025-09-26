@@ -20,7 +20,7 @@ function Seamless() {
             </span>
           </div>
 
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.1] mb-6">
             Over<span className="text-red-600"> 35 Years of Experience</span> in Mobility Solutions
           </h1>
 

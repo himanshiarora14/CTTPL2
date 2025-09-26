@@ -53,7 +53,7 @@ export default function ExploreGallery() {
                 Life at <span className="text-red-600">CTTPL</span>
               </h2>
               <p className="mt-3 text-gray-600 max-w-xl">
-                Moments from our journeys — vehicles, passengers, and events.
+                CTTPL isn’t just about travel — it’s about experiences that connect people.
               </p>
             </div>
 

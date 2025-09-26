@@ -13,13 +13,17 @@ const Hero = () => {
                         {/* Badge and Heading */}
                         <div className="flex flex-col gap-4 md:gap-2">
                             <div>
-                                <Embedded text={"TECH-ENABLED TRAVEL"}/> 
+                                <Embedded text={"TECH-ENABLED TRAVEL"} />
                             </div>
 
-                            <h1 className="text-2xl sm:text-[2.2rem] md:text-[2.8rem] lg:text-4xl xl:text-[3.2rem] font-bold leading-tight text-gray-900">
-                                Driving Values,<br />
-                                <span className="text-[#EC221F]">Delivering</span> Results
+                            <h1 className="text-2xl sm:text-[2.2rem] md:text-[2.8rem] lg:text-4xl xl:text-[3.2rem] font-bold leading-[1.1] text-gray-900">
+                                <span className="block">Driving Values,</span>
+                                <span className="block">
+                                    <span className="text-[#EC221F]">Delivering</span> Results
+                                </span>
                             </h1>
+
+
                         </div>
 
                         {/* Description and Button */}
@@ -28,7 +32,7 @@ const Hero = () => {
                                 Experience comfort, reliability, and tech-enabled journeys with India's leading travel partner—trusted by travellers and businesses alike.
                             </p>
 
-                            <Contact/>
+                            <Contact />
 
                         </div>
                     </div>
