@@ -14,8 +14,8 @@ const services = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false); // desktop dropdown
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false); // mobile nested
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((s) => !s);
   const toggleServices = () => setServicesOpen((s) => !s);
@@ -27,8 +27,7 @@ const Navbar = () => {
 
   return (
     <nav role="navigation" className="bg-white text-black p-4 shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex items-center justify-between">
-        {/* Logo */}
+      <div className="container md:mx-auto lg:mx-0 flex items-center justify-between">
         <div className="flex items-center">
           <NavLink
             to="/"
@@ -42,8 +41,8 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6 text-sm mr-6 relative">
+        {/* Changed from md:flex to lg:flex */}
+        <div className="hidden lg:flex items-center space-x-6 text-sm mr-6 relative">
           <NavLink to="/" className={linkClasses}>
             HOME
           </NavLink>
@@ -124,8 +123,8 @@ const Navbar = () => {
           <Quote />
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        {/* Mobile Menu Button - Changed from md:hidden to lg:hidden */}
+        <div className="lg:hidden">
           <button
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
@@ -137,8 +136,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 mt-3" : "max-h-0"}`} aria-hidden={!isOpen}>
+      {/* Mobile Menu - Changed from md:hidden to lg:hidden */}
+      <div className={`lg:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 mt-3" : "max-h-0"}`} aria-hidden={!isOpen}>
         <div className="bg-white shadow-md rounded-md mx-4 p-4 flex flex-col gap-3 items-center">
           <NavLink to="/" onClick={toggleMenu} className={linkClasses}>
             HOME
