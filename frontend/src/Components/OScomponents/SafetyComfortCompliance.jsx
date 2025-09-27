@@ -35,6 +35,27 @@ const features = [
 ];
 
 const SafetyComfortCompliance = () => {
+  const renderCard = (feature, index) => (
+    <div
+      key={index}
+      className="group bg-white rounded-xl shadow-md p-6 flex flex-col gap-3 
+                 transition-all duration-300 hover:bg-[#0A283A] hover:text-white hover:shadow-xl hover:-translate-y-2"
+    >
+      {/* Icon */}
+      <div
+        className="text-slate-700 bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center 
+                   transition-colors duration-300 group-hover:bg-[#F1B301] group-hover:text-black"
+      >
+        {feature.icon}
+      </div>
+
+      <h3 className="text-lg font-semibold">{feature.title}</h3>
+      <p className="text-gray-700 text-sm leading-relaxed group-hover:text-gray-200">
+        {feature.description}
+      </p>
+    </div>
+  );
+
   return (
     <section className="w-full px-6 md:px-16 py-16 bg-[#f0f8fb]">
       {/* Top Section: Left Title + Right 2 Cards */}
@@ -52,39 +73,13 @@ const SafetyComfortCompliance = () => {
 
         {/* Right Side - 2 Cards */}
         <div className="col-span-2 grid md:grid-cols-2 gap-6">
-          {features.slice(0, 2).map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-md p-6 flex flex-col gap-3"
-            >
-              <div className="text-slate-700 bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center">
-                {feature.icon}
-              </div>
-              <h3 className="text-lg font-semibold">{feature.title}</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+          {features.slice(0, 2).map(renderCard)}
         </div>
       </div>
 
       {/* Bottom Section: 3 Cards */}
       <div className="grid md:grid-cols-3 gap-6">
-        {features.slice(2).map((feature, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-md p-6 flex flex-col gap-3"
-          >
-            <div className="text-slate-700 bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center">
-              {feature.icon}
-            </div>
-            <h3 className="text-lg font-semibold">{feature.title}</h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              {feature.description}
-            </p>
-          </div>
-        ))}
+        {features.slice(2).map(renderCard)}
       </div>
     </section>
   );

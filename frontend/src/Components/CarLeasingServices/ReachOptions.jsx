@@ -6,13 +6,13 @@ const cardData = [
     title: "Reach + Options",
     description:
       "You can lease a self-drive car that suits your needs in states like Delhi, Uttar Pradesh, Haryana, Tamil Nadu, Karnataka, Telangana, Maharashtra, Madhya Pradesh, and more. Choose from a variety of models such as Swift, Innova, Crysta, Baleno, i10, i20, Etios, Creta, and others.",
-    image: {img1},
+    image: img1,
   },
   {
     title: "Tech + Support",
     description:
       "Assistance is available 24/7. Our team managing back-end operations at CTTPL is always ready to address your queries and resolve any issues you encounter. We provide continuous support to our clients, and we're even available to help navigate the complex streets of a new city or country.",
-    image: {img2},
+    image: img2,
   },
 ];
 
