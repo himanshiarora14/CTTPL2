@@ -7,7 +7,6 @@ import Fleets from '../Components/Fleets';
 import DS from './OScomponents/DS';
 import EF from './EF';
 import SafetyComfortCompliance from './OScomponents/SafetyComfortCompliance';
-
 function ElectricFleetServices() {
 
     return (
@@ -23,9 +22,10 @@ function ElectricFleetServices() {
             <SafetyComfortCompliance />
             <FleetBestChoice />
             <Fleets />
+            
             <br />
             <br />
-
+            
             <Getintouch />
         </>
     );
