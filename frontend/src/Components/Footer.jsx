@@ -6,12 +6,12 @@ const Footer = () => {
   const importantLinks = [
     { name: 'About Us', href: '/about' },
     { name: 'Employee Portal', href: '/safety' },
-    { name: 'Safety & Tech', href: '#' },
-    { name: 'Car Leasing', href: '#' },
+    { name: 'Safety & Tech', href: '/safety' },
+    { name: 'Car Leasing', href: '/car-leasing' },
     { name: 'News & Blogs', href: '#' },
-    { name: 'School Fleet', href: '#' },
-    { name: 'Dedicated Fleet', href: '#' },
-    { name: 'Electric Fleet', href: '#' },
+    { name: 'School Fleet', href: '/school-fleet' },
+    { name: 'Dedicated Fleet', href: '/dedicated-fleet-service' },
+    { name: 'Electric Fleet', href: '/electric-fleet-service' },
   ];
 
   return (
@@ -49,13 +49,13 @@ const Footer = () => {
               Don't miss out on any of the future updates at CTTPL. Follow, share, subscribe today and stay tuned.
             </p>
             <div className="mt-6 flex space-x-4">
-              <a href="#" aria-label="LinkedIn" className="text-[#FFD166] hover:text-white transition-colors duration-300">
+              <a href="https://www.linkedin.com/company/cttplofficial/" aria-label="LinkedIn" className="text-[#FFD166] hover:text-white transition-colors duration-300">
                 <FaLinkedin size={24} />
               </a>
-              <a href="#" aria-label="WhatsApp" className="text-[#FFD166] hover:text-white transition-colors duration-300">
+              <a href="https://api.whatsapp.com/send?phone=918527600262&text=Hello%20There%2C%20%0A%0AI%20have%20visited%20your%20website%20www.choudharytours.in%20%0AI%20would%20like%20to%20know%20more%20about%20your%20services.%20%0AKindly%20share%20your%20company%27s%20profile.%20%0A%0AThank%20You%20" aria-label="WhatsApp" className="text-[#FFD166] hover:text-white transition-colors duration-300">
                 <FaWhatsapp size={24} />
               </a>
-              <a href="#" aria-label="Google" className="text-[#FFD166] hover:text-white transition-colors duration-300">
+              <a href="https://choudharytours.in/" aria-label="Google" className="text-[#FFD166] hover:text-white transition-colors duration-300">
                 <FaGoogle size={24} />
               </a>
             </div>
