@@ -5,7 +5,7 @@ import logo from "../images/logo2.png";
 const Footer = () => {
   const importantLinks = [
     { name: 'About Us', href: '/about' },
-    { name: 'Employee Portal', href: '/safety' },
+    { name: 'Employee Portal', href: 'employee-transport-service' },
     { name: 'Safety & Tech', href: '/safety' },
     { name: 'Car Leasing', href: '/car-leasing' },
     { name: 'News & Blogs', href: '#' },
