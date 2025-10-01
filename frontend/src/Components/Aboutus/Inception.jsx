@@ -3,7 +3,7 @@ import React from "react";
 export default function Inception() {
   return (
     <section className="max-w-4xl mx-auto text-center  py-12">
-      <h1 className="text-5xl font-bold mb-4">
+      <h1 className="text-5xl font-semibold mb-4">
         Inception <span className="text-red-600">- 1990</span>
       </h1>
       <p className="text-md text-gray-800 leading-relaxed">

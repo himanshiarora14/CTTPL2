@@ -16,7 +16,7 @@ const Hero = () => {
                                 <Embedded text={"TECH-ENABLED TRAVEL"} />
                             </div>
 
-                            <h1 className="text-2xl sm:text-[2.2rem] md:text-[2.8rem] lg:text-4xl xl:text-[3.2rem] font-bold leading-[1.1] text-gray-900">
+                            <h1 className="text-2xl sm:text-[2.2rem] md:text-[2.8rem] lg:text-4xl xl:text-[3.2rem] font-semibold leading-[1.1] text-gray-900">
                                 <span className="block">Driving Values,</span>
                                 <span className="block">
                                     <span className="text-[#EC221F]">Delivering</span> Results

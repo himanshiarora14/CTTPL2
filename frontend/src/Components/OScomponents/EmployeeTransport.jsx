@@ -9,7 +9,7 @@ const EmployeeTransport = () => {
        <img
   src={image}
   alt="Employee Transport Bus"
-  className="w-full max-w-[500px] max-h-[350px] object-contain rounded-2xl"
+  className="w-full max-w-[500px] max-h-[410px] object-contain rounded-2xl"
 />
 
 

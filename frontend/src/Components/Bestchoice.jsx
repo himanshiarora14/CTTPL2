@@ -57,7 +57,7 @@ export default function Choice() {
     <>
       <div className="flex flex-col md:flex-row items-start gap-12 px-8 py-16 max-w-6xl mx-auto">
         <div className="md:w-1/2">
-          <h2 className="text-5xl font-bold ">
+          <h2 className="text-5xl font-semibold ">
             What Makes <span className="text-red-600">CTTPL</span> Your Best
             Choice?
           </h2>

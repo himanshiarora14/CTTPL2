@@ -58,7 +58,7 @@ const FleetBestChoice = () => {
       <div className="max-w-5xl mx-auto">
         {/* Main Heading */}
         <div className="text-center mb-8 lg:mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black mb-6">
             What Makes <span className="text-[#EC221F]">CTTPL</span> Your Best Choice?
           </h1>
 

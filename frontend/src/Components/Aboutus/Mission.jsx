@@ -24,7 +24,7 @@ const MissionVision = () => {
             VALUE DRIVEN
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
             <span className="text-gray-900">Our </span>
             <span className="text-red-600">Mission</span>
           </h2>
@@ -56,7 +56,7 @@ const MissionVision = () => {
             VALUE DRIVEN
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
             <span className="text-gray-900">Our </span>
             <span className="text-red-600">Vision</span>
           </h2>

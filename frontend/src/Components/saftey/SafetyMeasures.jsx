@@ -263,7 +263,7 @@ const SafetyMeasures = () => {
         <div className="flex flex-col gap-8 lg:flex-row items-center lg:gap-16">
           {/* Left Sidebar */}
           <div className="w-full lg:w-1/3">
-            <h1 className="mb-6 text-4xl font-bold text-right sm:text-5xl lg:mb-8">
+            <h1 className="mb-6 text-4xl font-semibold text-right sm:text-5xl lg:mb-8">
               <span className="text-red-500">Safety</span><br />
               <span className="text-black">Measures</span>
             </h1>

@@ -69,7 +69,7 @@ const Scc = () => {
         
         {/* Content */}
         <div className="flex-1">
-          <h3 className="text-xl lg:text-2xl font-bold text-black mb-4">
+          <h3 className="text-xl lg:text-2xl font-semibold text-black mb-4">
             {title}
           </h3>
           <p className="text-gray-700 text-sm lg:text-base leading-relaxed">
@@ -87,7 +87,7 @@ const Scc = () => {
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-12 mb-8 lg:mb-12">
           {/* Heading Section */}
           <div className="lg:flex-shrink-0 mb-8 lg:mb-0">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight">
               <span className="text-[#EC221F]">Safety,</span>
               <br />
               <span className="text-black">Comfort,</span>
