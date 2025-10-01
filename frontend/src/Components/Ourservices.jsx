@@ -74,7 +74,7 @@ const Ourservices = () => {
   return (
     <div className="bg-[#f0f3f6] py-16 px-4 sm:px-6 lg:px-20">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-3xl sm:text-5xl font-bold text-gray-800">
+        <h2 className="text-3xl sm:text-5xl font-semibold text-gray-800">
           Our Services, <span className="text-[#e74c3c]">One Need</span>
         </h2>
         <p className="mt-4 text-md text-gray-600 max-w-4xl mx-auto">

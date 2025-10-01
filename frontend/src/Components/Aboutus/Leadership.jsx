@@ -18,7 +18,7 @@ function CompanyStructure() {
 
         {/* Text */}
         <div className="flex-1 flex flex-col justify-center h-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-8">
             Company <span className="text-red-500">Structure</span> & Leadership
           </h2>
           <p className="mb-8 text-md">

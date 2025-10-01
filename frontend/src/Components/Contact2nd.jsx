@@ -6,7 +6,7 @@ const Contact2nd = () => {
       <div className="max-w-5xl mx-auto text-center">
         
         {/* Main Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.1]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1]">
           <span className="text-gray-900">Connecting You with</span>
           <span className="block text-red-600">
             Comfort and Reliability

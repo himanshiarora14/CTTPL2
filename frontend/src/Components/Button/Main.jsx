@@ -14,9 +14,9 @@ const Main = ({ embedded, heading, paragraph, image }) => {
 
 
           <Embedded text={embedded} />
-          <h1 className="text-5xl font-bold mb-4 pb-2">{heading}</h1>
+          <h1 className="text-5xl font-semibold mb-4 pb-2">{heading}</h1>
           <div className="md:w-110">
-            <p className="text-lg  text-gray-700 mb-6">{paragraph}</p>
+            <p className="text-md  text-gray-700 mb-6">{paragraph}</p>
           </div>
 
           <Contact />
