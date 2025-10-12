@@ -1,11 +1,11 @@
 import React from 'react';
 
 // Replace these with the actual paths to your 5 images
-import img1 from '../../images/Gallery/c1.jpg';
-import img2 from '../../images/Gallery/c2.jpg';
-import img3 from '../../images/Gallery/c3.jpg';
-import img4 from '../../images/Gallery/c4.jpg';
-import img5 from '../../images/Gallery/c5.jpg';
+import img1 from '../../images/Gallery/C1.jpg';
+import img2 from '../../images/Gallery/C2.jpg';
+import img3 from '../../images/Gallery/C3.jpg';
+import img4 from '../../images/Gallery/C4.jpg';
+import img5 from '../../images/Gallery/C5.jpg';
 
 const YogaDayCelebration = ({
   title = "Yoga day celebration",
