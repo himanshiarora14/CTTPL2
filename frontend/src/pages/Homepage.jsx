@@ -4,7 +4,7 @@ import Fleets from "../Components/Fleets";
 import Seamless from "../Components/Seamless";
 import Getintouch from "../Components/Getintouch";
 import Choice from "../Components/Bestchoice";
-import Hero from "../components/Hero";
+import Hero from "../Components/Hero";
 import OurClient from "../components/OurClient";
 import Ournumbers from "../Components/Ournumbers";
 import OurPresence from "../components/OurPresence";
