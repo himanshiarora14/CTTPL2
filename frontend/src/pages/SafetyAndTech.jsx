@@ -1,5 +1,5 @@
 import React from 'react'
-import Landing from '../Components/saftey/landing'
+import Landing from '../Components/saftey/Landing'
 import SafetyMeasures from '../Components/saftey/SafetyMeasures'
 import TechAndAi from '../Components/saftey/TechAndAi'
 import Choice from '../Components/Bestchoice'
