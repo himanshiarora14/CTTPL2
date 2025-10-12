@@ -107,7 +107,7 @@ const OurPresence = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes scroll {
           from {
             transform: translateX(0);
