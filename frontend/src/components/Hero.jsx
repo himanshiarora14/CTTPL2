@@ -1,5 +1,5 @@
 // import Contact from "./Button/Contact"
-import Contact2 from './Button/Contact2'
+import Contact2 from './Button/Contact2.jsx'
 import Embedded from '../Components/Button/Embedded'
 
 const Hero = () => {
