@@ -5,7 +5,7 @@ import TeamsSection from '../Components/ourStructure/TeamsCard'
 import ReportingStructure from '../Components/ourStructure/ReportingStructure'
 import BestChoice from '../Components/Bestchoice'
 import Fleets from '../Components/Fleets'
-import OurPresence from '../components/OurPresence'
+import OurPresence from '../Components/OurPresence'
 import ContactSection from '../Components/Getintouch'
 
 const OurStructure = () => {
