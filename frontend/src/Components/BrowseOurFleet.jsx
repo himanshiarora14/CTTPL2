@@ -1,5 +1,6 @@
 import React from "react";
-import Bus21 from "../images/Bus21.png";
+// import Bus21 from "../images/Bus21.png";
+import Bus21 from "../images/bus21.png"
 import EV from "../images/electric.png";
 import luxury from "../images/luxury.png";
 import suv from "../images/suv.png";
