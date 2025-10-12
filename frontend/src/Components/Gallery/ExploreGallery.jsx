@@ -3,11 +3,11 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { FiSearch, FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-import img1 from '../../images/Gallery/d4.jpg'
+import img1 from '../../images/Gallery/D4.jpg'
 import img2 from '../../images/Gallery/b1.jpg'
-import img3 from '../../images/Gallery/e2.jpg'
-import img4 from '../../images/Gallery/d2.jpg'
-import img5 from '../../images/Gallery/e4.jpg'
+import img3 from '../../images/Gallery/E2.jpg'
+import img4 from '../../images/Gallery/D2.jpg'
+import img5 from '../../images/Gallery/E4.jpg'
 
 const images = [
   { src: img1, alt: "Passengers boarding a comfortable bus", caption: "Comfort & Safety" },
