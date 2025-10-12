@@ -6,8 +6,7 @@ import Choice from '../Components/Bestchoice'
 import Fleets from '../Components/Fleets'
 // import OurPresence from '../components/OurPresence'
 // import OurPresence from '../Components/OurPresence'
-import OurPresence from "../Components/OurPresence"
-
+import OurPresence from "../Components/OurPresence.jsx"
 // import ContactSection from '../components/Getintouch'
 import ContactSection from '../Components/Getintouch'
 import Footer from '../Components/Footer'
