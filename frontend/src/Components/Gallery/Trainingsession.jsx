@@ -1,8 +1,8 @@
 import React from 'react';
-import img1 from '../../images/Gallery/d1.jpg';
-import img2 from '../../images/Gallery/d2.jpg';
-import img3 from '../../images/Gallery/d3.jpg';
-import img4 from '../../images/Gallery/d4.jpg';
+import img1 from '../../images/Gallery/D1.jpg';
+import img2 from '../../images/Gallery/D2.jpg';
+import img3 from '../../images/Gallery/D3.jpg';
+import img4 from '../../images/Gallery/D4.jpg';
 
 const Session= ({
   title = "Training session of supervisor",
