@@ -7,7 +7,7 @@ import Choice from "../Components/Bestchoice";
 import Hero from "../Components/Hero";
 import OurClient from "../components/OurClient";
 import Ournumbers from "../Components/Ournumbers";
-import OurPresence from "../components/OurPresence";
+import OurPresence from "../Components/OurPresence";
 import Comments from "../Components/Comments";
 import OnSpotRentalsForm from '../Components/Booking';
 import FleetSection from "../Components/BrowseOurFleet";
