@@ -1,6 +1,6 @@
 // import Contact from "./Button/Contact"
 // import Contact2 from './Button/Contact2.jsx'
-import Contact2 from './Button/Contact2'
+import Contact from './Button/Contact.jsx'
 import Embedded from '../Components/Button/Embedded'
 
 const Hero = () => {
@@ -34,7 +34,7 @@ const Hero = () => {
                                 Experience comfort, reliability, and tech-enabled journeys with India's leading travel partner—trusted by travellers and businesses alike.
                             </p>
 
-                            <Contact2 />
+                            <Contact />
 
                         </div>
                     </div>
