@@ -6,8 +6,9 @@ import Choice from '../Components/Bestchoice'
 import Fleets from '../Components/Fleets'
 // import OurPresence from '../components/OurPresence'
 // import OurPresence from '../Components/OurPresence'
-import OurPresence from "../Components/OurPresence.jsx"
+// import OurPresence from "../Components/OurPresence.jsx"
 // import ContactSection from '../components/Getintouch'
+import Ourpresence2 from '../Components/Ourpresence2'
 import ContactSection from '../Components/Getintouch'
 import Footer from '../Components/Footer'
 
@@ -20,7 +21,7 @@ const SafteyAndTech = () => {
        <TechAndAi/>
        <Choice/>
        <Fleets/>
-       <OurPresence/>
+       <Ourpresence2/>
        <ContactSection/>
       </div>
   )
