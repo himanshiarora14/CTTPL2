@@ -12,9 +12,10 @@ const teamMembers = [
   { name: "Mr. Sandeep Choudhary", title: "Managing Director", imageUrl: img4 },
   { name: "Mr. Rajeev Choudhary", title: "Chief Executive Officer", imageUrl: img3 },
   { name: "Mr. Chandradeep Tamta", title: "Chief Operating Officer", imageUrl: img2 },
+  { name: "Anju Choudhary", title: "Chief Financial Officer", imageUrl: img1 },
   { name: "Col. Ashok Prabhakar", title: "Chief Training Officer", imageUrl: null },
   { name: "Mr. Amit Tomar", title: "CBO and Director - Operations", imageUrl: null },
-  { name: "Anju Choudhary", title: "Chief Financial Officer", imageUrl: img1 }
+  
 ];
 
 const Team = () => {
