@@ -8,7 +8,6 @@ const Footer = () => {
     { name: 'Employee Portal', href: 'employee-transport-service' },
     { name: 'Safety & Tech', href: '/safety' },
     { name: 'Car Leasing', href: '/car-leasing' },
-    { name: 'News & Blogs', href: '#' },
     { name: 'School Fleet', href: '/school-fleet' },
     { name: 'Dedicated Fleet', href: '/dedicated-fleet-service' },
     { name: 'Electric Fleet', href: '/electric-fleet-service' },

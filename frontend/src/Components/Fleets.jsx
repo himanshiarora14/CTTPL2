@@ -8,12 +8,12 @@ const Fleets = () => {
             <div className="container mx-auto px-4 flex flex-col md:gap-4 xl:gap-0 xl:flex-row items-center">
                 
                 {/* Left content */}
-                <div className="w-full xl:w-1/2 md:pr-10 p-6 sm:p-8 md:p-8 lg:h-100 bg-gray-100 rounded-2xl md:rounded-b-none md:rounded-t-none xl:rounded-tl-4xl xl:rounded-bl-4xl">
+                <div className="w-full xl:w-1/2 md:pr-10 p-6 sm:p-8 md:p-8 lg:h-100 bg-[#F3F9F9] rounded-2xl md:rounded-b-none md:rounded-t-none xl:rounded-tl-4xl xl:rounded-bl-4xl">
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-4 pb-4 md:pb-4">
                         Ready to Experience <br />
                         <span className="text-red-500">Seamless </span>Travel?
                     </h2>
-                    <p className="text-base sm:text-lg text-gray-700 mb-6">
+                    <p className="text-base sm:text-md text-gray-700 mb-6">
                         Join thousands of satisfied travelers who trust Chaudhary Tours & Travels Pvt. Ltd. (CTTPL)
                         for safe, affordable, and tech-enabled mobility solutions. With 35+ years of expertise and
                         a fleet of 4,000+ vehicles, we're here to make your journeys comfortable and stress-free.

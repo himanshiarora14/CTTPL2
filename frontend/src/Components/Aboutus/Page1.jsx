@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Phone, Users, Car, Building, MapPin, Calendar } from "lucide-react";
 import Embedded from "../Button/Embedded";
 import Contact from "../Button/Contact";
-import img from "../../images/about.png";
+import img from "../../images/about1.png";
 
 // Simple Button Component
 function Button({ children, className = "", ...props }) {

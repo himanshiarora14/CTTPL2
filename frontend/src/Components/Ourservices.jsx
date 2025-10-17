@@ -65,7 +65,8 @@ const Ourservices = () => {
         </Link>
         <div className="bg-[#0A283A] p-2 rounded-full cursor-pointer transition-colors duration-200 
                         group-hover:bg-[#eab308]">
-          <FaArrowRight className="text-white group-hover:text-black" />
+          <Link to={service.link}> <FaArrowRight className="text-white group-hover:text-black" /></Link>
+
         </div>
       </div>
     </div>
@@ -78,7 +79,7 @@ const Ourservices = () => {
           Our Services, <span className="text-[#e74c3c]">One Need</span>
         </h2>
         <p className="mt-4 text-md text-gray-600 max-w-4xl mx-auto">
-          At Choudhary Tours & Travels Pvt. Ltd. (CTTPL), we have been a trusted name in the industry for over 35 years, offering comprehensive nationwide services in tours, cabs, and fleet management. Whether you're looking for safe and reliable corporate transportation, customizable tour packages, or efficient fleet solutions, our vast experience and cutting-edge technology ensure smooth and hassle-free journeys. With a fleet strength of 4,000+ vehicles, we provide top-notch service tailored to meet the unique needs of businesses and individuals alike. 
+          At Choudhary Tours & Travels Pvt. Ltd. (CTTPL), we have been a trusted name in the industry for over 35 years, offering comprehensive nationwide services in tours, cabs, and fleet management. Whether you're looking for safe and reliable corporate transportation, customizable tour packages, or efficient fleet solutions, our vast experience and cutting-edge technology ensure smooth and hassle-free journeys. With a fleet strength of 4,000+ vehicles, we provide top-notch service tailored to meet the unique needs of businesses and individuals alike.
         </p>
       </div>
 

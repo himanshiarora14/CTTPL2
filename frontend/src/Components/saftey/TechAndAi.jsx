@@ -33,33 +33,30 @@ function TechAndAi() {
             }}
         >
             <div className="relative max-w-6xl mx-auto px-6 text-center">
-                <h2 className="text-4xl font-bold mb-4">
+                <h2 className="text-5xl font-bold mb-6 mt-4">
                     <span className="text-yellow-400">Tech & AI</span> Enabled Organisation
                 </h2>
                 <p className="text-gray-200 text-md max-w-5xl mx-auto mb-12 leading-relaxed">
                     CTTPL is a technology-driven leader, pioneering end-to-end automation in the transportation sector. Our advanced systems cover every aspect of operations-from corporate fleet management and HR processes to workshop control and financial oversight-delivering unmatched efficiency and reliability. With built-in features like real-time route optimization, precise scheduling, and live vehicle tracking, our platform ensures smarter, safer journeys. At CTTPL, automation isn't just about technology-it's about creating a seamless, user-friendly ecosystem that enhances safety, accountability, and operational excellence across the board.
                 </p>
 
-                {/* Stats Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
                     {cardData.map((card, index) => (
                         <div
                             key={index}
-                            className="bg-gradient-to-b from-[#014452] to-[#012d38] rounded-2xl p-2 shadow-lg border border-gray-700/20 relative overflow-hidden text-left"
+                            className="bg-gradient-to-b from-[#014452] to-[#012d38] rounded-2xl p-4 shadow-lg pr-6 border border-gray-700/20 relative overflow-hidden text-left"
                         >
-                            {/* Large Background Number */}
                             <div className="absolute top-2 left-4">
-                                <span className="text-yellow-400/20 text-6xl sm:text-8xl font-bold leading-none select-none">
+                                <span className="text-yellow-400/20 text-4xl sm:text-7xl font-bold leading-none select-none">
                                     {card.number}
                                 </span>
                             </div>
                             
-                            {/* Content */}
-                            <div className="relative z-10 pt-12 mt-8 sm:mt-12">
+                            <div className="relative z-10 pt-12 mt-8 sm:mt-6">
                                 <h3 className="text-white text-lg sm:text-md font-semibold mb-3">
                                     {card.title}
                                 </h3>
-                                <p className="text-gray-300 text-xs sm:text-base leading-relaxed">
+                                <p className="text-gray-300 text-xs leading-relaxed">
                                     {card.description}
                                 </p>
                             </div>

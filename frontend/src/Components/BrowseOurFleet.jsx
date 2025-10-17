@@ -21,7 +21,7 @@ export default function FleetSection() {
                 <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
                     Browse Our <span className="text-red-500">Fleet</span>
                 </h2>
-                <p className="mt-3 text-md md:text-base text-gray-600 max-w-3xl mx-auto">
+                <p className="mt-3 text-md text-gray-600 max-w-4xl mx-auto">
                     Choose from our wide range of well-maintained vehicles to match your corporate transport needs.
                 </p>
 

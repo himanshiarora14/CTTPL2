@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion'; // Import motion from framer-motion
 
 const FleetBestChoice = () => {
   // Data arrays for clean, scalable code using map method
@@ -17,33 +18,57 @@ const FleetBestChoice = () => {
     " Incentive programs are implemented to motivate chauffeurs and encourage high performance."
   ];
 
-  // Reusable BulletPoint Component
+  const listContainerVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5, 
+      },
+    },
+  };
+
+  const listItemVariants = {
+    hidden: { x: -50, opacity: 0 }, 
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring', 
+        stiffness: 90,
+      },
+    },
+  };
+
   const BulletPoint = ({ text }) => (
-    <li className="flex items-start mb-4">
+    <motion.li variants={listItemVariants} className="flex items-start mb-4">
       <div className="flex-shrink-0 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[8px] border-b-[#EC221F] rotate-90 mt-2 mr-4"></div>
       <span className="text-gray-700 text-sm lg:text-base leading-relaxed flex-1">
         {text}
       </span>
-    </li>
+    </motion.li>
   );
 
-  // Reusable Section Component (with h-full for equal heights)
   const Section = ({ points, bgColor }) => (
     <div className={`${bgColor} rounded-2xl p-6 lg:p-8 relative h-full`}>
-      {/* Red vertical bar */}
       <div className="absolute left-0 top-6 bottom-6 w-1 bg-[#EC221F] rounded-r"></div>
 
       <div className="ml-6">
-        <ul className="space-y-4">
+        <motion.ul
+          className="space-y-4"
+          variants={listContainerVariants}
+          initial="hidden"
+          whileInView="visible" 
+          viewport={{ once: true, amount: 0.3 }}
+        >
           {points.map((point, index) => (
             <BulletPoint key={index} text={point} />
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </div>
   );
 
-  // Reusable Section Heading Component
   const SectionHeading = ({ title, titleHighlight }) => (
     <h3 className="text-xl lg:text-2xl font-bold mb-6 text-center">
       <span className="block">
@@ -56,13 +81,11 @@ const FleetBestChoice = () => {
   return (
     <div className="w-full bg-white px-10 py-8 lg:py-10">
       <div className="max-w-5xl mx-auto">
-        {/* Main Heading */}
         <div className="text-center mb-8 lg:mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black mb-6">
             What Makes <span className="text-[#EC221F]">CTTPL</span> Your Best Choice?
           </h1>
 
-          {/* Description */}
           <p className="text-gray-700 text-sm lg:text-base leading-relaxed max-w-6xl mx-auto">
             Choudhary Tours & Travels Pvt. Ltd. (CTTPL) has proudly served over 100,000 satisfied end users across the nation, conducting
             10,000+ tours and trips with an impressive fleet strength of 4,000+ vehicles. Choose Choudhary Tours & Travels Pvt. Ltd. (CTTPL)
@@ -71,9 +94,7 @@ const FleetBestChoice = () => {
           </p>
         </div>
 
-        {/* Two Column Grid with equal height */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
-          {/* Quality Compliance Section */}
           <div className="flex flex-col">
             <SectionHeading
               title="and Audits"
@@ -82,7 +103,6 @@ const FleetBestChoice = () => {
             <Section points={compliancePoints} bgColor="bg-[#FBF3E4]" />
           </div>
 
-          {/* Chauffeur Management Section */}
           <div className="flex flex-col">
             <SectionHeading
               title="Management"

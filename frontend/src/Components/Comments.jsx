@@ -4,13 +4,6 @@ import React from "react";
 const testimonials = [
   {
     text:
-      "Join thousands of satisfied travelers who trust Choudhary Tours & Travels Pvt. Ltd. (CTTPL) for safe, affordable, and tech-enabled mobility solutions. With 35+ years of expertise and a fleet of 4,000+ vehicles, we're here to make your journeys comfortable and stress-free. Contact us today and let's plan your next adventure!",
-    author: "Anju Choudhary",
-    role: "Chief Technical Officer, CTTPL",
-    rating: 2,
-  },
-  {
-    text:
       "Reliable service, friendly drivers and great vehicles. Highly recommended for corporate travel and tours.",
     author: "Rohan Verma",
     role: "Operations Manager",

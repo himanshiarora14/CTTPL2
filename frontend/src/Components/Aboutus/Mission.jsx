@@ -1,14 +1,36 @@
 import React from "react";
+import { motion } from "framer-motion";
 import img1 from '../../images/bus3.png'
 import img2 from '../../images/bus4.png'
+
+const containerVariant = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.12 } },
+};
+
+const slideFromLeft = {
+  hidden: { x: -80, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { type: "spring", stiffness: 100, damping: 14 } },
+};
+
+const slideFromRight = {
+  hidden: { x: 80, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { type: "spring", stiffness: 100, damping: 14 } },
+};
 
 const MissionVision = () => {
   return (
     <div className="max-w-5xl mx-auto px-6 py-12 space-y-15">
       {/* Mission - image left, text right */}
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        {/* Image */}
-        <div className="w-full">
+      <motion.div
+        className="grid md:grid-cols-2 gap-12 items-center"
+        variants={containerVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        {/* Image (slide from left) */}
+        <motion.div className="w-full" variants={slideFromLeft}>
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <img
               src={img1}
@@ -16,10 +38,10 @@ const MissionVision = () => {
               className="w-full h-80 sm:h-96 md:h-[20rem] lg:h-[22rem] object-cover"
             />
           </div>
-        </div>
+        </motion.div>
 
-        {/* Text */}
-        <div className="space-y-4">
+        {/* Text (slide from right) */}
+        <motion.div className="space-y-2" variants={slideFromRight}>
            <span className="inline-block px-3 py-1 text-xs font-semibold border-2 tracking-wide rounded-xl border-[#B8DDD9] text-black">
             VALUE DRIVEN
           </span>
@@ -45,13 +67,19 @@ const MissionVision = () => {
               contributing to a greener and safer future.
             </p>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Vision - text left, image right */}
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        {/* Text */}
-        <div className="space-y-4">
+      <motion.div
+        className="grid md:grid-cols-2 gap-12 items-center"
+        variants={containerVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        {/* Text (slide from left) */}
+        <motion.div className="space-y-2" variants={slideFromLeft}>
           <span className="inline-block px-3 py-1 text-xs font-semibold border-2 tracking-wide rounded-xl border-[#B8DDD9] text-black">
             VALUE DRIVEN
           </span>
@@ -76,10 +104,10 @@ const MissionVision = () => {
               mobility solutions.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Image (right) */}
-        <div className="w-full">
+        {/* Image (slide from right) */}
+        <motion.div className="w-full" variants={slideFromRight}>
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <img
               src={img2}
@@ -87,8 +115,8 @@ const MissionVision = () => {
               className="w-full h-80 sm:h-96 md:h-[20rem] lg:h-[22rem] object-cover"
             />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

@@ -1,22 +1,20 @@
 import React from "react";
 import img from '../../images/image.png'
+import { HiArrowRight } from "react-icons/hi";
 
 function CompanyStructure() {
   return (
     <div className="min-h-screen py-12 px-4 bg-white flex flex-col items-center">
-      {/* Structure Section */}
       <div className="max-w-5xl w-full flex flex-col md:flex-row gap-12 mb-12 items-stretch">
-        
-        {/* Image */}
+
         <div className="flex-1 flex">
           <img
             src={img}
             alt="Bus"
-            className="rounded-xl w-full h-auto object-cover" // 👈 fixed height to match text
+            className="rounded-xl w-full h-auto object-cover" 
           />
         </div>
 
-        {/* Text */}
         <div className="flex-1 flex flex-col justify-center h-auto">
           <h2 className="text-4xl md:text-5xl font-semibold mb-8">
             Company <span className="text-red-500">Structure</span> & Leadership
@@ -36,28 +34,16 @@ function CompanyStructure() {
             highest standards of service and safety.
           </p>
 
-          <div className="flex items-center space-x-3 mt-8">
-            <a href="/structure">
-              <button className="bg-red-500 text-white font-semibold py-2 px-6 rounded-lg text-sm hover:bg-red-600 transition duration-300">
+
+          <div className="flex items-center gap-3 mt-8">
+            <a href="/structure" className="flex items-center">
+              <button className="bg-red-500 text-white font-semibold py-2 px-6 rounded-lg text-sm hover:bg-red-600 transition duration-300 flex items-center">
                 Know More
               </button>
+              <button className="bg-red-500 text-white font-semibold ml-3 p-2 rounded-full hover:bg-red-600 transition duration-300 flex items-center justify-center">
+                <HiArrowRight className="text-white text-lg" />
+              </button>
             </a>
-            <button className="bg-red-500 text-white font-semibold p-2 rounded-full hover:bg-red-600 transition duration-300">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </div>
