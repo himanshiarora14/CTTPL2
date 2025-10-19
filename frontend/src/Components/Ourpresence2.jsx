@@ -7,22 +7,22 @@ const cards = [
     img: "/noida_up.png",
   },
   {
-    city: "Gurugram, HR",
+    city: "Gurugram,HR",
     address: "25, HUDA Market, Opposite KOD, Sector – 29, Gurugram – 122001",
     img: "/gurugram_hr.png",
   },
   {
-    city: "Chennai, TN",
+    city: "Chennai,TN",
     address: "No. 185, Velachery Main Road, Selaiyur, Chennai – 600073",
     img: "/chennai_tn.png",
   },
   {
-    city: "Bangalore, KA",
+    city: "Bangalore,KA",
     address: "9th 10th Cross, Vinayaka Layout, Bhattarahalli Bangalore – 560049",
     img: "/banglore_ka.png",
   },
   {
-    city: "Hyderabad, TL",
+    city: "Hyderabad,TL",
     address: "Villa # 455, Rainbow Meadows, Patelguda, Hyderabad – 502319",
     img: "/hydrabad.png",
   },
