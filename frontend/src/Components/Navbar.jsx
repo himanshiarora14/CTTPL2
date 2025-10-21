@@ -21,8 +21,7 @@ const Navbar = () => {
   const toggleServices = () => setServicesOpen((s) => !s);
 
   const linkClasses = ({ isActive }) =>
-    `hover:text-blue-950 transition duration-200 ${
-      isActive ? "text-[#e42313] font-bold underline-offset-4" : ""
+    `hover:text-blue-950 transition duration-200 ${isActive ? "text-[#e42313] font-bold underline-offset-4" : ""
     }`;
 
   return (
@@ -41,7 +40,6 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        {/* Changed from md:flex to lg:flex */}
         <div className="hidden lg:flex items-center space-x-6 text-sm mr-6 relative">
           <NavLink to="/" className={linkClasses}>
             HOME
@@ -53,13 +51,11 @@ const Navbar = () => {
             FLEET OVERVIEW
           </NavLink>
 
-          {/* OUR SERVICES dropdown (desktop) - NavLink + chevron */}
           <div
             className="relative"
-            onMouseLeave={() => setServicesOpen(false)} // close when leaving whole block
+            onMouseLeave={() => setServicesOpen(false)}
           >
             <div className="flex items-center gap-2 group">
-              {/* Main link to our services page */}
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
@@ -73,7 +69,6 @@ const Navbar = () => {
                 OUR SERVICES
               </NavLink>
 
-              {/* Chevron toggles dropdown separately */}
               <button
                 aria-haspopup="menu"
                 aria-expanded={servicesOpen}
@@ -89,12 +84,10 @@ const Navbar = () => {
               </button>
             </div>
 
-            {/* Dropdown panel */}
             <div
               role="menu"
-              className={`absolute left-0 mt-0 min-w-[260px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transform transition-all duration-150 ${
-                servicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-1"
-              }`}
+              className={`absolute left-0 mt-0 min-w-[260px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transform transition-all duration-150 ${servicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-1"
+                }`}
             >
               <div className="py-3">
                 {services.map((s) => (
@@ -123,7 +116,6 @@ const Navbar = () => {
           <Quote />
         </div>
 
-        {/* Mobile Menu Button - Changed from md:hidden to lg:hidden */}
         <div className="lg:hidden">
           <button
             aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -136,7 +128,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu - Changed from md:hidden to lg:hidden */}
       <div className={`lg:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 mt-3" : "max-h-0"}`} aria-hidden={!isOpen}>
         <div className="bg-white shadow-md rounded-md mx-4 p-4 flex flex-col gap-3 items-center">
           <NavLink to="/" onClick={toggleMenu} className={linkClasses}>
@@ -149,32 +140,25 @@ const Navbar = () => {
             FLEET OVERVIEW
           </NavLink>
 
-          {/* Mobile nested OUR SERVICES */}
-          <div className="w-full">
-            <div className="flex items-center justify-between w-full">
-              <NavLink
-                to="/services"
-                onClick={() => {
-                  setIsOpen(false);
-                  setMobileServicesOpen(false);
-                }}
-                className="text-sm font-medium px-4 py-2 block text-left"
-              >
-                OUR SERVICES
-              </NavLink>
+          <div className="w-full flex flex-col items-center">
+            <button
+              onClick={() => setMobileServicesOpen((s) => !s)}
+              className="flex items-center justify-center gap-2 text-md font-medium px-4 py-2 text-center"
+              aria-expanded={mobileServicesOpen}
+              aria-controls="mobile-services-list"
+            >
+              OUR SERVICES
+              <FaChevronDown
+                className={`w-3 h-3 transform transition ${mobileServicesOpen ? "rotate-180" : ""}`}
+              />
+            </button>
 
-              <button
-                onClick={() => setMobileServicesOpen((s) => !s)}
-                className="px-4 py-2"
-                aria-expanded={mobileServicesOpen}
-                aria-controls="mobile-services-list"
-              >
-                <FaChevronDown className={`w-3 h-3 transform transition ${mobileServicesOpen ? "rotate-180" : ""}`} />
-              </button>
-            </div>
-
-            <div id="mobile-services-list" className={`${mobileServicesOpen ? "max-h-[500px] mt-2" : "max-h-0"} overflow-hidden transition-all duration-300`}>
-              <div className="flex flex-col px-2">
+            <div
+              id="mobile-services-list"
+              className={`${mobileServicesOpen ? "max-h-[500px] mt-2" : "max-h-0"
+                } overflow-hidden transition-all duration-300 w-full`}
+            >
+              <div className="flex flex-col items-center px-2">
                 {services.map((s) => (
                   <NavLink
                     key={s.to}
@@ -183,7 +167,7 @@ const Navbar = () => {
                       setIsOpen(false);
                       setMobileServicesOpen(false);
                     }}
-                    className="block w-full px-4 py-3 text-left text-sm font-medium text-[#1f3a5a] hover:bg-gray-50 hover:text-[#e42313] rounded"
+                    className="block w-full px-4 py-3 text-center text-sm font-medium text-[#1f3a5a] hover:bg-gray-50 hover:text-[#e42313] rounded"
                   >
                     {s.label}
                   </NavLink>
@@ -191,6 +175,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+
 
           <NavLink to="/safety" onClick={toggleMenu} className={linkClasses}>
             SAFETY & TECH
