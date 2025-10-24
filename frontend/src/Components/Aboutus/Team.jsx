@@ -10,7 +10,6 @@ import img5 from "../../images/team/ashok.jpg";
 const teamMembers = [
   { name: "Mr. P.S. Choudhary", title: "Founder and Chairman", imageUrl: null, linkedin: "https://www.linkedin.com/in/pschoudhary" },
   { name: "Mr. Sandeep Choudhary", title: "Managing Director", imageUrl: img4, linkedin: "https://www.linkedin.com/in/sandeep-choudhary-054396369/" },
-  { name: "Mr. Rajeev Choudhary", title: "Chief Executive Officer", imageUrl: img3, linkedin: "https://www.linkedin.com/in/rajeev-choudhary-1a84a1146/" },
   { name: "Mr. Chandradeep Tamta", title: "Chief Operating Officer", imageUrl: img2, linkedin: "https://www.linkedin.com/in/chandradeeptamta" },
   { name: "Anju Choudhary", title: "Chief Financial Officer", imageUrl: img1, linkedin: "https://www.linkedin.com/in/anju-choudhary-a416abb/" },
   { name: "Col. Ashok Prabhakar", title: "Chief Training Officer", imageUrl: img5, linkedin: "https://www.linkedin.com/in/col-ashok-p-9644247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
