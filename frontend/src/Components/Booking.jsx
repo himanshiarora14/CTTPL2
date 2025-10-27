@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { BiSolidMessageSquare } from "react-icons/bi";
+import { BiMessageSquare } from "react-icons/bi";
 
+// ✅ Initial form state
 const initialForm = {
   name: "",
   email: "",
@@ -14,12 +15,19 @@ const initialForm = {
   agree: false,
 };
 
+// ✅ Automatically pick backend URL based on environment
+const BACKEND_URL =
+  import.meta.env.PROD
+    ? "https://choudharytours.in/sendemail" // your deployed backend
+    : "http://localhost:8080/sendemail"; // local dev backend
+
 const OnSpotRentalsForm = () => {
   const [formData, setFormData] = useState(initialForm);
   const [loading, setLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
-  const [previewUrl, setPreviewUrl] = useState("");
+  const [serverStatus, setServerStatus] = useState(null);
 
+  // ✅ Handle input changes
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
@@ -28,30 +36,77 @@ const OnSpotRentalsForm = () => {
     }));
   };
 
+  // ✅ Validate Indian phone numbers
+  const isValidIndianPhone = (phone) => {
+    const cleaned = phone.replace(/\D/g, "");
+    return /^([6-9]\d{9})$/.test(cleaned);
+  };
+
+  // ✅ Submit handler
   const handleSubmit = async (e) => {
     e.preventDefault();
     setResponseMessage("");
+    setServerStatus(null);
+
+    // Basic validation
+    if (!formData.name.trim() || !formData.email.trim()) {
+      setResponseMessage("Name and email are required.");
+      return;
+    }
+
+    if (formData.countryCode === "+91" && !isValidIndianPhone(formData.phone)) {
+      setResponseMessage("Please enter a valid 10-digit Indian phone number.");
+      return;
+    }
+
+    if (!formData.agree) {
+      setResponseMessage("Please agree to the terms and conditions.");
+      return;
+    }
+
+    const payload = {
+      ...formData,
+      travellers: formData.travellers
+        ? Number(formData.travellers)
+        : undefined,
+    };
+
     setLoading(true);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
 
     try {
-      const response = await fetch("https://cttpl.onrender.com/sendemail", {
+      console.log("[POST] ->", BACKEND_URL, payload);
+
+      const res = await fetch(BACKEND_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
+        signal: controller.signal,
       });
 
-      const data = await response.json().catch(() => ({}));
+      clearTimeout(timeoutId);
+      setServerStatus({ status: res.status, text: res.statusText });
 
-      if (response.ok) {
-        setResponseMessage("Your consultation request has been sent successfully!");
-        if (data.previewUrl) setPreviewUrl(data.previewUrl);
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok) {
+        setResponseMessage(data.message || "✅ Enquiry sent successfully!");
         setFormData(initialForm);
       } else {
-        setResponseMessage(`Failed to send request: ${data.message || "Unknown error"}`);
+        console.error("[Server Error]", res.status, data);
+        setResponseMessage(
+          data.message || `Failed to send enquiry. (Status ${res.status})`
+        );
       }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setResponseMessage("There was an error sending your request. Please try again later.");
+    } catch (err) {
+      clearTimeout(timeoutId);
+      if (err.name === "AbortError") {
+        setResponseMessage("⏳ Request timed out. Try again later.");
+      } else {
+        console.error("Network/error:", err);
+        setResponseMessage("⚠️ Network error. Please try again later.");
+      }
     } finally {
       setLoading(false);
     }
@@ -59,21 +114,21 @@ const OnSpotRentalsForm = () => {
 
   return (
     <div className="w-full min-h-screen m-4 flex items-center justify-center">
-      <div className="w-full max-w-6xl bg-white p-10 rounded-2xl shadow-xl border-[3px] border-white">
-        <h2 className=" text-3xl md:text-5xl font-semibold text-center mb-8">
-          On Spot <span className="text-red-500">Rentals</span>
+      <div className="w-full max-w-5xl bg-white p-10 rounded-2xl shadow-xl border border-gray-200">
+        <h2 className="text-3xl md:text-5xl font-semibold text-center mb-8">
+          On Spot <span className="text-red-600">Rentals</span>
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-6 w-full">
+        <form onSubmit={handleSubmit} className="space-y-6 w-full" noValidate>
           {/* Name + Email */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
               name="name"
-              placeholder="Enter Your name"
+              placeholder="Enter Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="border-[3px] border-gray-300 p-3 rounded-lg w-full"
+              className="border-[2px] border-gray-300 p-3 rounded-lg w-full"
               required
             />
             <input
@@ -82,7 +137,7 @@ const OnSpotRentalsForm = () => {
               placeholder="Enter Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="border-[3px] border-gray-300 p-3 rounded-lg w-full"
+              className="border-[2px] border-gray-300 p-3 rounded-lg w-full"
               required
             />
           </div>
@@ -91,7 +146,7 @@ const OnSpotRentalsForm = () => {
           <div className="grid grid-cols-3 gap-2">
             <select
               name="countryCode"
-              className="border-[3px] border-gray-300 p-3 rounded-lg"
+              className="border-[2px] border-gray-300 p-3 rounded-lg"
               value={formData.countryCode}
               onChange={handleChange}
             >
@@ -103,7 +158,7 @@ const OnSpotRentalsForm = () => {
               placeholder="Enter Your Phone No."
               value={formData.phone}
               onChange={handleChange}
-              className="border-[3px] border-gray-300 p-3 rounded-lg col-span-2"
+              className="border-[2px] border-gray-300 p-3 rounded-lg col-span-2"
               required
             />
           </div>
@@ -114,7 +169,7 @@ const OnSpotRentalsForm = () => {
               name="serviceType"
               value={formData.serviceType}
               onChange={handleChange}
-              className="border-[3px] border-gray-300 p-3 rounded-lg"
+              className="border-[2px] border-gray-300 p-3 rounded-lg"
               required
             >
               <option value="">Select Service Type</option>
@@ -127,7 +182,7 @@ const OnSpotRentalsForm = () => {
               name="country"
               value={formData.country}
               onChange={handleChange}
-              className="border-[3px] border-gray-300 p-3 rounded-lg"
+              className="border-[2px] border-gray-300 p-3 rounded-lg"
             >
               <option value="India">India</option>
               <option value="USA">USA</option>
@@ -139,7 +194,7 @@ const OnSpotRentalsForm = () => {
               name="date"
               value={formData.date}
               onChange={handleChange}
-              className="border-[3px] border-gray-300 p-3 rounded-lg"
+              className="border-[2px] border-gray-300 p-3 rounded-lg"
               required
             />
           </div>
@@ -151,22 +206,22 @@ const OnSpotRentalsForm = () => {
             placeholder="No. of Travellers"
             value={formData.travellers}
             onChange={handleChange}
-            className="border-[3px] border-gray-300 p-3 rounded-lg w-full"
-            required
+            className="border-[2px] border-gray-300 p-3 rounded-lg w-full"
             min="1"
+            required
           />
 
           {/* Requirements */}
           <textarea
             name="requirements"
-            placeholder="Any specific requirement / question"
+            placeholder="Any specific requirement or question"
             value={formData.requirements}
             onChange={handleChange}
-            className="border-[3px] border-gray-300 p-3 rounded-lg w-full"
+            className="border-[2px] border-gray-300 p-3 rounded-lg w-full"
             rows="3"
           />
 
-          {/* Checkbox */}
+          {/* Agreement */}
           <label className="flex items-center space-x-2 text-sm">
             <input
               type="checkbox"
@@ -177,58 +232,58 @@ const OnSpotRentalsForm = () => {
             />
             <span>
               I agree with the{" "}
-              <a href="#" className="text-blue-500 underline">
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="text-blue-500 underline"
+              >
                 privacy policy
               </a>{" "}
               and{" "}
-              <a href="#" className="text-blue-500 underline">
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="text-blue-500 underline"
+              >
                 terms and conditions
               </a>
               .
             </span>
           </label>
 
-          {/* Button */}
+          {/* Submit */}
           <div className="flex justify-end">
-            {/* Button */}
-            <div className="flex justify-end">
-              <button
-                type="submit"
-                disabled={loading}
-                className={`${loading ? "opacity-70 cursor-wait" : ""
-                  } flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-2 py-3 rounded-lg shadow`}
-              >
-                {loading ? "Sending..." : "Send Enquiry"}
-
-                {/* White icon box */}
-                <div className="bg-white p-1 rounded-sm">
-                  <BiSolidMessageSquare className="h-4 w-4 text-red-600"/>
-                </div>
-              </button>
-            </div>
-
+            <button
+              type="submit"
+              disabled={loading}
+              className={`${
+                loading ? "opacity-70 cursor-wait" : ""
+              } flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-3 rounded-lg shadow`}
+            >
+              {loading ? "Sending..." : "Send Enquiry"}
+              <div className="bg-white p-1 rounded-sm">
+                <BiMessageSquare className="h-4 w-4 text-red-600" aria-hidden />
+              </div>
+            </button>
           </div>
 
-          {/* Response */}
+          {/* Response Message */}
           {responseMessage && (
             <div
               role="status"
-              className="mb-4 p-3 rounded border bg-green-100 text-sm"
+              className={`mt-4 p-3 rounded border text-sm ${
+                responseMessage.toLowerCase().includes("success")
+                  ? "bg-green-100 border-green-400 text-green-800"
+                  : "bg-red-100 border-red-400 text-red-800"
+              }`}
             >
               {responseMessage}
-              {previewUrl && (
-                <div className="mt-2 text-xs">
-                  Preview:{" "}
-                  <a
-                    href={previewUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 underline"
-                  >
-                    Open
-                  </a>
-                </div>
-              )}
+            </div>
+          )}
+
+          {serverStatus && (
+            <div className="text-xs text-gray-600">
+              Server response: {serverStatus.status} {serverStatus.text}
             </div>
           )}
         </form>
