@@ -1,5 +1,5 @@
 import Main from '../Button/Main'
-import img from '../../images/car.png'
+import img from '../../images/car1.png'
 
 const HeroCarLeasing = () => {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import image from "../../images/image.png";
+import image from "../../images/fleets.png";
 
 const containerVariants = {
   hidden: {},

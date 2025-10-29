@@ -32,12 +32,12 @@ const cards = [
     img: "/Pune.png",
   },
   {
-    city: "Indore, MP",
+    city: "Indore,MP",
     address: "CH 45 MR 10 Road, Sukhliya, Indore – 452010",
     img: "/Indore.png",
   },
   {
-    city: "Kolkata, WB",
+    city: "Kolkata,WB",
     address: "58, Southern Avenue, Kolkata – 700029",
     img: "/Kolkata.png",
   },

@@ -62,9 +62,10 @@ const Navbar = () => {
           <NavLink to="/about" className={linkClasses}>
             ABOUT US
           </NavLink>
-          <NavLink to="/overview" className={linkClasses}>
-            FLEET OVERVIEW
-          </NavLink>
+          {/* <NavLink to="/overview" className={linkClasses}>
+  FLEET OVERVIEW
+</NavLink> */}
+
 
           <div className="relative" onMouseLeave={() => setServicesOpen(false)}>
             <div className="flex items-center gap-2">
@@ -156,9 +157,10 @@ const Navbar = () => {
           <NavLink to="/about" onClick={() => setIsOpen(false)} className={linkClasses}>
             ABOUT US
           </NavLink>
-          <NavLink to="/overview" onClick={() => setIsOpen(false)} className={linkClasses}>
-            FLEET OVERVIEW
-          </NavLink>
+          {/* <NavLink to="/overview" onClick={() => setIsOpen(false)} className={linkClasses}>
+  FLEET OVERVIEW
+</NavLink> */}
+
 
           <div className="w-full flex flex-col items-center">
             {/* apply the same "active" look when on a services route */}
