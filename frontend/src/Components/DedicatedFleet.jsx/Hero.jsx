@@ -1,6 +1,6 @@
 import Contact from '../Button/Contact'
 import Embedded from '../Button/Embedded'
-import img from '../../images/bus7.png'
+import img from '../../images/team/fleets.png'
 import Main from '../Button/Main';
 
 const Hero = () => {

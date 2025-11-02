@@ -1,5 +1,5 @@
 import React from "react";
-import bus2 from "../../images/os.png";
+import bus2 from "../../images/team/os.png";
 import Main from "../Button/Main";
 
 const FleetSection = () => {

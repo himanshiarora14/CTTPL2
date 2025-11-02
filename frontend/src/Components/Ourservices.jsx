@@ -73,12 +73,15 @@ const Ourservices = () => {
   );
 
   return (
-    <div className="bg-[#f0f3f6] py-16 px-4 sm:px-6 lg:px-20">
+    <div className="bg-[#f2f8f8] py-16 px-4 sm:px-6 lg:px-20">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl sm:text-5xl font-semibold text-gray-800">
-          Our Services, <span className="text-[#e74c3c]">One Need</span>
+          Our Services, <span className="text-red-600">One Need</span>
         </h2>
-        <p className="mt-4 text-md text-gray-600 max-w-4xl mx-auto">
+        <p
+  className="mt-4 text-md text-gray-600 max-w-4xl mx-auto"
+  style={{ textWrap: "balance" }}
+>
           At Choudhary Tours & Travels Pvt. Ltd. (CTTPL), we have been a trusted name in the industry for over 35 years, offering comprehensive nationwide services in tours, cabs, and fleet management. Whether you're looking for safe and reliable corporate transportation, customizable tour packages, or efficient fleet solutions, our vast experience and cutting-edge technology ensure smooth and hassle-free journeys. With a fleet strength of 4,000+ vehicles, we provide top-notch service tailored to meet the unique needs of businesses and individuals alike.
         </p>
       </div>

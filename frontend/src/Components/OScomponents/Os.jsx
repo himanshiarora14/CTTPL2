@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import img1 from "../../images/bus6.png";
-import img2 from "../../images/bus7.png";
+import img2 from "../../images/team/fleets.png";
 import img3 from "../../images/bus8.png";
 import img4 from "../../images/bus9.png";
 import img5 from "../../images/bus10.png";

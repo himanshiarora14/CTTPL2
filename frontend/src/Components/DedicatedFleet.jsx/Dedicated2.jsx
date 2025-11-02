@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import img from '../../images/bus7.png'
+import img from '../../images/team/fleets.png'
 
 
 const SafetyMeasures = () => {
