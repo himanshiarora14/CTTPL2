@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 import img1 from "../../images/bus6.png";
 import img2 from "../../images/team/fleets.png";
@@ -95,28 +97,33 @@ export default function Os() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-2">
-                  <a href={service.link} className="w-full sm:w-auto">
-                    <button className="w-full sm:w-auto bg-red-500 text-white font-semibold py-2 px-6 rounded-lg text-sm hover:bg-red-600 transition duration-300">
-                      Know More
-                    </button>
-                  </a>
+                  <Link to={service.link} className="w-full sm:w-auto">
+  <button className="w-full sm:w-auto bg-red-500 text-white font-semibold py-2 px-6 rounded-lg text-sm hover:bg-red-600 transition duration-300">
+    Know More
+  </button>
+</Link>
 
-                  <button className="w-full sm:w-auto bg-red-500 text-white font-semibold p-2 rounded-full hover:bg-red-600 transition duration-300 flex items-center justify-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </button>
+
+                  <Link
+  to={service.link}
+  className="w-full sm:w-auto bg-red-500 text-white font-semibold p-2 rounded-full hover:bg-red-600 transition duration-300 flex items-center justify-center"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M17 8l4 4m0 0l-4 4m4-4H3"
+    />
+  </svg>
+</Link>
+
                 </div>
               </motion.div>
 

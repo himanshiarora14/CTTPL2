@@ -54,7 +54,7 @@ export default function ReachOptions() {
                   style={{ bottom: 0 }}
                 >
                   <div
-                    className={`relative w-[46%] md:w-[40%] lg:-right-35 lg:-bottom-6 lg:w-[80%] z-40`}
+                    className={`relative w-[46%] md:w-[40%] lg:-right-60 lg:-bottom-6 lg:w-[80%] z-40`}
                   >
                     <img
                       src={card.image}

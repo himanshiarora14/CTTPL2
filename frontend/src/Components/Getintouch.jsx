@@ -52,7 +52,7 @@ export default function ContactSection() {
                             <div>
                                 <p className="font-bold">Meet Us</p>
                                 <p className="text-gray-600 text-sm">
-                                    Y-348, C/2, Sector-12, Noida - 201301
+                                    J96V+FF9, B-99, Sector 69, Noida, Uttar Pradesh 201309
                                 </p>
                             </div>
                         </div>
