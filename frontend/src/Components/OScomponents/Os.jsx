@@ -21,14 +21,14 @@ const services = [
     description:
       "CTTPL offers comprehensive car leasing services, providing businesses with a flexible and cost-efficient solution for long-term transportation needs. Whether you require compact cars or premium vehicles, we deliver well-maintained vehicles with customized leasing options for operations and reduced maintenance costs.",
     img: img3,
-    link: "#",
+    link: "/car-leasing",
   },
   {
     title: "Dedicated Fleet Services",
     description:
       "CTTPL’s Dedicated Fleet Services provide businesses with exclusive, fully-managed vehicles to meet their ongoing transportation demands. With customized solutions for your workforce, our services enhance reliability, flexibility, and cost efficiency. Backed by expert management, our dedicated fleet delivers superior service quality across industries.",
     img: img2,
-    link: "#",
+    link: "/dedicated-fleet-service",
   },
   {
     title: "School Fleet Services",
