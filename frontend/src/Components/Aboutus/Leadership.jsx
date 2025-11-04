@@ -1,5 +1,5 @@
 import React from "react";
-import img from '../../images/image.png'
+import img from '../../images/team/leadership.png'
 import { HiArrowRight } from "react-icons/hi";
 
 function CompanyStructure() {

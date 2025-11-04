@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FaLinkedin, FaWhatsapp, FaGoogle } from 'react-icons/fa';
 import logo from "../images/logo2.png";
 
@@ -32,12 +33,13 @@ const Footer = () => {
             <h3 className="text-lg font-bold text-[#FFD166]">Important Links</h3>
             <ul className="mt-4 grid grid-cols-2 gap-x-8 gap-y-2 text-sm">
               {importantLinks.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="hover:text-white transition-colors duration-300">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+  <li key={link.name}>
+    <Link to={link.href} className="hover:text-white transition-colors duration-300">
+      {link.name}
+    </Link>
+  </li>
+))}
+
             </ul>
           </div>
 
