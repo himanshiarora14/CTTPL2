@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroCarLeasing from '../Components/CarLeasingServices/HeroCarLeasing'
-import OnSpotRentalsForm from '../Components/Booking'
 import FleetBestChoice from '../Components/SchoolFleetServices/FleetBestChoice'
 import Fleets from '../Components/Fleets'
 import ContactSection from '../Components/Getintouch'
@@ -10,7 +9,6 @@ const CarLeasingService = () => {
   return (
     <div>
         <HeroCarLeasing/>
-        <OnSpotRentalsForm/>
         {/* 1 section remaining */}
         <ReachOptions/>
         <FleetBestChoice/>

@@ -58,9 +58,9 @@ const useCountUp = (end, duration = 3000) => {
 
 function Ournumbers() {
   const [experienceCount, experienceRef] = useCountUp(35);
-  const [employeesCount, employeesRef] = useCountUp(10000);
-  const [vehiclesCount, vehiclesRef] = useCountUp(4312);
-  const [clientsCount, clientsRef] = useCountUp(231);
+  const [employeesCount, employeesRef] = useCountUp(15000);
+  const [vehiclesCount, vehiclesRef] = useCountUp(4000);
+  const [clientsCount, clientsRef] = useCountUp(130);
   const [toursCount, toursRef] = useCountUp(97423);
 
   const stats = [
@@ -74,7 +74,7 @@ function Ournumbers() {
     {
       value: employeesCount,
       suffix: "+",
-      label: "Employees",
+      label: "Daily Employee Transportation",
       ref: employeesRef,
       icon: <GoPersonFill className="w-6 h-6 text-yellow-400 mr-2" />,
     },
@@ -88,14 +88,14 @@ function Ournumbers() {
     {
       value: clientsCount,
       suffix: "+",
-      label: "Corporate Clients",
+      label: "Clients",
       ref: clientsRef,
       icon: <MdCorporateFare className="w-6 h-6 text-yellow-400 mr-2" />,
     },
     {
       value: toursCount,
       suffix: "+",
-      label: "Successful Transportation",
+      label: "3.05 Million Trips in FY 24-25",
       ref: toursRef,
       icon: <BsBusFront className="w-6 h-6 text-yellow-400 mr-2" />,
     },

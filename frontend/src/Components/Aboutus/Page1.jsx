@@ -111,12 +111,12 @@ function Counter({ end = 0, duration = 1800, startOnView = true }) {
 
 export default function Home() {
   const stats = [
-    { icon: Car, number: 45, label: "Trusted Service" },
-    { icon: Users, number: 10000, label: "Happy Clients" },
-    { icon: Car, number: 4312, label: "Vehicles in Fleet" },
-    { icon: Building, number: 231, label: "Corporate Clients" },
-    { icon: Calendar, number: 97423, label: "Tours & Trips" },
-    { icon: MapPin, number: 10, label: "States & Cities" },
+    { icon: Car, number: 35, label: "Years of Trusted Service" },
+    { icon: Users, number: 15000, label: "Daily Employee Transportation" },
+    { icon: Car, number: 4000, label: "Vehicles and Fleets" },
+    { icon: Building, number: 130, label: "Clients" },
+    { icon: Calendar, number: 97450, label: "Tours & Trips" },
+    { icon: MapPin, number: 100, label: "Cities" },
   ];
 
   return (

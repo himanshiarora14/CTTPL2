@@ -1,10 +1,12 @@
 import React from "react";
 import img from '../../images/team/leadership.png'
 import { HiArrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
+
 
 function CompanyStructure() {
   return (
-    <div className="min-h-screen py-12 px-4 bg-white flex flex-col items-center">
+    <div className=" py-12 px-4 bg-white flex flex-col items-center">
       <div className="max-w-5xl w-full flex flex-col md:flex-row gap-12 mb-12 items-stretch">
 
         <div className="flex-1 flex">
@@ -36,15 +38,19 @@ function CompanyStructure() {
 
 
           <div className="flex items-center gap-3 mt-8">
-            <a href="/structure" className="flex items-center">
-              <button className="bg-red-500 text-white font-semibold py-2 px-6 rounded-lg text-sm hover:bg-red-600 transition duration-300 flex items-center">
-                Know More
-              </button>
-              <button className="bg-red-500 text-white font-semibold ml-3 p-2 rounded-full hover:bg-red-600 transition duration-300 flex items-center justify-center">
-                <HiArrowRight className="text-white text-lg" />
-              </button>
-            </a>
-          </div>
+  <Link to="/structure" className="flex items-center">
+
+    <div className="bg-red-500 text-white font-semibold py-2 px-6 rounded-lg text-sm hover:bg-red-600 transition duration-300 flex items-center">
+      Know More
+    </div>
+
+    <div className="bg-red-500 text-white font-semibold ml-3 p-2 rounded-full hover:bg-red-600 transition duration-300 flex items-center justify-center">
+      <HiArrowRight className="text-white text-lg" />
+    </div>
+
+  </Link>
+</div>
+
         </div>
       </div>
     </div>
