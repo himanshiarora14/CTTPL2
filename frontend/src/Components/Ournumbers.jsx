@@ -61,7 +61,7 @@ function Ournumbers() {
   const [employeesCount, employeesRef] = useCountUp(15000);
   const [vehiclesCount, vehiclesRef] = useCountUp(4000);
   const [clientsCount, clientsRef] = useCountUp(130);
-  const [toursCount, toursRef] = useCountUp(97423);
+  const [toursCount, toursRef] = useCountUp(3.05);
 
   const stats = [
     {
@@ -94,8 +94,8 @@ function Ournumbers() {
     },
     {
       value: toursCount,
-      suffix: "+",
-      label: "3.05 Million Trips in FY 24-25",
+      suffix: " M+",
+      label: "Trips in FY 24-25",
       ref: toursRef,
       icon: <BsBusFront className="w-6 h-6 text-yellow-400 mr-2" />,
     },
