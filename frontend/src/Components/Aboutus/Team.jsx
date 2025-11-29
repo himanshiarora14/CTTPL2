@@ -15,7 +15,7 @@ const teamMembers = [
   { name: "Mr. Chandradeep Tamta", title: "Chief Operating Officer", imageUrl: img2, linkedin: "https://www.linkedin.com/in/chandradeeptamta" },
   { name: "Anju Choudhary", title: "Chief Financial Officer", imageUrl: img1, linkedin: "https://www.linkedin.com/in/anju-choudhary-a416abb/" },
   { name: "Col. Ashok Prabhakar", title: "Chief Training Officer", imageUrl: img5, linkedin: "https://www.linkedin.com/in/col-ashok-p-9644247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-  { name: "Mr. Amit Tomar", title: "CBO and Director - Operations", imageUrl: img3, linkedin: "https://www.linkedin.com/in/amittomar" },
+  { name: "Mr. Amit Tomar", title: "CBO and Director - Operations", imageUrl: img6, linkedin: "https://www.linkedin.com/in/amittomar" },
 ];
 
 const Team = () => {
