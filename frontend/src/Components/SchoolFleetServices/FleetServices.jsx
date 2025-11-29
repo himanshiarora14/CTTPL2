@@ -6,37 +6,37 @@ const FleetServices = () => {
   const fleetItems = [
     {
       title: "Student Safety First",
-      image: "/assets/schoolfleetservice.png",
+      image: "/assets/schoolfleetservice2.png",
       contentIcon: "/assets/safety-icon.svg",
       description: "Safety is our top priority. Our vehicles are equipped with GPS tracking, speed limit monitoring, CCTV cameras, and emergency response systems to ensure the security of every child."
     },
     {
       title: "Trained and Verified Drivers",
-      image: "/assets/schoolfleetservice.png",
+      image: "/assets/schoolfleetservice2.png",
       contentIcon:  "/assets/safety-icon.svg",
       description: "All our drivers undergo rigorous training in safety protocols and are thoroughly background-verified, also regularly counseled to uphold the highest standards of professionalism."
     },
     {
       title: "Reliable and Punctual Services",
-      image: "/assets/schoolfleetservice.png",
+      image: "/assets/schoolfleetservice2.png",
       contentIcon:  "/assets/safety-icon.svg",
       description: "We understand the importance of adhering to school schedules. Our fleet operations are meticulously planned to ensure on-time pickups and drop-offs every day."
     },
     {
       title: "Well-Maintained Vehicles",
-      image: "/assets/schoolfleetservice.png",
+      image: "/assets/schoolfleetservice2.png",
       contentIcon:  "/assets/safety-icon.svg",
       description: "Each vehicle in our fleet undergoes regular maintenance checks to ensure optimal performance, cleanliness, and roadworthiness."
     },
     {
       title: "Technology Integration",
-      image: "/assets/schoolfleetservice.png",
+      image: "/assets/schoolfleetservice2.png",
       contentIcon:  "/assets/safety-icon.svg",
       description: "Advanced technology like real-time tracking allows parents and school authorities to monitor the fleet's location, adding an extra layer."
     },
     {
       title: "Customizable Solutions",
-      image: "/assets/schoolfleetservice.png",
+      image: "/assets/schoolfleetservice2.png",
       contentIcon:  "/assets/safety-icon.svg",
       description: "Our services are tailored to meet the unique transportation requirements of different schools, whether it's for daily commutes or special events."
     }
@@ -107,7 +107,7 @@ const FleetServices = () => {
                   <img 
                     src={fleetItems[activeIndex].image} 
                     alt={`${fleetItems[activeIndex].title} Vehicle`}
-                    className="w-full h-64 object-cover rounded-xl"
+                    className="w-full h-90 object-cover rounded-xl"
                   />
                 </div>
                 

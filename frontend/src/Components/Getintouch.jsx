@@ -64,7 +64,7 @@ export default function ContactSection() {
                             </div>
                             <div>
                                 <p className="font-bold">Call Us</p>
-                                <p className="text-gray-600 text-sm">+91-97737 83869</p>
+                                <p className="text-gray-600 text-sm">+91-9971598659</p>
                             </div>
                         </div>
 

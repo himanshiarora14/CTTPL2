@@ -1,7 +1,6 @@
 import React from 'react';
 import Getintouch from "../Components/Getintouch";
 import Footer from "../Components/Footer";
-import OnSpotRentalsForm from '../Components/Booking';
 import FleetBestChoice from './SchoolFleetServices/FleetBestChoice';
 import Fleets from '../Components/Fleets';
 import DS from './OScomponents/DS';
@@ -14,7 +13,6 @@ function ElectricFleetServices() {
             {/* <Navbar /> */}
             <DS />
             <br />
-            <OnSpotRentalsForm />
 
             <br />
             <EF />

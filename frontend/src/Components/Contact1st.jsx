@@ -7,11 +7,11 @@ const Contact1st = () => {
   const contactDetails = [
     {
       title: 'Meet us at:',
-      info: 'Y-348, C/2, Sector-12, Noida - 201301',
+      info: 'B-99, Transport Nagar, Sec-69, Noida',
     },
     {
       title: 'Call us at:',
-      info: '+91-97737 83869',
+      info: '+91-9971598659',
     },
     {
       title: 'Chat with us:',
