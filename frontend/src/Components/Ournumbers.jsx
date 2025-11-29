@@ -94,7 +94,7 @@ function Ournumbers() {
     },
     {
       value: toursCount,
-      suffix: " Million +",
+      suffix: " M +",
       label: "Trips in FY 24-25",
       ref: toursRef,
       icon: <BsBusFront className="w-6 h-6 text-yellow-400 mr-2" />,
