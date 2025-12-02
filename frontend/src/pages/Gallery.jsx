@@ -3,7 +3,7 @@ import IndependenceDayGallery from "../Components/Gallery/IndependenceDayGallery
 import YogaDayCelebration from "../Components/Gallery/YogaDayCelebration";
 import Session from "../Components/Gallery/Trainingsession";
 import NewCabsGallery from "../Components/Gallery/NewCabsGallery";
-import OurFirstBuses from "../Components/Gallery/Ourfirstbuses";
+import OurFirstBuses from "../Components/Gallery/OurFirstBuses";
 function Gallery() {
     return (
         <>
