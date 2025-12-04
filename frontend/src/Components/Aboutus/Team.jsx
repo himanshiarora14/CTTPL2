@@ -5,7 +5,6 @@ import img1 from "../../images/team/anju.jpg";
 import img2 from "../../images/team/Chandradeep.jpg";
 import img4 from "../../images/team/sandeep.jpg";
 import img5 from "../../images/team/ashok.jpg";
-import img6 from "../../images/team/profile.png";
 import img7 from "../../images/team/ps.jpg";
 
 const teamMembers = [
@@ -35,8 +34,8 @@ const Team = () => {
         </div>
 
         {/* First Row (4 members) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 mb-10">
-          {teamMembers.slice(0, 4).map((member, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10 mb-10">
+          {teamMembers.slice(0, 3).map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               {/* Linked Image */}
               <a
@@ -75,7 +74,7 @@ const Team = () => {
 
         {/* Second Row (3 members) */}
         <div className="flex justify-center gap-24 flex-wrap">
-          {teamMembers.slice(4).map((member, index) => (
+          {teamMembers.slice(3).map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               {/* Linked Image */}
               <a
