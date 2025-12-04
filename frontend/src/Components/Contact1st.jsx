@@ -15,7 +15,7 @@ const Contact1st = () => {
     },
     {
       title: 'Chat with us:',
-      info: 'whatsapp number',
+      info: '+91-9971598659',
     },
     {
       title: 'Email us at:',
